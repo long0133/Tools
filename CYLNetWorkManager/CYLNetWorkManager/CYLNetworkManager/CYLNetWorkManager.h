@@ -24,8 +24,29 @@ typedef NS_ENUM(NSInteger,CYLNetWorkStatus) {
 - (CYLNetWorkStatus)currentNetWorkStatus;
 
 #pragma mark - 网络请求
+
++ (NSURLSessionDataTask*)GET:(NSString*)url parameter:(id)param success:(void (^)(CYLResponse *response))successBlock fail:(void (^)(NSError *error))failBlock;
+
++ (NSURLSessionDataTask*)POST:(NSString*)url parameter:(id)param success:(void (^)(CYLResponse *response))successBlock fail:(void (^)(NSError *error))failBlock;
+
+/**
+ 可以缓存的get请求
+
+ @param url 请求路径
+ @param policy 缓存策略
+ @param period 缓存有效期
+ @param param 参数
+ */
 + (NSURLSessionDataTask*)GET:(NSString*)url CachePolicy:(CYLNetWorkCachePolicy)policy activePeriod:(NSTimeInterval)period parameter:(id)param success:(void (^)(CYLResponse *response))successBlock fail:(void (^)(NSError *error))failBlock;
 
+/**
+ 可以缓存的Post请求
+ 
+ @param url 请求路径
+ @param policy 缓存策略
+ @param period 缓存有效期
+ @param param 参数
+ */
 + (NSURLSessionDataTask*)POST:(NSString*)url CachePolicy:(CYLNetWorkCachePolicy)policy activePeriod:(NSTimeInterval)period parameter:(id)param success:(void (^)(CYLResponse *response))successBlock fail:(void (^)(NSError *error))failBlock;
 
 #pragma mark - 网络权限

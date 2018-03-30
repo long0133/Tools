@@ -78,6 +78,15 @@ static CYLNetWorkManager *_instance;
 }
 
 #pragma mark - private
+
++ (NSURLSessionDataTask*)GET:(NSString*)url parameter:(id)param success:(void (^)(CYLResponse *response))successBlock fail:(void (^)(NSError *error))failBlock{
+    return [self GET:url CachePolicy:CYLNetWorkCachePolicy_DoNotCache activePeriod:0 parameter:param success:successBlock fail:failBlock];
+}
+
++ (NSURLSessionDataTask*)POST:(NSString*)url parameter:(id)param success:(void (^)(CYLResponse *response))successBlock fail:(void (^)(NSError *error))failBlock{
+    return [self POST:url CachePolicy:CYLNetWorkCachePolicy_DoNotCache activePeriod:0 parameter:param success:successBlock fail:failBlock];
+} 
+
 + (NSURLSessionDataTask*)GET:(NSString*)url CachePolicy:(CYLNetWorkCachePolicy)policy activePeriod:(NSTimeInterval)period parameter:(id)param success:(void (^)(CYLResponse *response))successBlock fail:(void (^)(NSError *error))failBlock{
     
     if (![[CYLNetWorkManager shareInstance] judgeIfNewWorkingAvailable]) {
@@ -126,8 +135,6 @@ static CYLNetWorkManager *_instance;
             return nil;
         }
     }
-    
-    
     
     return [[CYLNetWorkManager shareInstance].manner POST:url parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
