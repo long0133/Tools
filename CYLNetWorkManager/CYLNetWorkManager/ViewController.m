@@ -7,32 +7,35 @@
 //
 
 #import "ViewController.h"
-#import "CYLNetWorkManager.h"
+#import "CYLGetTypeApi.h"
+#import "CYLTypeReformer.h"
 
-@interface ViewController ()
-
+@interface ViewController ()<CYLApiBaseManagerDelegate>
+@property (nonatomic, strong) id<ReformerProtocol> reformer;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    _reformer = [CYLTypeReformer new];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    CYLGetTypeApi *api =  [[CYLGetTypeApi alloc] init];
+    api.delegate = self;
+    [api callApi];
     
-    [CYLNetWorkManager GET:@"/api/order/reqtype" CachePolicy:CYLNetWorkCachePolicy_MemoryAndDisk activePeriod:60 parameter:@{} success:^(CYLResponse *response) {
-        NSLog(@"success");
-    } fail:^(NSError *error) {
-        NSLog(@"fail");
-    }];
 }
 
+- (void)callApiDidSuccess:(CYLApiBaseManager *)apiManager{
+    id t = [apiManager fetchDataWithReformer:_reformer];
+    NSLog(@"%@",t);
+}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)callApiDidFailed:(NSError *)error{
+    NSLog(@"call failed");
 }
 
 

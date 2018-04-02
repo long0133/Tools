@@ -44,7 +44,7 @@ static CYLNetWorkCache *_instance;
 
 #pragma mark - public
 - (void)cacheResponse:(CYLResponse*)response{
-//    NSLog(@"cache res : %@",response.url);
+    NSLog(@"try cache res : %@",response.url);
     
     response.firstCacheTime = [[NSDate date] timeIntervalSince1970];
     
@@ -61,7 +61,7 @@ static CYLNetWorkCache *_instance;
         case CYLNetWorkCachePolicy_MemoryAndDisk:{
             if (response.cachePeriod == 0) return;
             [self.cache setObject:response forKey:response.url];
-//            NSLog(@"cache disk to %@",[self getCacheDiskPathForRes:response.url]);
+            NSLog(@"cache disk to %@",[self getCacheDiskPathForRes:response.url]);
             [TKFileManager saveData:response withFileName:[self getCacheDiskPathForRes:response.url]];
             [self performSelector:@selector(startTimerForEffectiveCachePeriod:) onThread:self.netWorkThread withObject:response waitUntilDone:YES];
         }
@@ -87,11 +87,11 @@ static CYLNetWorkCache *_instance;
             res = nil;
             [self.cache removeObjectForKey:res.url];
             [self removeLocalFile:urlKey];
-//            NSLog(@"cache outOfDate Remove: %@",res.url);
+            NSLog(@"cache outOfDate Remove: %@",res.url);
         }
-//        NSLog(@"cache from disk : %@", res);
+        NSLog(@"cache from disk : %@", res);
     }else{
-//        NSLog(@"cache from memory : %@", res);
+        NSLog(@"cache from memory : %@", res);
     }
     
     
@@ -106,7 +106,7 @@ static CYLNetWorkCache *_instance;
 
 - (void)startTimerForEffectiveCachePeriod:(CYLResponse*)response{
     NSTimer *timer = [NSTimer timerWithTimeInterval:response.cachePeriod repeats:NO block:^(NSTimer * _Nonnull timer) {
-//        NSLog(@"evict: %@",response.url);
+        NSLog(@"evict: %@",response.url);
         [self.cache removeObjectForKey:response.url];
     }];
     [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];

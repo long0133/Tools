@@ -20,6 +20,9 @@
 		E35C88CE206DD5E300E1F687 /* CYLNetWorkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E35C88CD206DD5E300E1F687 /* CYLNetWorkCache.m */; };
 		E35C88D8206DE12000E1F687 /* TKFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E35C88D5206DE11F00E1F687 /* TKFileManager.m */; };
 		E35C88D9206DE12000E1F687 /* LSFileAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = E35C88D7206DE12000E1F687 /* LSFileAssistant.m */; };
+		E3C86BEE2071FFB900D2ABC7 /* CYLApiBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C86BED2071FFB900D2ABC7 /* CYLApiBaseManager.m */; };
+		E3C86BF1207202AF00D2ABC7 /* CYLGetTypeApi.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C86BF0207202AF00D2ABC7 /* CYLGetTypeApi.m */; };
+		E3C86BF5207219E900D2ABC7 /* CYLTypeReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C86BF4207219E900D2ABC7 /* CYLTypeReformer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,13 @@
 		E35C88D6206DE12000E1F687 /* TKFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKFileManager.h; path = FileManager/TKFileManager.h; sourceTree = "<group>"; };
 		E35C88D7206DE12000E1F687 /* LSFileAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSFileAssistant.m; path = FileManager/LSFileAssistant.m; sourceTree = "<group>"; };
 		E35C88DA206DE21600E1F687 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		E3C86BEC2071FFB900D2ABC7 /* CYLApiBaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLApiBaseManager.h; sourceTree = "<group>"; };
+		E3C86BED2071FFB900D2ABC7 /* CYLApiBaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLApiBaseManager.m; sourceTree = "<group>"; };
+		E3C86BEF207202AF00D2ABC7 /* CYLGetTypeApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLGetTypeApi.h; sourceTree = "<group>"; };
+		E3C86BF0207202AF00D2ABC7 /* CYLGetTypeApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLGetTypeApi.m; sourceTree = "<group>"; };
+		E3C86BF22072176100D2ABC7 /* ReformerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReformerProtocol.h; sourceTree = "<group>"; };
+		E3C86BF3207219E900D2ABC7 /* CYLTypeReformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLTypeReformer.h; sourceTree = "<group>"; };
+		E3C86BF4207219E900D2ABC7 /* CYLTypeReformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLTypeReformer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +118,10 @@
 				E35C88BC206CBA0C00E1F687 /* CYLNetworkManager */,
 				E35C88A6206CB3C300E1F687 /* AppDelegate.h */,
 				E35C88A7206CB3C300E1F687 /* AppDelegate.m */,
+				E3C86BEF207202AF00D2ABC7 /* CYLGetTypeApi.h */,
+				E3C86BF0207202AF00D2ABC7 /* CYLGetTypeApi.m */,
+				E3C86BF3207219E900D2ABC7 /* CYLTypeReformer.h */,
+				E3C86BF4207219E900D2ABC7 /* CYLTypeReformer.m */,
 				E35C88A9206CB3C300E1F687 /* ViewController.h */,
 				E35C88AA206CB3C300E1F687 /* ViewController.m */,
 				E35C88AC206CB3C300E1F687 /* Main.storyboard */,
@@ -122,6 +136,15 @@
 		E35C88BC206CBA0C00E1F687 /* CYLNetworkManager */ = {
 			isa = PBXGroup;
 			children = (
+				E3C86BEB2071FF9D00D2ABC7 /* API */,
+				E3C86BEA2071FF8300D2ABC7 /* NetWork */,
+			);
+			path = CYLNetworkManager;
+			sourceTree = "<group>";
+		};
+		E3C86BEA2071FF8300D2ABC7 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
 				E35C88BD206CBA2E00E1F687 /* CYLNetWorkManager.h */,
 				E35C88BE206CBA2E00E1F687 /* CYLNetWorkManager.m */,
 				E35C88C0206CC12D00E1F687 /* CYLNetworkConfigration.h */,
@@ -132,7 +155,17 @@
 				E35C88C7206CC9B800E1F687 /* CYLResponse.m */,
 				E35C88DA206DE21600E1F687 /* Constant.h */,
 			);
-			path = CYLNetworkManager;
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		E3C86BEB2071FF9D00D2ABC7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E3C86BEC2071FFB900D2ABC7 /* CYLApiBaseManager.h */,
+				E3C86BED2071FFB900D2ABC7 /* CYLApiBaseManager.m */,
+				E3C86BF22072176100D2ABC7 /* ReformerProtocol.h */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3C86BF5207219E900D2ABC7 /* CYLTypeReformer.m in Sources */,
 				E35C88AB206CB3C300E1F687 /* ViewController.m in Sources */,
 				E35C88C8206CC9B800E1F687 /* CYLResponse.m in Sources */,
+				E3C86BEE2071FFB900D2ABC7 /* CYLApiBaseManager.m in Sources */,
 				E35C88D9206DE12000E1F687 /* LSFileAssistant.m in Sources */,
 				E35C88B6206CB3C300E1F687 /* main.m in Sources */,
 				E35C88C2206CC12D00E1F687 /* CYLNetworkConfigration.m in Sources */,
@@ -269,6 +304,7 @@
 				E35C88CE206DD5E300E1F687 /* CYLNetWorkCache.m in Sources */,
 				E35C88A8206CB3C300E1F687 /* AppDelegate.m in Sources */,
 				E35C88BF206CBA2E00E1F687 /* CYLNetWorkManager.m in Sources */,
+				E3C86BF1207202AF00D2ABC7 /* CYLGetTypeApi.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

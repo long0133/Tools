@@ -10,9 +10,9 @@
 #define Constant_h
 
 typedef NS_ENUM(NSInteger, CYLNetWorkCachePolicy) {
-    CYLNetWorkCachePolicy_DoNotCache = 0,
-    CYLNetWorkCachePolicy_OnlyMemory,
-    CYLNetWorkCachePolicy_MemoryAndDisk
+    CYLNetWorkCachePolicy_DoNotCache = 99890,
+    CYLNetWorkCachePolicy_OnlyMemory = 99891,
+    CYLNetWorkCachePolicy_MemoryAndDisk = 99892
 };
 
 #endif /* Constant_h */

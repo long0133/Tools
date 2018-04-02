@@ -11,7 +11,7 @@
 @implementation CYLNetworkConfigration
 
 + (NSString *)baseUrl{
-    return @"http://apiv2.zjbird.com";
+    return @"http://phenix3.zjbird.com";
 }
 
 @end
