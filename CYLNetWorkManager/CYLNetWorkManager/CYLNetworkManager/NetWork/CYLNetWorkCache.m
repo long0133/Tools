@@ -54,15 +54,15 @@ static CYLNetWorkCache *_instance;
             break;
         case CYLNetWorkCachePolicy_OnlyMemory:{
             if (response.cachePeriod == 0) return;
-            [self.cache setObject:response forKey:response.url];
+            [self.cache setObject:response forKey:response.cacheKey];
             [self performSelector:@selector(startTimerForEffectiveCachePeriod:) onThread:self.netWorkThread withObject:response waitUntilDone:YES];
         }
             break;
         case CYLNetWorkCachePolicy_MemoryAndDisk:{
             if (response.cachePeriod == 0) return;
-            [self.cache setObject:response forKey:response.url];
-            NSLog(@"cache disk to %@",[self getCacheDiskPathForRes:response.url]);
-            [TKFileManager saveData:response withFileName:[self getCacheDiskPathForRes:response.url]];
+            [self.cache setObject:response forKey:response.cacheKey];
+            NSLog(@"cache disk to %@",[self getCacheDiskPathForRes:response.cacheKey]);
+            [TKFileManager saveData:response withFileName:[self getCacheDiskPathForRes:response.cacheKey]];
             [self performSelector:@selector(startTimerForEffectiveCachePeriod:) onThread:self.netWorkThread withObject:response waitUntilDone:YES];
         }
             break;
@@ -85,7 +85,7 @@ static CYLNetWorkCache *_instance;
         NSTimeInterval currTimeStamp = [[NSDate date] timeIntervalSince1970];
         if (currTimeStamp > res.firstCacheTime + res.cachePeriod) {
             res = nil;
-            [self.cache removeObjectForKey:res.url];
+            [self.cache removeObjectForKey:res.cacheKey];
             [self removeLocalFile:urlKey];
             NSLog(@"cache outOfDate Remove: %@",res.url);
         }
@@ -107,7 +107,7 @@ static CYLNetWorkCache *_instance;
 - (void)startTimerForEffectiveCachePeriod:(CYLResponse*)response{
     NSTimer *timer = [NSTimer timerWithTimeInterval:response.cachePeriod repeats:NO block:^(NSTimer * _Nonnull timer) {
         NSLog(@"evict: %@",response.url);
-        [self.cache removeObjectForKey:response.url];
+        [self.cache removeObjectForKey:response.cacheKey];
     }];
     [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
 }

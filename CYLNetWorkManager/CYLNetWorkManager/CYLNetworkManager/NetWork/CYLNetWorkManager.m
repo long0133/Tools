@@ -12,6 +12,7 @@
 #import "CYLNetWorkCache.h"
 #import <CoreTelephony/CoreTelephonyDefines.h>
 #import <CoreTelephony/CTCellularData.h>
+#import <CommonCrypto/CommonDigest.h>
 
 static CYLNetWorkManager *_instance;
 
@@ -94,7 +95,8 @@ static CYLNetWorkManager *_instance;
         [[CYLNetWorkManager shareInstance] treatNetWorkNotAvailable];
     }
     
-    CYLResponse *cachedRes = [[CYLNetWorkCache shareInstance] getResponseFromCacheWithKey:url];
+    NSString *cacheKey = [self getCacheKey:url params:param];
+    CYLResponse *cachedRes = [[CYLNetWorkCache shareInstance] getResponseFromCacheWithKey:cacheKey];
     if (cachedRes) {
         if (successBlock) {
             successBlock(cachedRes);
@@ -109,6 +111,7 @@ static CYLNetWorkManager *_instance;
             res.cachePolicy = policy;
             res.url = url;
             res.cachePeriod = period;
+            res.cacheKey = cacheKey;
             [self cacheResponse:res];
             successBlock(res);
         }
@@ -128,7 +131,8 @@ static CYLNetWorkManager *_instance;
         [[CYLNetWorkManager shareInstance] treatNetWorkNotAvailable];
     }
     
-    CYLResponse *cachedRes = [[CYLNetWorkCache shareInstance] getResponseFromCacheWithKey:url];
+    NSString *cacheKey = [self getCacheKey:url params:param];
+    CYLResponse *cachedRes = [[CYLNetWorkCache shareInstance] getResponseFromCacheWithKey:cacheKey];
     if (cachedRes) {
         if (successBlock) {
             successBlock(cachedRes);
@@ -143,6 +147,7 @@ static CYLNetWorkManager *_instance;
             res.cachePolicy = policy;
             res.url = url;
             res.cachePeriod = period;
+            res.cacheKey = cacheKey;
             [self cacheResponse:res];
             successBlock(res);
         }
@@ -158,6 +163,30 @@ static CYLNetWorkManager *_instance;
 //缓存处理
 + (void)cacheResponse:(CYLResponse*)response{
     [[CYLNetWorkCache shareInstance] cacheResponse:response];
+}
+
+
+/**
+ 获取请求的md5key
+ */
++ (NSString*)getCacheKey:(NSString*)url params:(NSDictionary*)params{
+    NSString *key = [NSMutableString stringWithString:url];
+    NSString *paramStr = [NSMutableString string];
+    
+    if ([params isKindOfClass:[NSDictionary class]] || [params isKindOfClass:[NSMutableDictionary class]]) {
+        for (NSString *value in params.allValues) {
+            [paramStr stringByAppendingString:[NSString stringWithFormat:@"&%@",value]];
+        }
+    }else if ([params isKindOfClass:[NSArray class]] || [params isKindOfClass:[NSMutableArray class]]){
+        NSArray *paramArr = (NSArray*)params;
+        for (NSString *value in paramArr) {
+            [paramStr stringByAppendingString:[NSString stringWithFormat:@"&%@",value]];
+        }
+    }
+    
+    key = [key stringByAppendingString:paramStr];
+    key = [self md5:key];
+    return key;
 }
 
 //无网络状态下的处理流程
@@ -243,6 +272,18 @@ static CYLNetWorkManager *_instance;
     };
 }
 
++ (NSString *) md5:(NSString *) input {
+    const char *cStr = [input UTF8String];
+    unsigned char digest[CC_MD5_DIGEST_LENGTH];
+    CC_MD5( cStr, strlen(cStr), digest ); // This is the md5 call
+    
+    NSMutableString *output = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
+    
+    for(int i = 0; i < CC_MD5_DIGEST_LENGTH; i++)
+        [output appendFormat:@"%02x", digest[i]];
+    
+    return  output;
+}
 
 #pragma mark - getter setter
 - (AFHTTPSessionManager *)manner{
