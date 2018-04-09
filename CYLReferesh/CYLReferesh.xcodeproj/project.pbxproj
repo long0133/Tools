@@ -9,14 +9,16 @@
 /* Begin PBXBuildFile section */
 		E3677A6D207A031100A5C0E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3677A6C207A031100A5C0E1 /* AppDelegate.m */; };
 		E3677A70207A031100A5C0E1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3677A6F207A031100A5C0E1 /* ViewController.m */; };
-		E3677A73207A031100A5C0E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3677A71207A031100A5C0E1 /* Main.storyboard */; };
 		E3677A75207A031100A5C0E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3677A74207A031100A5C0E1 /* Assets.xcassets */; };
 		E3677A78207A031100A5C0E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3677A76207A031100A5C0E1 /* LaunchScreen.storyboard */; };
 		E3677A7B207A031100A5C0E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3677A7A207A031100A5C0E1 /* main.m */; };
-		E3677A84207A04A500A5C0E1 /* UIScrollView+Referesh.m in Sources */ = {isa = PBXBuildFile; fileRef = E3677A83207A04A500A5C0E1 /* UIScrollView+Referesh.m */; };
+		E3677A84207A04A500A5C0E1 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = E3677A83207A04A500A5C0E1 /* UIScrollView+Refresh.m */; };
 		E3677A87207A05D000A5C0E1 /* CYLRefershHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E3677A86207A05D000A5C0E1 /* CYLRefershHeader.m */; };
 		E3677A8A207A084F00A5C0E1 /* CYLRefereshTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E3677A89207A084F00A5C0E1 /* CYLRefereshTool.m */; };
 		E3677A8D207A0DC500A5C0E1 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E3677A8B207A0DC500A5C0E1 /* UIView+MJExtension.m */; };
+		E3C94F90207B0379001E3CF3 /* CYLRefereshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C94F8F207B0379001E3CF3 /* CYLRefereshBaseView.m */; };
+		E3C94F93207B078F001E3CF3 /* CYLRefereshConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C94F92207B078F001E3CF3 /* CYLRefereshConstant.m */; };
+		E3C94F96207B322C001E3CF3 /* CYLRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C94F95207B322C001E3CF3 /* CYLRefreshFooter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,19 +27,24 @@
 		E3677A6C207A031100A5C0E1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E3677A6E207A031100A5C0E1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E3677A6F207A031100A5C0E1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E3677A72207A031100A5C0E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3677A74207A031100A5C0E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3677A77207A031100A5C0E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3677A79207A031100A5C0E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3677A7A207A031100A5C0E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E3677A82207A04A500A5C0E1 /* UIScrollView+Referesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Referesh.h"; sourceTree = "<group>"; };
-		E3677A83207A04A500A5C0E1 /* UIScrollView+Referesh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Referesh.m"; sourceTree = "<group>"; };
+		E3677A82207A04A500A5C0E1 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
+		E3677A83207A04A500A5C0E1 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
 		E3677A85207A05D000A5C0E1 /* CYLRefershHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLRefershHeader.h; sourceTree = "<group>"; };
 		E3677A86207A05D000A5C0E1 /* CYLRefershHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLRefershHeader.m; sourceTree = "<group>"; };
 		E3677A88207A084F00A5C0E1 /* CYLRefereshTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLRefereshTool.h; sourceTree = "<group>"; };
 		E3677A89207A084F00A5C0E1 /* CYLRefereshTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLRefereshTool.m; sourceTree = "<group>"; };
 		E3677A8B207A0DC500A5C0E1 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
 		E3677A8C207A0DC500A5C0E1 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
+		E3C94F8E207B0379001E3CF3 /* CYLRefereshBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLRefereshBaseView.h; sourceTree = "<group>"; };
+		E3C94F8F207B0379001E3CF3 /* CYLRefereshBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLRefereshBaseView.m; sourceTree = "<group>"; };
+		E3C94F91207B078F001E3CF3 /* CYLRefereshConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLRefereshConstant.h; sourceTree = "<group>"; };
+		E3C94F92207B078F001E3CF3 /* CYLRefereshConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLRefereshConstant.m; sourceTree = "<group>"; };
+		E3C94F94207B322C001E3CF3 /* CYLRefreshFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLRefreshFooter.h; sourceTree = "<group>"; };
+		E3C94F95207B322C001E3CF3 /* CYLRefreshFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLRefreshFooter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +82,6 @@
 				E3677A6C207A031100A5C0E1 /* AppDelegate.m */,
 				E3677A6E207A031100A5C0E1 /* ViewController.h */,
 				E3677A6F207A031100A5C0E1 /* ViewController.m */,
-				E3677A71207A031100A5C0E1 /* Main.storyboard */,
 				E3677A74207A031100A5C0E1 /* Assets.xcassets */,
 				E3677A76207A031100A5C0E1 /* LaunchScreen.storyboard */,
 				E3677A79207A031100A5C0E1 /* Info.plist */,
@@ -87,12 +93,18 @@
 		E3677A81207A048900A5C0E1 /* CYLReferesh */ = {
 			isa = PBXGroup;
 			children = (
-				E3677A82207A04A500A5C0E1 /* UIScrollView+Referesh.h */,
-				E3677A83207A04A500A5C0E1 /* UIScrollView+Referesh.m */,
+				E3677A82207A04A500A5C0E1 /* UIScrollView+Refresh.h */,
+				E3677A83207A04A500A5C0E1 /* UIScrollView+Refresh.m */,
+				E3C94F8E207B0379001E3CF3 /* CYLRefereshBaseView.h */,
+				E3C94F8F207B0379001E3CF3 /* CYLRefereshBaseView.m */,
 				E3677A85207A05D000A5C0E1 /* CYLRefershHeader.h */,
 				E3677A86207A05D000A5C0E1 /* CYLRefershHeader.m */,
+				E3C94F94207B322C001E3CF3 /* CYLRefreshFooter.h */,
+				E3C94F95207B322C001E3CF3 /* CYLRefreshFooter.m */,
 				E3677A88207A084F00A5C0E1 /* CYLRefereshTool.h */,
 				E3677A89207A084F00A5C0E1 /* CYLRefereshTool.m */,
+				E3C94F91207B078F001E3CF3 /* CYLRefereshConstant.h */,
+				E3C94F92207B078F001E3CF3 /* CYLRefereshConstant.m */,
 				E3677A8C207A0DC500A5C0E1 /* UIView+MJExtension.h */,
 				E3677A8B207A0DC500A5C0E1 /* UIView+MJExtension.m */,
 			);
@@ -159,7 +171,6 @@
 			files = (
 				E3677A78207A031100A5C0E1 /* LaunchScreen.storyboard in Resources */,
 				E3677A75207A031100A5C0E1 /* Assets.xcassets in Resources */,
-				E3677A73207A031100A5C0E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,8 +183,11 @@
 			files = (
 				E3677A8A207A084F00A5C0E1 /* CYLRefereshTool.m in Sources */,
 				E3677A70207A031100A5C0E1 /* ViewController.m in Sources */,
-				E3677A84207A04A500A5C0E1 /* UIScrollView+Referesh.m in Sources */,
+				E3C94F90207B0379001E3CF3 /* CYLRefereshBaseView.m in Sources */,
+				E3C94F96207B322C001E3CF3 /* CYLRefreshFooter.m in Sources */,
+				E3677A84207A04A500A5C0E1 /* UIScrollView+Refresh.m in Sources */,
 				E3677A8D207A0DC500A5C0E1 /* UIView+MJExtension.m in Sources */,
+				E3C94F93207B078F001E3CF3 /* CYLRefereshConstant.m in Sources */,
 				E3677A7B207A031100A5C0E1 /* main.m in Sources */,
 				E3677A87207A05D000A5C0E1 /* CYLRefershHeader.m in Sources */,
 				E3677A6D207A031100A5C0E1 /* AppDelegate.m in Sources */,
@@ -183,14 +197,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E3677A71207A031100A5C0E1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E3677A72207A031100A5C0E1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E3677A76207A031100A5C0E1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIScrollView (Referesh)
-- (void)addHeaderRefereshAction:(void (^)(void))Action;
-- (void)endReferesh;
+@interface UIScrollView (Refresh)
+- (void)addHeaderRefreshAction:(void (^)(void))Action;
+- (void)addFooterRfreshAction:(void(^)(void))Action;
+- (void)endRefresh;
 @end

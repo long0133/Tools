@@ -6,11 +6,10 @@
 //  Copyright © 2018年 Gary. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "CYLRefereshBaseView.h"
 
+static CGFloat CYLRefreshHeaderViewHeight = 60;
 
-static CGFloat CYLRefereshHeaderViewHeight = 60;
-
-@interface CYLRefershHeader : UIView
-
+@interface CYLRefershHeader : CYLRefereshBaseView
+@property (nonatomic, copy) dispatch_block_t headerAction;
 @end

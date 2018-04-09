@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UIScrollView+Referesh.h"
+#import "UIScrollView+Refresh.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) UITableView *tableView;
@@ -23,9 +23,15 @@
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-    [_tableView addHeaderRefereshAction:^{
+    [_tableView addHeaderRefreshAction:^{
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [_tableView endReferesh];
+            [_tableView endRefresh];
+        });
+    }];
+    
+    [_tableView addFooterRfreshAction:^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [_tableView endRefresh];
         });
     }];
 }
@@ -47,8 +53,7 @@
 
 - (UITableView *)tableView{
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
-        _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height-64) style:UITableViewStylePlain];
     }
     return _tableView;
 }
