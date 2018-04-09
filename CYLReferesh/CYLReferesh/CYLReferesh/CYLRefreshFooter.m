@@ -7,6 +7,9 @@
 //
 
 #import "CYLRefreshFooter.h"
+@interface CYLRefreshFooter()
+
+@end
 
 @implementation CYLRefreshFooter
 - (instancetype)initWithFrame:(CGRect)frame{

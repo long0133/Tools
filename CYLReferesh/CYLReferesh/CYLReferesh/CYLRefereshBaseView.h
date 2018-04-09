@@ -16,8 +16,6 @@ typedef NS_ENUM(NSInteger, RefreshState) {
     RefreshStatePulling,
     /** 正在刷新中的状态 */
     RefreshStateRefreshing,
-    /** 即将刷新的状态 */
-    RefreshStateWillRefresh,
     /** 所有数据加载完毕，没有更多的数据了 */
     RefreshStateNoMoreData
 };

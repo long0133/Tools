@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37154CBB41180F471B04A95A /* libPods-CYLReferesh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7495CD6D709DEDCEBD87459 /* libPods-CYLReferesh.a */; };
 		E3677A6D207A031100A5C0E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3677A6C207A031100A5C0E1 /* AppDelegate.m */; };
 		E3677A70207A031100A5C0E1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3677A6F207A031100A5C0E1 /* ViewController.m */; };
 		E3677A75207A031100A5C0E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3677A74207A031100A5C0E1 /* Assets.xcassets */; };
@@ -19,9 +20,13 @@
 		E3C94F90207B0379001E3CF3 /* CYLRefereshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C94F8F207B0379001E3CF3 /* CYLRefereshBaseView.m */; };
 		E3C94F93207B078F001E3CF3 /* CYLRefereshConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C94F92207B078F001E3CF3 /* CYLRefereshConstant.m */; };
 		E3C94F96207B322C001E3CF3 /* CYLRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C94F95207B322C001E3CF3 /* CYLRefreshFooter.m */; };
+		E3C94F99207B62C5001E3CF3 /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C94F98207B62C5001E3CF3 /* Animator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		552629000A854BC5CB4573C4 /* Pods-CYLReferesh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYLReferesh.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CYLReferesh/Pods-CYLReferesh.debug.xcconfig"; sourceTree = "<group>"; };
+		AB694F0CDBD509C64BF0C112 /* Pods-CYLReferesh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYLReferesh.release.xcconfig"; path = "Pods/Target Support Files/Pods-CYLReferesh/Pods-CYLReferesh.release.xcconfig"; sourceTree = "<group>"; };
+		C7495CD6D709DEDCEBD87459 /* libPods-CYLReferesh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYLReferesh.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3677A68207A031100A5C0E1 /* CYLReferesh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYLReferesh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3677A6B207A031100A5C0E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E3677A6C207A031100A5C0E1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -45,6 +50,8 @@
 		E3C94F92207B078F001E3CF3 /* CYLRefereshConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLRefereshConstant.m; sourceTree = "<group>"; };
 		E3C94F94207B322C001E3CF3 /* CYLRefreshFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLRefreshFooter.h; sourceTree = "<group>"; };
 		E3C94F95207B322C001E3CF3 /* CYLRefreshFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLRefreshFooter.m; sourceTree = "<group>"; };
+		E3C94F97207B62C5001E3CF3 /* Animator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animator.h; sourceTree = "<group>"; };
+		E3C94F98207B62C5001E3CF3 /* Animator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,17 +59,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37154CBB41180F471B04A95A /* libPods-CYLReferesh.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D298C4E5131DF4CFA71E264 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7495CD6D709DEDCEBD87459 /* libPods-CYLReferesh.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E3677A5F207A031100A5C0E1 = {
 			isa = PBXGroup;
 			children = (
 				E3677A6A207A031100A5C0E1 /* CYLReferesh */,
 				E3677A69207A031100A5C0E1 /* Products */,
+				F75A11C2C0577B4444CC842C /* Pods */,
+				4D298C4E5131DF4CFA71E264 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +111,7 @@
 		E3677A81207A048900A5C0E1 /* CYLReferesh */ = {
 			isa = PBXGroup;
 			children = (
+				E3C94F9A207B62CE001E3CF3 /* Animator */,
 				E3677A82207A04A500A5C0E1 /* UIScrollView+Refresh.h */,
 				E3677A83207A04A500A5C0E1 /* UIScrollView+Refresh.m */,
 				E3C94F8E207B0379001E3CF3 /* CYLRefereshBaseView.h */,
@@ -111,6 +130,24 @@
 			path = CYLReferesh;
 			sourceTree = "<group>";
 		};
+		E3C94F9A207B62CE001E3CF3 /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				E3C94F97207B62C5001E3CF3 /* Animator.h */,
+				E3C94F98207B62C5001E3CF3 /* Animator.m */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		F75A11C2C0577B4444CC842C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				552629000A854BC5CB4573C4 /* Pods-CYLReferesh.debug.xcconfig */,
+				AB694F0CDBD509C64BF0C112 /* Pods-CYLReferesh.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3677A7E207A031100A5C0E1 /* Build configuration list for PBXNativeTarget "CYLReferesh" */;
 			buildPhases = (
+				99DF5360DA9C9F6AD8AF3C1C /* [CP] Check Pods Manifest.lock */,
 				E3677A64207A031100A5C0E1 /* Sources */,
 				E3677A65207A031100A5C0E1 /* Frameworks */,
 				E3677A66207A031100A5C0E1 /* Resources */,
+				7DBBFF47035099EA13689CE6 /* [CP] Embed Pods Frameworks */,
+				C54FF51C9E5E661A86F06D91 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,11 +216,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7DBBFF47035099EA13689CE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYLReferesh/Pods-CYLReferesh-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99DF5360DA9C9F6AD8AF3C1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CYLReferesh-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C54FF51C9E5E661A86F06D91 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYLReferesh/Pods-CYLReferesh-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E3677A64207A031100A5C0E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3C94F99207B62C5001E3CF3 /* Animator.m in Sources */,
 				E3677A8A207A084F00A5C0E1 /* CYLRefereshTool.m in Sources */,
 				E3677A70207A031100A5C0E1 /* ViewController.m in Sources */,
 				E3C94F90207B0379001E3CF3 /* CYLRefereshBaseView.m in Sources */,
@@ -314,6 +406,7 @@
 		};
 		E3677A7F207A031100A5C0E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 552629000A854BC5CB4573C4 /* Pods-CYLReferesh.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -328,6 +421,7 @@
 		};
 		E3677A80207A031100A5C0E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB694F0CDBD509C64BF0C112 /* Pods-CYLReferesh.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

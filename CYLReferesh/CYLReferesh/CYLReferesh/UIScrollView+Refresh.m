@@ -100,8 +100,13 @@ static BOOL isObserving = false; /**< 是否观察中 */
     CGFloat offSet_Y = contentOffSet.y;
     
     if (offSet_Y > -CYLRefreshHeaderViewHeight && state == UIGestureRecognizerStateChanged) {
-        //还未拉倒触发区
-        self.headerView.state = RefreshStateIdle;
+        //开始拖拽但是还未拉倒触发区
+        self.headerView.state = RefreshStatePulling;
+    }
+    
+    if (offSet_Y <= -CYLRefreshHeaderViewHeight && state == UIGestureRecognizerStateChanged) {
+        //拖拽到触发区 但是还未松手
+        self.headerView.state = RefreshStatePulling;
     }
     
     //下拉刷新
