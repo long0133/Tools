@@ -43,13 +43,18 @@ static BOOL isObserving = false; /**< 是否观察中 */
     self.footerView = [[CYLRefreshFooter alloc] initWithFrame:CGRectMake(0, self.mj_size.height, self.mj_size.width, CYLRefreshFooterViewHeight)];
     self.footerView.state = RefreshStateIdle;
     self.footerView.footerAction = Action;
-    
+    self.contentInset = [self edgeInsets:self.contentInset addBottom:CYLRefreshFooterViewHeight];
     [self refreshPrepare];
-    [self addSubview:self.footerView];
+    [self insertSubview:self.footerView atIndex:0];
 }
 
-- (void)endRefresh{
+- (void)endHeaderRefresh{
     self.headerView.state = RefreshStateIdle;
+    [self setScrollViewContentInset:self.originInset.UIEdgeInsetsValue];
+}
+
+- (void)endFooterRefresh{
+    self.footerView.state = RefreshStateIdle;
     [self setScrollViewContentInset:self.originInset.UIEdgeInsetsValue];
 }
 
@@ -74,6 +79,8 @@ static BOOL isObserving = false; /**< 是否观察中 */
     
     if ([keyPath isEqualToString:CYLRefreshKeyPathContentSize]) {
         NSValue *value = (NSValue*)change[NSKeyValueChangeNewKey];
+        CGSize contentSize = value.CGSizeValue;
+        self.footerView.frame = CGRectMake(0, contentSize.height, contentSize.width, CYLRefreshFooterViewHeight);
         [self.scrollContentStateDict setValue:value forKey:CYLRefreshKeyPathContentSize];
     }
     
@@ -111,7 +118,13 @@ static BOOL isObserving = false; /**< 是否观察中 */
     if (offSet_Y >= fmaxf(.0f, self.contentSize.height - self.frame.size.height) + CYLRefreshFooterViewHeight) //x是触发操作的阀值
     {
         //触发上拉刷新
-        NSLog(@"触发上拉刷新");
+        if (self.footerView.state == RefreshStateIdle) {
+            NSLog(@"触发上拉刷新");
+            self.footerView.state = RefreshStateRefreshing;
+            if (self.footerView.footerAction) {
+                self.footerView.footerAction();
+            }
+        }
     }
 }
 

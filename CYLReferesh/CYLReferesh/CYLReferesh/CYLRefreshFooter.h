@@ -8,7 +8,7 @@
 
 #import "CYLRefereshBaseView.h"
 
-static CGFloat CYLRefreshFooterViewHeight = 60;
+static CGFloat CYLRefreshFooterViewHeight = 44;
 
 @interface CYLRefreshFooter : CYLRefereshBaseView
 @property (nonatomic, copy) dispatch_block_t footerAction;

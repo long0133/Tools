@@ -24,4 +24,5 @@ typedef NS_ENUM(NSInteger, RefreshState) {
 
 @interface CYLRefereshBaseView : UIView
 @property (nonatomic, assign) RefreshState state; /**< 刷新控件的状态 */
+@property (nonatomic, strong) UIScrollView *scrollView;/**< 父控件scrollView */
 @end

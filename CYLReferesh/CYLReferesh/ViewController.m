@@ -11,27 +11,31 @@
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) UITableView *tableView;
-
+@property (nonatomic, strong) NSMutableArray *contentArr;;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.contentArr = [NSMutableArray arrayWithObjects:@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1, nil];
     [self.view addSubview:self.tableView];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     [_tableView addHeaderRefreshAction:^{
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [_tableView endRefresh];
+            self.contentArr = [NSMutableArray arrayWithObjects:@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1, nil];
+            [self.tableView reloadData];
+            [_tableView endHeaderRefresh];
         });
     }];
     
     [_tableView addFooterRfreshAction:^{
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [_tableView endRefresh];
+            [self.contentArr addObjectsFromArray:@[@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1]];
+            [self.tableView reloadData];
+            [_tableView endFooterRefresh];
         });
     }];
 }
@@ -42,7 +46,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
+    return self.contentArr.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{

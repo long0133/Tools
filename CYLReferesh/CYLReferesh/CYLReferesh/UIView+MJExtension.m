@@ -81,4 +81,20 @@
 {
     return self.frame.origin;
 }
+
+- (UIEdgeInsets)edgeInsets:(UIEdgeInsets)edgeInsts addTop:(CGFloat)top{
+    return UIEdgeInsetsMake(edgeInsts.top+top, edgeInsts.left, edgeInsts.bottom, edgeInsts.right);
+}
+
+- (UIEdgeInsets)edgeInsets:(UIEdgeInsets)edgeInsts addLeft:(CGFloat)left{
+    return UIEdgeInsetsMake(edgeInsts.top, edgeInsts.left+left, edgeInsts.bottom, edgeInsts.right);
+}
+
+- (UIEdgeInsets)edgeInsets:(UIEdgeInsets)edgeInsts addRight:(CGFloat)right{
+    return UIEdgeInsetsMake(edgeInsts.top, edgeInsts.left, edgeInsts.bottom, edgeInsts.right+right);
+}
+
+- (UIEdgeInsets)edgeInsets:(UIEdgeInsets)edgeInsts addBottom:(CGFloat)bottom{
+    return UIEdgeInsetsMake(edgeInsts.top, edgeInsts.left, edgeInsts.bottom+bottom, edgeInsts.right);
+}
 @end

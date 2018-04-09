@@ -16,4 +16,10 @@
 @property (assign, nonatomic) CGFloat mj_h;
 @property (assign, nonatomic) CGSize mj_size;
 @property (assign, nonatomic) CGPoint mj_origin;
+
+- (UIEdgeInsets)edgeInsets:(UIEdgeInsets)edgeInsts addTop:(CGFloat)top;
+- (UIEdgeInsets)edgeInsets:(UIEdgeInsets)edgeInsts addLeft:(CGFloat)left;
+- (UIEdgeInsets)edgeInsets:(UIEdgeInsets)edgeInsts addRight:(CGFloat)right;
+- (UIEdgeInsets)edgeInsets:(UIEdgeInsets)edgeInsts addBottom:(CGFloat)bottom;
+
 @end

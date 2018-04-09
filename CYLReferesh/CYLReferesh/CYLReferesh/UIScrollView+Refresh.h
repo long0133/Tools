@@ -10,6 +10,8 @@
 
 @interface UIScrollView (Refresh)
 - (void)addHeaderRefreshAction:(void (^)(void))Action;
+- (void)endHeaderRefresh;
+
 - (void)addFooterRfreshAction:(void(^)(void))Action;
-- (void)endRefresh;
+- (void)endFooterRefresh;
 @end

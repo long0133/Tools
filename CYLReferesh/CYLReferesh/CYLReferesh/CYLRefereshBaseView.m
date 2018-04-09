@@ -10,12 +10,9 @@
 
 @implementation CYLRefereshBaseView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (void)willMoveToSuperview:(UIView *)newSuperview{
+    [super willMoveToSuperview:newSuperview];
+    if (![newSuperview isKindOfClass:[UIScrollView class]]) return;
+    self.scrollView = (UIScrollView*)newSuperview;
 }
-*/
-
 @end
