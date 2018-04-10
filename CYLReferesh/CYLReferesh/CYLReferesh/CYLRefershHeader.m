@@ -13,6 +13,7 @@
 
 @interface CYLRefershHeader()
 @property (nonatomic, strong) UIView *canvas;
+@property (nonatomic, strong) Animator *arrowAnimator;
 @end
 
 @implementation CYLRefershHeader
@@ -29,7 +30,7 @@
     [self addSubview:self.canvas];
     [self.canvas mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.mas_centerX);
-        make.centerY.equalTo(self.mas_centerY).offset(-10);
+        make.centerY.equalTo(self.mas_centerY).offset(0);
         make.height.mas_equalTo(self.mj_h*2.0/3);
         make.width.mas_equalTo(self.mj_h*2.0/3);
     }];
@@ -40,7 +41,16 @@
         _state = state;
         
         if (state == RefreshStatePulling) {
-            [Animator showArrowOnCanvas:self.canvas];
+            [self.arrowAnimator showArrowOnCanvas:self.canvas];
+        }else if (state == RefreshStateRefreshing){
+            [self.arrowAnimator showRefreshAnimationCanTriggerActionBlock:^{
+                if (self.headerAction) {
+                    self.headerAction();
+                }
+            }];
+        }else if (state == RefreshStateIdle){
+            [self.arrowAnimator clear];
+            self.arrowAnimator = nil;
         }
     }
 }
@@ -49,8 +59,15 @@
 - (UIView *)canvas{
     if (!_canvas) {
         _canvas = [[UIView alloc] init];
-        _canvas.backgroundColor = [UIColor whiteColor];
+        _canvas.backgroundColor = self.backgroundColor;
     }
     return _canvas;
+}
+
+- (Animator *)arrowAnimator{
+    if (!_arrowAnimator) {
+        _arrowAnimator = [[Animator alloc] init];
+    }
+    return _arrowAnimator;
 }
 @end

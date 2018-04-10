@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#define color255(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+
 UIKIT_EXTERN NSString *const CYLRefreshKeyPathContentOffset;
 UIKIT_EXTERN NSString *const CYLRefreshKeyPathContentSize;
 UIKIT_EXTERN NSString *const CYLRefreshKeyPathContentInset;

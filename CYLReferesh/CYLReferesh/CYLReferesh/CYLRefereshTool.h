@@ -11,4 +11,5 @@
 
 @interface CYLRefereshTool : NSObject
 + (void)methodSwizzle:(Class)clazz origin:(SEL)originSel new:(SEL)newSel;
+
 @end

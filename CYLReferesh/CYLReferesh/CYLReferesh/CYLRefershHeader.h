@@ -8,7 +8,7 @@
 
 #import "CYLRefereshBaseView.h"
 
-static CGFloat CYLRefreshHeaderViewHeight = 60;
+static CGFloat CYLRefreshHeaderViewHeight = 50;
 
 @interface CYLRefershHeader : CYLRefereshBaseView
 @property (nonatomic, copy) dispatch_block_t headerAction;

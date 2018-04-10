@@ -114,9 +114,6 @@ static BOOL isObserving = false; /**< 是否观察中 */
     if (offSet_Y <= -CYLRefreshHeaderViewHeight && state == UIGestureRecognizerStateEnded) {
         [self setScrollViewContentInset:UIEdgeInsetsMake(CYLRefreshHeaderViewHeight, 0, 0, 0)];
         self.headerView.state = RefreshStateRefreshing;
-        if (self.headerView.headerAction) {
-            self.headerView.headerAction();
-        }
     }
     
     //上拉加载

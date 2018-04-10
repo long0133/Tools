@@ -10,5 +10,7 @@
 #import <UIKit/UIKit.h>
 
 @interface Animator : NSObject
-+ (void)showArrowOnCanvas:(UIView*)view;
+- (void)showArrowOnCanvas:(UIView*)view;
+- (void)showRefreshAnimationCanTriggerActionBlock:(dispatch_block_t)block;
+- (void)clear;
 @end
