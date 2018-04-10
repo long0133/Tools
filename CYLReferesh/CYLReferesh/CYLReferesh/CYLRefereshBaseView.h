@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CYLRefereshConstant.h"
+#import <Masonry.h>
 
 /** 刷新控件的状态 */
 typedef NS_ENUM(NSInteger, RefreshState) {
@@ -19,6 +21,8 @@ typedef NS_ENUM(NSInteger, RefreshState) {
     /** 所有数据加载完毕，没有更多的数据了 */
     RefreshStateNoMoreData
 };
+
+#define headerFooterColor [UIColor colorWithRed:245/255.0 green:245/255.0 blue:245/255.0 alpha:1]
 
 @interface CYLRefereshBaseView : UIView
 @property (nonatomic, assign) RefreshState state; /**< 刷新控件的状态 */

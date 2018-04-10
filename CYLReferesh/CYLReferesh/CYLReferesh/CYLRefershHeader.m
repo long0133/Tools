@@ -9,7 +9,6 @@
 #import "CYLRefershHeader.h"
 #import "UIView+MJExtension.h"
 #import "Animator.h"
-#import <Masonry.h>
 
 @interface CYLRefershHeader()
 @property (nonatomic, strong) UIView *canvas;
@@ -36,6 +35,7 @@
     }];
 }
 
+#pragma mark - 动画入口
 - (void)setState:(RefreshState)state{
     if (_state != state) {
         _state = state;
