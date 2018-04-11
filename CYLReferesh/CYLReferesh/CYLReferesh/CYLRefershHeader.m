@@ -40,6 +40,8 @@
     if (_state != state) {
         _state = state;
         
+        [[NSNotificationCenter defaultCenter] postNotificationName:NotificationHeaderStatusDidChanged object:@(state)];
+        
         if (state == RefreshStatePulling) {
             [self.arrowAnimator showArrowOnCanvas:self.canvas];
         }else if (state == RefreshStateRefreshing){
@@ -55,7 +57,7 @@
     }
 }
 
-#pragma mark - getter
+#pragma mark - getter setter
 - (UIView *)canvas{
     if (!_canvas) {
         _canvas = [[UIView alloc] init];

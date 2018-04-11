@@ -14,4 +14,5 @@
 
 - (void)addFooterRfreshAction:(void(^)(void))Action;
 - (void)endFooterRefresh;
+- (void)endFooterRefreshNoMoreData;
 @end

@@ -27,7 +27,7 @@ static BOOL isObserving = false; /**< 是否观察中 */
 @end
 
 @implementation UIScrollView (Refresh)
-#pragma mark - private
+#pragma mark - header footer constructor
 //header
 - (void)addHeaderRefreshAction:(void (^)(void))Action{
     self.headerView = [[CYLRefershHeader alloc] initWithFrame:CGRectMake(0, -CYLRefreshHeaderViewHeight, self.mj_size.width, CYLRefreshHeaderViewHeight)];
@@ -36,6 +36,8 @@ static BOOL isObserving = false; /**< 是否观察中 */
     
     [self refreshPrepare];
     [self addSubview:self.headerView];
+    
+    [self observeHeaderNotification];
 }
 
 //footer
@@ -48,6 +50,7 @@ static BOOL isObserving = false; /**< 是否观察中 */
     [self insertSubview:self.footerView atIndex:0];
 }
 
+#pragma mark - end refresh
 - (void)endHeaderRefresh{
     self.headerView.state = RefreshStateIdle;
     [self setScrollViewContentInset:self.originInset.UIEdgeInsetsValue];
@@ -55,6 +58,11 @@ static BOOL isObserving = false; /**< 是否观察中 */
 
 - (void)endFooterRefresh{
     self.footerView.state = RefreshStateIdle;
+    [self setScrollViewContentInset:self.originInset.UIEdgeInsetsValue];
+}
+
+- (void)endFooterRefreshNoMoreData{
+    self.footerView.state = RefreshStateNoMoreData;
     [self setScrollViewContentInset:self.originInset.UIEdgeInsetsValue];
 }
 
@@ -98,27 +106,27 @@ static BOOL isObserving = false; /**< 是否观察中 */
     CGPoint contentOffSet = ((NSValue*)contentDict[CYLRefreshKeyPathContentOffset]).CGPointValue;
     UIGestureRecognizerState state = ((NSNumber*)contentDict[CYLRefreshKeyPathPanState]).integerValue;
     CGFloat offSet_Y = contentOffSet.y;
+    CGFloat pullingPercent = 0;
     
     if (offSet_Y > -CYLRefreshHeaderViewHeight && state == UIGestureRecognizerStateChanged) {
         //开始拖拽但是还未拉倒触发区
         self.headerView.state = RefreshStatePulling;
-    }
-    
-    if (offSet_Y <= -CYLRefreshHeaderViewHeight && state == UIGestureRecognizerStateChanged) {
+        pullingPercent = fabs(offSet_Y / CYLRefreshHeaderViewHeight);
+        
+    }else if (offSet_Y <= -CYLRefreshHeaderViewHeight && state == UIGestureRecognizerStateChanged) {
         //拖拽到触发区 但是还未松手
         self.headerView.state = RefreshStatePulling;
-    }
-    
-    //下拉刷新
-    //松手后再进行contentInset的更改 手势拖拽中进行更改会出抖动bug
-    if (offSet_Y <= -CYLRefreshHeaderViewHeight && state == UIGestureRecognizerStateEnded) {
+        pullingPercent = 1.0;
+        
+    }else if (offSet_Y <= -CYLRefreshHeaderViewHeight && state == UIGestureRecognizerStateEnded) {
+        //下拉刷新
+        //松手后再进行contentInset的更改 手势拖拽中进行更改会出抖动bug
         [self setScrollViewContentInset:UIEdgeInsetsMake(CYLRefreshHeaderViewHeight, 0, 0, 0)];
         self.headerView.state = RefreshStateRefreshing;
-    }
-    
-    //上拉加载
-    if (offSet_Y >= fmaxf(.0f, self.contentSize.height - self.frame.size.height) + CYLRefreshFooterViewHeight) //x是触发操作的阀值
+        
+    }else if (offSet_Y >= fmaxf(.0f, self.contentSize.height - self.frame.size.height) + CYLRefreshFooterViewHeight) //x是触发操作的阀值
     {
+        //上拉加载
         //触发上拉刷新
         if (self.footerView.state == RefreshStateIdle) {
             NSLog(@"触发上拉刷新");
@@ -154,6 +162,19 @@ static BOOL isObserving = false; /**< 是否观察中 */
         [self.panGestureRecognizer addObserver:self forKeyPath:CYLRefreshKeyPathPanState options:NSKeyValueObservingOptionNew context:nil];
         isObserving = YES;
     }
+}
+
+#pragma mark - notification
+- (void)observeHeaderNotification{
+    [[NSNotificationCenter defaultCenter] addObserverForName:NotificationHeaderStatusDidChanged object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
+        
+        if (self.headerView.state == RefreshStateRefreshing) {
+            self.footerView.hidden = YES;
+        }else{
+            self.footerView.hidden = NO;
+        }
+        
+    }];
 }
 
 #pragma mark - getter setter
