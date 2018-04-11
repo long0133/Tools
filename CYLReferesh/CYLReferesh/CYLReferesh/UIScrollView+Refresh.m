@@ -36,8 +36,6 @@ static BOOL isObserving = false; /**< 是否观察中 */
     
     [self refreshPrepare];
     [self addSubview:self.headerView];
-    
-    [self observeHeaderNotification];
 }
 
 //footer
@@ -53,6 +51,7 @@ static BOOL isObserving = false; /**< 是否观察中 */
 #pragma mark - end refresh
 - (void)endHeaderRefresh{
     self.headerView.state = RefreshStateIdle;
+    self.footerView.state = RefreshStateIdle;
     [self setScrollViewContentInset:self.originInset.UIEdgeInsetsValue];
 }
 
@@ -152,6 +151,7 @@ static BOOL isObserving = false; /**< 是否观察中 */
     [self removeObserver:self forKeyPath:CYLRefreshKeyPathContentOffset];
     [self removeObserver:self forKeyPath:CYLRefreshKeyPathContentSize];
     [self removeObserver:self forKeyPath:CYLRefreshKeyPathPanState];
+    
     isObserving = false;
 }
 
@@ -165,17 +165,6 @@ static BOOL isObserving = false; /**< 是否观察中 */
 }
 
 #pragma mark - notification
-- (void)observeHeaderNotification{
-    [[NSNotificationCenter defaultCenter] addObserverForName:NotificationHeaderStatusDidChanged object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
-        
-        if (self.headerView.state == RefreshStateRefreshing) {
-            self.footerView.hidden = YES;
-        }else{
-            self.footerView.hidden = NO;
-        }
-        
-    }];
-}
 
 #pragma mark - getter setter
 - (void)setHeaderView:(CYLRefershHeader *)headerView{
