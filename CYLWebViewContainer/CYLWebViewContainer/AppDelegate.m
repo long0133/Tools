@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "CYLWebViewContainer/CYLWebViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +23,7 @@
     UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
     self.window.rootViewController = navVC;
     [self.window makeKeyAndVisible];
-    
+    [[CYLWebViewController sharedInstance] pre_initWebView];
     return YES;
 }
 

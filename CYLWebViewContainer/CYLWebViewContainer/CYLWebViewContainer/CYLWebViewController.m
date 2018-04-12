@@ -66,6 +66,24 @@ extern CFAbsoluteTime startTime;
     _request = request;
 }
 
+- (void)pre_initWebView{
+    //初始化一个WKWebViewConfiguration对象
+    WKWebViewConfiguration *config = [WKWebViewConfiguration new];
+    //初始化偏好设置属性：preferences
+    config.preferences = [WKPreferences new];
+    //The minimum font size in points default is 0;
+    config.preferences.minimumFontSize = 10;
+    //是否支持JavaScript
+    config.preferences.javaScriptEnabled = YES;
+    //不通过用户交互，是否可以打开窗口
+    config.preferences.javaScriptCanOpenWindowsAutomatically = NO;
+    
+    WKWebView *webView = [[CYLWebView alloc]initWithFrame:self.view.frame configuration:config];
+    webView.navigationDelegate = self;
+    webView.hidden = YES;
+    [[UIApplication sharedApplication].keyWindow addSubview:webView];
+}
+
 #pragma mark -  delegate
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
     //  在发送请求之前，决定是否跳转

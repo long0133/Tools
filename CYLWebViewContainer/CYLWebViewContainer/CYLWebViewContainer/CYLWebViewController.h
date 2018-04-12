@@ -13,4 +13,5 @@
 @property (nonatomic, strong) NSURLRequest *request;
 
 +(instancetype) sharedInstance;
+- (void)pre_initWebView;
 @end
