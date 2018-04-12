@@ -21,6 +21,10 @@
     return [self loadRequest:request];
 }
 
+- (WKNavigation *)loadLocalHTMLString:(NSString *)htmlString{
+    return [self loadHTMLString:htmlString baseURL:[NSBundle mainBundle].bundleURL];
+}
+
 #pragma mark - private
 - (void)initUI{
     

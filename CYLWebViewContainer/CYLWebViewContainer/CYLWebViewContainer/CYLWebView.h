@@ -10,4 +10,5 @@
 
 @interface CYLWebView : WKWebView
 - (WKNavigation*)loadHtml:(NSURLRequest*)request;
+- (WKNavigation*)loadLocalHTMLString:(NSString*)htmlString;
 @end

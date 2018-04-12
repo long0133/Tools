@@ -12,7 +12,7 @@
 @interface ViewController ()
 
 @end
-
+CFAbsoluteTime startTime;
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -23,8 +23,10 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     CYLWebViewController *webvc = [CYLWebViewController sharedInstance];
-    webvc.request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.jianshu.com/p/d07298613f86"]];
+    webvc.request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.chinapex.com.cn"]];
     [self.navigationController pushViewController:webvc animated:YES];
+    startTime = CFAbsoluteTimeGetCurrent();
+    NSLog(@"startTime: %f",startTime);
 }
 
 

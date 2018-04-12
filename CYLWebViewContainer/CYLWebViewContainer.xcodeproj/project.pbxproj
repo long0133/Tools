@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2A908632E2CE1A3CA32764E /* libPods-CYLWebViewContainer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE4FE3F735F4E3AEE25C268 /* libPods-CYLWebViewContainer.a */; };
 		E367F70A207F42E20058FB4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F709207F42E20058FB4A /* AppDelegate.m */; };
 		E367F70D207F42E20058FB4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F70C207F42E20058FB4A /* ViewController.m */; };
 		E367F712207F42E20058FB4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E367F711207F42E20058FB4A /* Assets.xcassets */; };
@@ -14,9 +15,20 @@
 		E367F718207F42E20058FB4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F717207F42E20058FB4A /* main.m */; };
 		E367F720207F42FC0058FB4A /* CYLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F71F207F42FC0058FB4A /* CYLWebViewController.m */; };
 		E367F724207F438C0058FB4A /* CYLWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F723207F438C0058FB4A /* CYLWebView.m */; };
+		E367F734207F47C00058FB4A /* CYLApiBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F727207F47BF0058FB4A /* CYLApiBaseManager.m */; };
+		E367F735207F47C00058FB4A /* CYLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F72B207F47BF0058FB4A /* CYLResponse.m */; };
+		E367F736207F47C00058FB4A /* CYLNetworkConfigration.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F72D207F47BF0058FB4A /* CYLNetworkConfigration.m */; };
+		E367F737207F47C00058FB4A /* CYLNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F731207F47BF0058FB4A /* CYLNetWorkManager.m */; };
+		E367F738207F47C00058FB4A /* CYLNetWorkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F733207F47BF0058FB4A /* CYLNetWorkCache.m */; };
+		E367F73E207F47F50058FB4A /* LSFileAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F73A207F47F40058FB4A /* LSFileAssistant.m */; };
+		E367F73F207F47F50058FB4A /* TKFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F73B207F47F40058FB4A /* TKFileManager.m */; };
+		E367F745207F68800058FB4A /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E367F744207F68800058FB4A /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BE4FE3F735F4E3AEE25C268 /* libPods-CYLWebViewContainer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYLWebViewContainer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EE4D204DE46DF2DD081001D /* Pods-CYLWebViewContainer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYLWebViewContainer.release.xcconfig"; path = "Pods/Target Support Files/Pods-CYLWebViewContainer/Pods-CYLWebViewContainer.release.xcconfig"; sourceTree = "<group>"; };
+		8462F6CDDD6F44233C96506D /* Pods-CYLWebViewContainer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYLWebViewContainer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CYLWebViewContainer/Pods-CYLWebViewContainer.debug.xcconfig"; sourceTree = "<group>"; };
 		E367F705207F42E20058FB4A /* CYLWebViewContainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYLWebViewContainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E367F708207F42E20058FB4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E367F709207F42E20058FB4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -30,6 +42,24 @@
 		E367F71F207F42FC0058FB4A /* CYLWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLWebViewController.m; sourceTree = "<group>"; };
 		E367F722207F438C0058FB4A /* CYLWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLWebView.h; sourceTree = "<group>"; };
 		E367F723207F438C0058FB4A /* CYLWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLWebView.m; sourceTree = "<group>"; };
+		E367F727207F47BF0058FB4A /* CYLApiBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLApiBaseManager.m; sourceTree = "<group>"; };
+		E367F728207F47BF0058FB4A /* ReformerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReformerProtocol.h; sourceTree = "<group>"; };
+		E367F729207F47BF0058FB4A /* CYLApiBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLApiBaseManager.h; sourceTree = "<group>"; };
+		E367F72B207F47BF0058FB4A /* CYLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLResponse.m; sourceTree = "<group>"; };
+		E367F72C207F47BF0058FB4A /* CYLNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLNetWorkManager.h; sourceTree = "<group>"; };
+		E367F72D207F47BF0058FB4A /* CYLNetworkConfigration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLNetworkConfigration.m; sourceTree = "<group>"; };
+		E367F72E207F47BF0058FB4A /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		E367F72F207F47BF0058FB4A /* CYLNetWorkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLNetWorkCache.h; sourceTree = "<group>"; };
+		E367F730207F47BF0058FB4A /* CYLNetworkConfigration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLNetworkConfigration.h; sourceTree = "<group>"; };
+		E367F731207F47BF0058FB4A /* CYLNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLNetWorkManager.m; sourceTree = "<group>"; };
+		E367F732207F47BF0058FB4A /* CYLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLResponse.h; sourceTree = "<group>"; };
+		E367F733207F47BF0058FB4A /* CYLNetWorkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLNetWorkCache.m; sourceTree = "<group>"; };
+		E367F73A207F47F40058FB4A /* LSFileAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFileAssistant.m; sourceTree = "<group>"; };
+		E367F73B207F47F40058FB4A /* TKFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKFileManager.m; sourceTree = "<group>"; };
+		E367F73C207F47F40058FB4A /* LSFileAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFileAssistant.h; sourceTree = "<group>"; };
+		E367F73D207F47F40058FB4A /* TKFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKFileManager.h; sourceTree = "<group>"; };
+		E367F743207F687D0058FB4A /* CYLWebViewContainer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CYLWebViewContainer.entitlements; sourceTree = "<group>"; };
+		E367F744207F68800058FB4A /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +67,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2A908632E2CE1A3CA32764E /* libPods-CYLWebViewContainer.a in Frameworks */,
+				E367F745207F68800058FB4A /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB1D8C7263F0BF9AF3BAC1E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E367F744207F68800058FB4A /* CloudKit.framework */,
+				0BE4FE3F735F4E3AEE25C268 /* libPods-CYLWebViewContainer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E367F6FC207F42E20058FB4A = {
 			isa = PBXGroup;
 			children = (
 				E367F707207F42E20058FB4A /* CYLWebViewContainer */,
 				E367F706207F42E20058FB4A /* Products */,
+				E6DA82EBC5DED6F68D259A89 /* Pods */,
+				AB1D8C7263F0BF9AF3BAC1E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +105,8 @@
 		E367F707207F42E20058FB4A /* CYLWebViewContainer */ = {
 			isa = PBXGroup;
 			children = (
+				E367F743207F687D0058FB4A /* CYLWebViewContainer.entitlements */,
+				E367F725207F47BF0058FB4A /* CYLNetworkManager */,
 				E367F721207F43040058FB4A /* CYLWebViewContainer */,
 				E367F708207F42E20058FB4A /* AppDelegate.h */,
 				E367F709207F42E20058FB4A /* AppDelegate.m */,
@@ -86,6 +131,64 @@
 			path = CYLWebViewContainer;
 			sourceTree = "<group>";
 		};
+		E367F725207F47BF0058FB4A /* CYLNetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				E367F739207F47F40058FB4A /* FileManager */,
+				E367F726207F47BF0058FB4A /* API */,
+				E367F72A207F47BF0058FB4A /* NetWork */,
+			);
+			name = CYLNetworkManager;
+			path = ../../CYLNetWorkManager/CYLNetWorkManager/CYLNetworkManager;
+			sourceTree = "<group>";
+		};
+		E367F726207F47BF0058FB4A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E367F727207F47BF0058FB4A /* CYLApiBaseManager.m */,
+				E367F728207F47BF0058FB4A /* ReformerProtocol.h */,
+				E367F729207F47BF0058FB4A /* CYLApiBaseManager.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E367F72A207F47BF0058FB4A /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				E367F72B207F47BF0058FB4A /* CYLResponse.m */,
+				E367F72C207F47BF0058FB4A /* CYLNetWorkManager.h */,
+				E367F72D207F47BF0058FB4A /* CYLNetworkConfigration.m */,
+				E367F72E207F47BF0058FB4A /* Constant.h */,
+				E367F72F207F47BF0058FB4A /* CYLNetWorkCache.h */,
+				E367F730207F47BF0058FB4A /* CYLNetworkConfigration.h */,
+				E367F731207F47BF0058FB4A /* CYLNetWorkManager.m */,
+				E367F732207F47BF0058FB4A /* CYLResponse.h */,
+				E367F733207F47BF0058FB4A /* CYLNetWorkCache.m */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		E367F739207F47F40058FB4A /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				E367F73A207F47F40058FB4A /* LSFileAssistant.m */,
+				E367F73B207F47F40058FB4A /* TKFileManager.m */,
+				E367F73C207F47F40058FB4A /* LSFileAssistant.h */,
+				E367F73D207F47F40058FB4A /* TKFileManager.h */,
+			);
+			name = FileManager;
+			path = ../FileManager;
+			sourceTree = "<group>";
+		};
+		E6DA82EBC5DED6F68D259A89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8462F6CDDD6F44233C96506D /* Pods-CYLWebViewContainer.debug.xcconfig */,
+				7EE4D204DE46DF2DD081001D /* Pods-CYLWebViewContainer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -93,9 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E367F71B207F42E20058FB4A /* Build configuration list for PBXNativeTarget "CYLWebViewContainer" */;
 			buildPhases = (
+				AFABB765C7AD7989D4DCD9D3 /* [CP] Check Pods Manifest.lock */,
 				E367F701207F42E20058FB4A /* Sources */,
 				E367F702207F42E20058FB4A /* Frameworks */,
 				E367F703207F42E20058FB4A /* Resources */,
+				CF9F8E54C8510668C91E132B /* [CP] Embed Pods Frameworks */,
+				316A3017EFD909983F0E383E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -118,6 +224,14 @@
 					E367F704207F42E20058FB4A = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -151,15 +265,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		316A3017EFD909983F0E383E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYLWebViewContainer/Pods-CYLWebViewContainer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFABB765C7AD7989D4DCD9D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CYLWebViewContainer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF9F8E54C8510668C91E132B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYLWebViewContainer/Pods-CYLWebViewContainer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E367F701207F42E20058FB4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E367F73F207F47F50058FB4A /* TKFileManager.m in Sources */,
+				E367F736207F47C00058FB4A /* CYLNetworkConfigration.m in Sources */,
 				E367F70D207F42E20058FB4A /* ViewController.m in Sources */,
+				E367F735207F47C00058FB4A /* CYLResponse.m in Sources */,
 				E367F718207F42E20058FB4A /* main.m in Sources */,
+				E367F73E207F47F50058FB4A /* LSFileAssistant.m in Sources */,
+				E367F738207F47C00058FB4A /* CYLNetWorkCache.m in Sources */,
 				E367F724207F438C0058FB4A /* CYLWebView.m in Sources */,
 				E367F720207F42FC0058FB4A /* CYLWebViewController.m in Sources */,
+				E367F734207F47C00058FB4A /* CYLApiBaseManager.m in Sources */,
+				E367F737207F47C00058FB4A /* CYLNetWorkManager.m in Sources */,
 				E367F70A207F42E20058FB4A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,13 +456,15 @@
 		};
 		E367F71C207F42E20058FB4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8462F6CDDD6F44233C96506D /* Pods-CYLWebViewContainer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CYLWebViewContainer/CYLWebViewContainer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WNNZLJCCS5;
+				DEVELOPMENT_TEAM = T8ZN3T2999;
 				INFOPLIST_FILE = CYLWebViewContainer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chinapex.-CYLWebViewContainer.CYLWebViewContainer";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinapex.CYLWebViewContainer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,13 +472,15 @@
 		};
 		E367F71D207F42E20058FB4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EE4D204DE46DF2DD081001D /* Pods-CYLWebViewContainer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CYLWebViewContainer/CYLWebViewContainer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WNNZLJCCS5;
+				DEVELOPMENT_TEAM = T8ZN3T2999;
 				INFOPLIST_FILE = CYLWebViewContainer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chinapex.-CYLWebViewContainer.CYLWebViewContainer";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinapex.CYLWebViewContainer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

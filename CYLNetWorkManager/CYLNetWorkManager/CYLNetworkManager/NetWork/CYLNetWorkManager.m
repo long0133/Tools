@@ -290,6 +290,7 @@ static CYLNetWorkManager *_instance;
     if (!_manner) {
         _manner = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:[CYLNetworkConfigration baseUrl]]];
         _manner.requestSerializer.timeoutInterval = 10;
+        _manner.responseSerializer = [AFHTTPResponseSerializer serializer];
     }
     return _manner;
 }

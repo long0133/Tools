@@ -8,8 +8,10 @@
 
 #import "CYLWebViewController.h"
 #import "CYLWebView.h"
+#import "CYLNetWorkManager.h"
 
 static CYLWebViewController * _instance = nil;
+extern CFAbsoluteTime startTime;
 
 @interface CYLWebViewController ()<WKNavigationDelegate>
 @property (nonatomic, strong) CYLWebView *webView;
@@ -26,6 +28,14 @@ static CYLWebViewController * _instance = nil;
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.webView loadHtml:self.request];
+//    [CYLNetWorkManager GET:_request.URL.absoluteString parameter:@{} success:^(CYLResponse *response) {
+//        NSLog(@"htmlString : %f",CFAbsoluteTimeGetCurrent() - startTime);
+//        NSString *htmlString = [[NSString alloc] initWithData:response.returnObj encoding:NSUTF8StringEncoding];
+//        [self.webView loadLocalHTMLString:htmlString];
+//
+//    } fail:^(NSError *error) {
+//
+//    }];
 }
 
 #pragma mark - singleton
@@ -50,6 +60,61 @@ static CYLWebViewController * _instance = nil;
 
 -(id)mutableCopyWithZone:(NSZone *)zone{
     return _instance;
+}
+
+- (void)setRequest:(NSURLRequest *)request{
+    _request = request;
+}
+
+#pragma mark -  delegate
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
+    //  在发送请求之前，决定是否跳转
+    decisionHandler(WKNavigationActionPolicyAllow);
+    
+    NSLog(@"decidePolicyForNavigationAction :%f",CFAbsoluteTimeGetCurrent() - startTime);
+}
+
+- (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(null_unspecified WKNavigation *)navigation{
+    
+    // 页面开始加载时调用
+    NSLog(@"didStartProvisionalNavigation :%f",CFAbsoluteTimeGetCurrent() - startTime);
+    
+}
+
+
+- (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(null_unspecified WKNavigation *)navigation{
+    // 接收到服务器跳转请求之后调用
+    
+    NSLog(@"didReceiveServerRedirectForProvisionalNavigation :%f",CFAbsoluteTimeGetCurrent() - startTime);
+}
+
+- (void)webView:(WKWebView *)webView didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition disposition, NSURLCredential *__nullable credential))completionHandler{
+    
+    completionHandler(NSURLSessionAuthChallengePerformDefaultHandling ,nil);
+    
+    NSLog(@"didReceiveAuthenticationChallenge :%f",CFAbsoluteTimeGetCurrent() - startTime);
+}
+
+
+//以下三个是连续调用
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
+    
+    // 在收到响应后，决定是否跳转和发送请求之前那个允许配套使用
+    decisionHandler(WKNavigationResponsePolicyAllow);
+    
+    NSLog(@"decidePolicyForNavigationResponse :%f",CFAbsoluteTimeGetCurrent() - startTime);
+}
+
+- (void)webView:(WKWebView *)webView didCommitNavigation:(null_unspecified WKNavigation *)navigation{
+    
+    // 当内容开始返回时调用
+    NSLog(@"didCommitNavigation :%f",CFAbsoluteTimeGetCurrent() - startTime);
+}
+
+
+- (void)webView:(WKWebView *)webView didFinishNavigation:(null_unspecified WKNavigation *)navigation{
+    // 页面加载完成之后调用
+    NSLog(@"didFinishNavigation :%f",CFAbsoluteTimeGetCurrent() - startTime);
 }
 
 #pragma mark - getter

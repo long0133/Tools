@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+#warning 缓存html时 需要再AFNetwork 的AFHTTPResponseSerializer类里修改 self.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html", nil];
 @interface CYLWebViewController : UIViewController
 @property (nonatomic, strong) NSURLRequest *request;
 
