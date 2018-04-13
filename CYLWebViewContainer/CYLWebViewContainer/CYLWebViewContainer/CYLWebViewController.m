@@ -82,6 +82,9 @@ extern CFAbsoluteTime startTime;
     webView.navigationDelegate = self;
     webView.hidden = YES;
     [[UIApplication sharedApplication].keyWindow addSubview:webView];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [webView removeFromSuperview];
+    });
 }
 
 #pragma mark -  delegate
