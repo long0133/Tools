@@ -23,6 +23,7 @@
 		E367F73E207F47F50058FB4A /* LSFileAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F73A207F47F40058FB4A /* LSFileAssistant.m */; };
 		E367F73F207F47F50058FB4A /* TKFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F73B207F47F40058FB4A /* TKFileManager.m */; };
 		E367F745207F68800058FB4A /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E367F744207F68800058FB4A /* CloudKit.framework */; };
+		E367F748208055020058FB4A /* CYLWebHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F747208055020058FB4A /* CYLWebHandle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,8 @@
 		E367F73D207F47F40058FB4A /* TKFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKFileManager.h; sourceTree = "<group>"; };
 		E367F743207F687D0058FB4A /* CYLWebViewContainer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CYLWebViewContainer.entitlements; sourceTree = "<group>"; };
 		E367F744207F68800058FB4A /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		E367F746208055010058FB4A /* CYLWebHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLWebHandle.h; sourceTree = "<group>"; };
+		E367F747208055020058FB4A /* CYLWebHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLWebHandle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				E367F71F207F42FC0058FB4A /* CYLWebViewController.m */,
 				E367F722207F438C0058FB4A /* CYLWebView.h */,
 				E367F723207F438C0058FB4A /* CYLWebView.m */,
+				E367F746208055010058FB4A /* CYLWebHandle.h */,
+				E367F747208055020058FB4A /* CYLWebHandle.m */,
 			);
 			path = CYLWebViewContainer;
 			sourceTree = "<group>";
@@ -326,6 +331,7 @@
 				E367F70D207F42E20058FB4A /* ViewController.m in Sources */,
 				E367F735207F47C00058FB4A /* CYLResponse.m in Sources */,
 				E367F718207F42E20058FB4A /* main.m in Sources */,
+				E367F748208055020058FB4A /* CYLWebHandle.m in Sources */,
 				E367F73E207F47F50058FB4A /* LSFileAssistant.m in Sources */,
 				E367F738207F47C00058FB4A /* CYLNetWorkCache.m in Sources */,
 				E367F724207F438C0058FB4A /* CYLWebView.m in Sources */,

@@ -9,10 +9,11 @@
 #import "ViewController.h"
 #import "CYLWebViewController.h"
 
+CFAbsoluteTime startTime;
+static NSInteger count = 0;
 @interface ViewController ()
 
 @end
-CFAbsoluteTime startTime;
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -23,7 +24,12 @@ CFAbsoluteTime startTime;
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     CYLWebViewController *webvc = [CYLWebViewController sharedInstance];
-    webvc.request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.chinapex.com.cn"]];
+    if (count %2 == 0) {
+        webvc.request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.chinapex.com.cn"]];
+    }else{
+        webvc.request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://mp.weixin.qq.com/s/evzDnTsHrAr2b9jcevwBzA"]];
+    }
+    count ++;
     [self.navigationController pushViewController:webvc animated:YES];
     startTime = CFAbsoluteTimeGetCurrent();
     NSLog(@"startTime: %f",startTime);

@@ -9,6 +9,7 @@
 #import <WebKit/WebKit.h>
 
 @interface CYLWebView : WKWebView
-- (WKNavigation*)loadHtml:(NSURLRequest*)request;
-- (WKNavigation*)loadLocalHTMLString:(NSString*)htmlString;
+- (WKNavigation*_Nullable)loadHtml:(NSURLRequest*_Nonnull)request;
+- (WKNavigation*_Nonnull)loadLocalHTMLString:(NSString*_Nonnull)htmlString;
+- (void)evaluateJavaScript:(NSString *_Nonnull)js completionHandler:(void (^_Nullable)(id _Nullable, NSError * _Nullable))completionHandler;
 @end

@@ -25,6 +25,11 @@
     return [self loadHTMLString:htmlString baseURL:[NSBundle mainBundle].bundleURL];
 }
 
+- (void)evaluateJavaScript:(NSString *)js completionHandler:(void (^)(id _Nullable, NSError * _Nullable))completionHandler
+{
+    [self evaluateJavaScript:js completionHandler:completionHandler];
+}
+
 #pragma mark - private
 - (void)initUI{
     
