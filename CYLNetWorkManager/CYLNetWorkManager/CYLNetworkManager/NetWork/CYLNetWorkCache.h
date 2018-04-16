@@ -11,9 +11,9 @@
 @class CYLResponse;
 
 @interface CYLNetWorkCache : NSObject
-@property (nonatomic, strong) NSThread *netWorkThread;
+@property (nonatomic, strong) NSThread * _Nonnull netWorkThread;
 
-+ (instancetype)shareInstance;
-- (void)cacheResponse:(CYLResponse*)response;
-- (nullable CYLResponse*)getResponseFromCacheWithKey:(NSString*)urlKey;
++ (instancetype _Nonnull )shareInstance;
+- (void)cacheResponse:(CYLResponse*_Nullable)response;
+- (nullable CYLResponse*)getResponseFromCacheWithKey:(NSString*_Nonnull)urlKey;
 @end

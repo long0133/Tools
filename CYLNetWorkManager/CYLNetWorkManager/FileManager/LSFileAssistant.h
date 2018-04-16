@@ -68,8 +68,6 @@ typedef NS_ENUM(NSInteger, LSSearchPathDirectory)
 /**
  *  从文件中载入数据
  *
- *  @param class 文件中存取内容对应的NSObject类型
- *
  *  @return 返回文件中所包含的内容
  */
 - (id)loadDataFromFileWithDataClass:(Class)aClass;
@@ -77,7 +75,6 @@ typedef NS_ENUM(NSInteger, LSSearchPathDirectory)
 /**
  *  从文件中载入数据
  *
- *  @param class         文件中存取内容对应的NSObject类型
  *  @param pathOfFile    文件在沙箱指定目录中的相对路径
  *  @param directoryType 文件在沙箱中的目录
  *

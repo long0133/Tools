@@ -11,7 +11,7 @@
 @class CYLWebHandle;
 @interface CYLWebViewController : UIViewController
 @property (nonatomic, strong) NSArray *messageHandlerNameArr;
-@property (nonatomic, strong) NSArray *jsCodeArr;
+@property (nonatomic, strong) NSArray *jsCodeArr; /**< webview注入js代码 需要在webview初始化前设置 */
 @property (nonatomic, strong) NSArray *triggerFuncFromInjectionAfterNavigationDoneArr;
 @property (nonatomic, strong) NSDictionary<NSString*, CYLWebHandle*> *handlers;
 
