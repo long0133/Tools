@@ -15,6 +15,7 @@
 @property (nonatomic, strong) id parameters; /**< 请求参数 */
 @property (nonatomic, assign) APICallMethod method; /**< 请求方法 */
 
+
 #pragma mark - 缓存相关配置
 //@property (nonatomic, assign) CYLNetWorkCachePolicy cachePolicy; /**< 缓存策略 */
 //@property (nonatomic, assign) NSTimeInterval cachePeriod; /**< 缓存事件 */

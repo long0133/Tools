@@ -7,6 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-@interface CYLNetworkConfigration : NSObject
+__attribute__((deprecated("class deprecated"))) @interface  CYLNetworkConfigration : NSObject
 //+ (NSString*)baseUrl;
 @end

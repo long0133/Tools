@@ -3,7 +3,7 @@
 //  CYLNetWorkManager
 //
 //  Created by chinapex on 2018/3/29.
-//  Copyright © 2018年 chinapex. All rights reserved.
+//  Copyright © 2018年 Gary. All rights reserved.
 //
 
 #import "CYLNetWorkManager.h"
@@ -13,6 +13,7 @@
 #import <CoreTelephony/CoreTelephonyDefines.h>
 #import <CoreTelephony/CTCellularData.h>
 #import <CommonCrypto/CommonDigest.h>
+
 
 static CYLNetWorkManager *_instance;
 
