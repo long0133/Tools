@@ -1,0 +1,15 @@
+workspace 'AppBaseWorkSpace'
+project 'CYLAppBaseFrameWork/CYLAppBaseFrameWork.xcodeproj'
+project 'CYLAppBaseFrameWork-Demo.xcodeproj'
+
+target 'CYLAppBaseFrameWork-Demo' do
+pod 'AFNetworking'
+pod 'Masonry'
+project 'CYLAppBaseFrameWork-Demo.xcodeproj'
+end
+
+target 'CYLAppBaseFrameWork' do
+pod 'AFNetworking'
+pod 'Masonry'
+project 'CYLAppBaseFrameWork/CYLAppBaseFrameWork.xcodeproj'
+end

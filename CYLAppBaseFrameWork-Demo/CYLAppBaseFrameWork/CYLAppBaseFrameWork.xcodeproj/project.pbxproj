@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		E797921520886C9C00538641 /* CYLAppBaseFrameWorks */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E797921620886C9D00538641 /* Build configuration list for PBXAggregateTarget "CYLAppBaseFrameWorks" */;
+			buildPhases = (
+				E797921920886CA500538641 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = CYLAppBaseFrameWorks;
+			productName = CYLAppBaseFrameWorks;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		E367F75820843CC00058FB4A /* CYLAppBaseFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F75620843CC00058FB4A /* CYLAppBaseFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E79791DA2088684000538641 /* CYLNetWorkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E797919A2088684000538641 /* CYLNetWorkCache.m */; };
+		E79791DB2088684000538641 /* Constant.h in Headers */ = {isa = PBXBuildFile; fileRef = E797919B2088684000538641 /* Constant.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E79791DC2088684000538641 /* CYLNetworkConfigration.h in Headers */ = {isa = PBXBuildFile; fileRef = E797919C2088684000538641 /* CYLNetworkConfigration.h */; };
+		E79791DD2088684000538641 /* CYLNetWorkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E797919D2088684000538641 /* CYLNetWorkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E79791DE2088684000538641 /* CYLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E797919E2088684000538641 /* CYLResponse.m */; };
+		E79791DF2088684000538641 /* CYLNetWorkCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E797919F2088684000538641 /* CYLNetWorkCache.h */; };
+		E79791E02088684000538641 /* CYLResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791A02088684000538641 /* CYLResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E79791E12088684000538641 /* CYLNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791A12088684000538641 /* CYLNetWorkManager.m */; };
+		E79791E22088684000538641 /* CYLNetworkConfigration.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791A22088684000538641 /* CYLNetworkConfigration.m */; };
+		E79791E32088684000538641 /* CYLApiBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791A42088684000538641 /* CYLApiBaseManager.m */; };
+		E79791E42088684000538641 /* ReformerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791A52088684000538641 /* ReformerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E79791E52088684000538641 /* CYLApiBaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791A62088684000538641 /* CYLApiBaseManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E79791E62088684000538641 /* CYLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791A82088684000538641 /* CYLWebViewController.m */; };
+		E79791E72088684000538641 /* CYLWebHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791A92088684000538641 /* CYLWebHandle.m */; };
+		E79791E82088684000538641 /* CYLWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791AA2088684000538641 /* CYLWebView.m */; };
+		E79791E92088684000538641 /* CYLWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791AB2088684000538641 /* CYLWebView.h */; };
+		E79791EA2088684000538641 /* CYLWebHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791AC2088684000538641 /* CYLWebHandle.h */; };
+		E79791EB2088684000538641 /* CYLWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791AD2088684000538641 /* CYLWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E79791EC2088684000538641 /* TKFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791AF2088684000538641 /* TKFileManager.m */; };
+		E79791ED2088684000538641 /* LSFileAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791B02088684000538641 /* LSFileAssistant.m */; };
+		E79791EE2088684000538641 /* LSFileAssistant.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791B12088684000538641 /* LSFileAssistant.h */; };
+		E79791EF2088684000538641 /* TKFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791B22088684000538641 /* TKFileManager.h */; };
+		E79791F02088684000538641 /* CYLTansitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791B42088684000538641 /* CYLTansitionManager.m */; };
+		E79791F12088684000538641 /* CYLInteractiveTrasition.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791B52088684000538641 /* CYLInteractiveTrasition.m */; };
+		E79791F22088684000538641 /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791B62088684000538641 /* UIImage+Blur.m */; };
+		E79791F32088684000538641 /* MagicMoveTransitionAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791B82088684000538641 /* MagicMoveTransitionAnimation.h */; };
+		E79791F42088684000538641 /* CYLCardPopUpController.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791B92088684000538641 /* CYLCardPopUpController.h */; };
+		E79791F52088684000538641 /* SpreadTransitionAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791BA2088684000538641 /* SpreadTransitionAnimation.h */; };
+		E79791F62088684000538641 /* CardPopUpTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791BB2088684000538641 /* CardPopUpTransitionAnimation.m */; };
+		E79791F72088684000538641 /* MagicMoveTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791BC2088684000538641 /* MagicMoveTransitionAnimation.m */; };
+		E79791F82088684000538641 /* SpreadTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791BD2088684000538641 /* SpreadTransitionAnimation.m */; };
+		E79791F92088684000538641 /* CYLCardPopUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791BE2088684000538641 /* CYLCardPopUpController.m */; };
+		E79791FA2088684000538641 /* CardPopUpTransitionAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791BF2088684000538641 /* CardPopUpTransitionAnimation.h */; };
+		E79791FB2088684000538641 /* CYLBaseTransitionAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791C02088684000538641 /* CYLBaseTransitionAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E79791FC2088684000538641 /* FXBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791C12088684000538641 /* FXBlurView.h */; };
+		E79791FD2088684000538641 /* CYLInteractiveTrasition.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791C22088684000538641 /* CYLInteractiveTrasition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E79791FE2088684000538641 /* CYLTansitionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791C32088684000538641 /* CYLTansitionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E79791FF2088684000538641 /* CYLTransitionHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791C42088684000538641 /* CYLTransitionHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E79792002088684000538641 /* UIImage+Blur.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791C52088684000538641 /* UIImage+Blur.h */; };
+		E79792012088684000538641 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791C62088684000538641 /* FXBlurView.m */; };
+		E79792022088684000538641 /* CYLBaseTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791C72088684000538641 /* CYLBaseTransitionAnimation.m */; };
+		E79792032088684000538641 /* CYLRefereshConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791C92088684000538641 /* CYLRefereshConstant.h */; };
+		E79792042088684000538641 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791CA2088684000538641 /* UIScrollView+Refresh.m */; };
+		E79792052088684000538641 /* UIView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791CB2088684000538641 /* UIView+MJExtension.h */; };
+		E79792062088684000538641 /* CYLRefershHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791CC2088684000538641 /* CYLRefershHeader.m */; };
+		E79792072088684000538641 /* CYLRefereshTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791CD2088684000538641 /* CYLRefereshTool.m */; };
+		E79792082088684000538641 /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791CF2088684000538641 /* Animator.m */; };
+		E79792092088684000538641 /* Animator.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791D02088684000538641 /* Animator.h */; };
+		E797920A2088684000538641 /* CYLRefereshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791D12088684000538641 /* CYLRefereshBaseView.m */; };
+		E797920B2088684000538641 /* CYLRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791D22088684000538641 /* CYLRefreshFooter.m */; };
+		E797920C2088684000538641 /* CYLRefereshConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791D32088684000538641 /* CYLRefereshConstant.m */; };
+		E797920D2088684000538641 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791D42088684000538641 /* UIView+MJExtension.m */; };
+		E797920E2088684000538641 /* UIScrollView+Refresh.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791D52088684000538641 /* UIScrollView+Refresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E797920F2088684000538641 /* CYLRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791D62088684000538641 /* CYLRefreshFooter.h */; };
+		E79792102088684000538641 /* CYLRefereshBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791D72088684000538641 /* CYLRefereshBaseView.h */; };
+		E79792112088684000538641 /* CYLRefereshTool.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791D82088684000538641 /* CYLRefereshTool.h */; };
+		E79792122088684000538641 /* CYLRefershHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791D92088684000538641 /* CYLRefershHeader.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4181406B70A0C613BC44D313 /* Pods-CYLAppBaseFrameWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYLAppBaseFrameWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CYLAppBaseFrameWork/Pods-CYLAppBaseFrameWork.debug.xcconfig"; sourceTree = "<group>"; };
+		789F4A85B7A5ACB881A5A01C /* Pods-CYLAppBaseFrameWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYLAppBaseFrameWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-CYLAppBaseFrameWork/Pods-CYLAppBaseFrameWork.release.xcconfig"; sourceTree = "<group>"; };
+		E367F75320843CC00058FB4A /* CYLAppBaseFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CYLAppBaseFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E367F75620843CC00058FB4A /* CYLAppBaseFrameWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLAppBaseFrameWork.h; sourceTree = "<group>"; };
+		E367F75720843CC00058FB4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E797919A2088684000538641 /* CYLNetWorkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLNetWorkCache.m; sourceTree = "<group>"; };
+		E797919B2088684000538641 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		E797919C2088684000538641 /* CYLNetworkConfigration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLNetworkConfigration.h; sourceTree = "<group>"; };
+		E797919D2088684000538641 /* CYLNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLNetWorkManager.h; sourceTree = "<group>"; };
+		E797919E2088684000538641 /* CYLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLResponse.m; sourceTree = "<group>"; };
+		E797919F2088684000538641 /* CYLNetWorkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLNetWorkCache.h; sourceTree = "<group>"; };
+		E79791A02088684000538641 /* CYLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLResponse.h; sourceTree = "<group>"; };
+		E79791A12088684000538641 /* CYLNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLNetWorkManager.m; sourceTree = "<group>"; };
+		E79791A22088684000538641 /* CYLNetworkConfigration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLNetworkConfigration.m; sourceTree = "<group>"; };
+		E79791A42088684000538641 /* CYLApiBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLApiBaseManager.m; sourceTree = "<group>"; };
+		E79791A52088684000538641 /* ReformerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReformerProtocol.h; sourceTree = "<group>"; };
+		E79791A62088684000538641 /* CYLApiBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLApiBaseManager.h; sourceTree = "<group>"; };
+		E79791A82088684000538641 /* CYLWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLWebViewController.m; sourceTree = "<group>"; };
+		E79791A92088684000538641 /* CYLWebHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLWebHandle.m; sourceTree = "<group>"; };
+		E79791AA2088684000538641 /* CYLWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLWebView.m; sourceTree = "<group>"; };
+		E79791AB2088684000538641 /* CYLWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLWebView.h; sourceTree = "<group>"; };
+		E79791AC2088684000538641 /* CYLWebHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLWebHandle.h; sourceTree = "<group>"; };
+		E79791AD2088684000538641 /* CYLWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLWebViewController.h; sourceTree = "<group>"; };
+		E79791AF2088684000538641 /* TKFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKFileManager.m; sourceTree = "<group>"; };
+		E79791B02088684000538641 /* LSFileAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFileAssistant.m; sourceTree = "<group>"; };
+		E79791B12088684000538641 /* LSFileAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFileAssistant.h; sourceTree = "<group>"; };
+		E79791B22088684000538641 /* TKFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKFileManager.h; sourceTree = "<group>"; };
+		E79791B42088684000538641 /* CYLTansitionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTansitionManager.m; sourceTree = "<group>"; };
+		E79791B52088684000538641 /* CYLInteractiveTrasition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLInteractiveTrasition.m; sourceTree = "<group>"; };
+		E79791B62088684000538641 /* UIImage+Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Blur.m"; sourceTree = "<group>"; };
+		E79791B82088684000538641 /* MagicMoveTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicMoveTransitionAnimation.h; sourceTree = "<group>"; };
+		E79791B92088684000538641 /* CYLCardPopUpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLCardPopUpController.h; sourceTree = "<group>"; };
+		E79791BA2088684000538641 /* SpreadTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpreadTransitionAnimation.h; sourceTree = "<group>"; };
+		E79791BB2088684000538641 /* CardPopUpTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardPopUpTransitionAnimation.m; sourceTree = "<group>"; };
+		E79791BC2088684000538641 /* MagicMoveTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicMoveTransitionAnimation.m; sourceTree = "<group>"; };
+		E79791BD2088684000538641 /* SpreadTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpreadTransitionAnimation.m; sourceTree = "<group>"; };
+		E79791BE2088684000538641 /* CYLCardPopUpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLCardPopUpController.m; sourceTree = "<group>"; };
+		E79791BF2088684000538641 /* CardPopUpTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardPopUpTransitionAnimation.h; sourceTree = "<group>"; };
+		E79791C02088684000538641 /* CYLBaseTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLBaseTransitionAnimation.h; sourceTree = "<group>"; };
+		E79791C12088684000538641 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		E79791C22088684000538641 /* CYLInteractiveTrasition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLInteractiveTrasition.h; sourceTree = "<group>"; };
+		E79791C32088684000538641 /* CYLTansitionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTansitionManager.h; sourceTree = "<group>"; };
+		E79791C42088684000538641 /* CYLTransitionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTransitionHeader.h; sourceTree = "<group>"; };
+		E79791C52088684000538641 /* UIImage+Blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Blur.h"; sourceTree = "<group>"; };
+		E79791C62088684000538641 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		E79791C72088684000538641 /* CYLBaseTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLBaseTransitionAnimation.m; sourceTree = "<group>"; };
+		E79791C92088684000538641 /* CYLRefereshConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLRefereshConstant.h; sourceTree = "<group>"; };
+		E79791CA2088684000538641 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
+		E79791CB2088684000538641 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
+		E79791CC2088684000538641 /* CYLRefershHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLRefershHeader.m; sourceTree = "<group>"; };
+		E79791CD2088684000538641 /* CYLRefereshTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLRefereshTool.m; sourceTree = "<group>"; };
+		E79791CF2088684000538641 /* Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animator.m; sourceTree = "<group>"; };
+		E79791D02088684000538641 /* Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animator.h; sourceTree = "<group>"; };
+		E79791D12088684000538641 /* CYLRefereshBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLRefereshBaseView.m; sourceTree = "<group>"; };
+		E79791D22088684000538641 /* CYLRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLRefreshFooter.m; sourceTree = "<group>"; };
+		E79791D32088684000538641 /* CYLRefereshConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLRefereshConstant.m; sourceTree = "<group>"; };
+		E79791D42088684000538641 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		E79791D52088684000538641 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
+		E79791D62088684000538641 /* CYLRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLRefreshFooter.h; sourceTree = "<group>"; };
+		E79791D72088684000538641 /* CYLRefereshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLRefereshBaseView.h; sourceTree = "<group>"; };
+		E79791D82088684000538641 /* CYLRefereshTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLRefereshTool.h; sourceTree = "<group>"; };
+		E79791D92088684000538641 /* CYLRefershHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLRefershHeader.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E367F74F20843CC00058FB4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1639E4F3398054FA11DDC842 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4181406B70A0C613BC44D313 /* Pods-CYLAppBaseFrameWork.debug.xcconfig */,
+				789F4A85B7A5ACB881A5A01C /* Pods-CYLAppBaseFrameWork.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		48AF7ACBC360677E97C0898F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E367F74920843CC00058FB4A = {
+			isa = PBXGroup;
+			children = (
+				E367F75520843CC00058FB4A /* CYLAppBaseFrameWork */,
+				E367F75420843CC00058FB4A /* Products */,
+				1639E4F3398054FA11DDC842 /* Pods */,
+				48AF7ACBC360677E97C0898F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E367F75420843CC00058FB4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E367F75320843CC00058FB4A /* CYLAppBaseFrameWork.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E367F75520843CC00058FB4A /* CYLAppBaseFrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				E79792202088735000538641 /* CYLNestingTableView */,
+				E79791982088684000538641 /* CYLNetworkManager */,
+				E79791C82088684000538641 /* CYLReferesh */,
+				E79791B32088684000538641 /* CYLTransitioning */,
+				E79791A72088684000538641 /* CYLWebViewContainer */,
+				E79791AE2088684000538641 /* FileManager */,
+				E367F75620843CC00058FB4A /* CYLAppBaseFrameWork.h */,
+				E367F75720843CC00058FB4A /* Info.plist */,
+			);
+			path = CYLAppBaseFrameWork;
+			sourceTree = "<group>";
+		};
+		E79791982088684000538641 /* CYLNetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				E79791992088684000538641 /* NetWork */,
+				E79791A32088684000538641 /* API */,
+			);
+			path = CYLNetworkManager;
+			sourceTree = "<group>";
+		};
+		E79791992088684000538641 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				E797919B2088684000538641 /* Constant.h */,
+				E797919D2088684000538641 /* CYLNetWorkManager.h */,
+				E79791A12088684000538641 /* CYLNetWorkManager.m */,
+				E79791A02088684000538641 /* CYLResponse.h */,
+				E797919E2088684000538641 /* CYLResponse.m */,
+				E797919F2088684000538641 /* CYLNetWorkCache.h */,
+				E797919A2088684000538641 /* CYLNetWorkCache.m */,
+				E797919C2088684000538641 /* CYLNetworkConfigration.h */,
+				E79791A22088684000538641 /* CYLNetworkConfigration.m */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		E79791A32088684000538641 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E79791A62088684000538641 /* CYLApiBaseManager.h */,
+				E79791A42088684000538641 /* CYLApiBaseManager.m */,
+				E79791A52088684000538641 /* ReformerProtocol.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E79791A72088684000538641 /* CYLWebViewContainer */ = {
+			isa = PBXGroup;
+			children = (
+				E79791AB2088684000538641 /* CYLWebView.h */,
+				E79791AA2088684000538641 /* CYLWebView.m */,
+				E79791AC2088684000538641 /* CYLWebHandle.h */,
+				E79791A92088684000538641 /* CYLWebHandle.m */,
+				E79791AD2088684000538641 /* CYLWebViewController.h */,
+				E79791A82088684000538641 /* CYLWebViewController.m */,
+			);
+			path = CYLWebViewContainer;
+			sourceTree = "<group>";
+		};
+		E79791AE2088684000538641 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				E79791B12088684000538641 /* LSFileAssistant.h */,
+				E79791B02088684000538641 /* LSFileAssistant.m */,
+				E79791B22088684000538641 /* TKFileManager.h */,
+				E79791AF2088684000538641 /* TKFileManager.m */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
+		E79791B32088684000538641 /* CYLTransitioning */ = {
+			isa = PBXGroup;
+			children = (
+				E79791B72088684000538641 /* TransitionAnimation */,
+				E79791C42088684000538641 /* CYLTransitionHeader.h */,
+				E79791C22088684000538641 /* CYLInteractiveTrasition.h */,
+				E79791B52088684000538641 /* CYLInteractiveTrasition.m */,
+				E79791C32088684000538641 /* CYLTansitionManager.h */,
+				E79791B42088684000538641 /* CYLTansitionManager.m */,
+				E79791C52088684000538641 /* UIImage+Blur.h */,
+				E79791B62088684000538641 /* UIImage+Blur.m */,
+				E79791C12088684000538641 /* FXBlurView.h */,
+				E79791C62088684000538641 /* FXBlurView.m */,
+				E79791C02088684000538641 /* CYLBaseTransitionAnimation.h */,
+				E79791C72088684000538641 /* CYLBaseTransitionAnimation.m */,
+			);
+			path = CYLTransitioning;
+			sourceTree = "<group>";
+		};
+		E79791B72088684000538641 /* TransitionAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				E79791B82088684000538641 /* MagicMoveTransitionAnimation.h */,
+				E79791B92088684000538641 /* CYLCardPopUpController.h */,
+				E79791BA2088684000538641 /* SpreadTransitionAnimation.h */,
+				E79791BB2088684000538641 /* CardPopUpTransitionAnimation.m */,
+				E79791BC2088684000538641 /* MagicMoveTransitionAnimation.m */,
+				E79791BD2088684000538641 /* SpreadTransitionAnimation.m */,
+				E79791BE2088684000538641 /* CYLCardPopUpController.m */,
+				E79791BF2088684000538641 /* CardPopUpTransitionAnimation.h */,
+			);
+			path = TransitionAnimation;
+			sourceTree = "<group>";
+		};
+		E79791C82088684000538641 /* CYLReferesh */ = {
+			isa = PBXGroup;
+			children = (
+				E79791CE2088684000538641 /* Animator */,
+				E79791C92088684000538641 /* CYLRefereshConstant.h */,
+				E79791D32088684000538641 /* CYLRefereshConstant.m */,
+				E79791CB2088684000538641 /* UIView+MJExtension.h */,
+				E79791D42088684000538641 /* UIView+MJExtension.m */,
+				E79791D52088684000538641 /* UIScrollView+Refresh.h */,
+				E79791CA2088684000538641 /* UIScrollView+Refresh.m */,
+				E79791D62088684000538641 /* CYLRefreshFooter.h */,
+				E79791D22088684000538641 /* CYLRefreshFooter.m */,
+				E79791D72088684000538641 /* CYLRefereshBaseView.h */,
+				E79791D12088684000538641 /* CYLRefereshBaseView.m */,
+				E79791D82088684000538641 /* CYLRefereshTool.h */,
+				E79791CD2088684000538641 /* CYLRefereshTool.m */,
+				E79791D92088684000538641 /* CYLRefershHeader.h */,
+				E79791CC2088684000538641 /* CYLRefershHeader.m */,
+			);
+			path = CYLReferesh;
+			sourceTree = "<group>";
+		};
+		E79791CE2088684000538641 /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				E79791D02088684000538641 /* Animator.h */,
+				E79791CF2088684000538641 /* Animator.m */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		E79792202088735000538641 /* CYLNestingTableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CYLNestingTableView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E367F75020843CC00058FB4A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79791DD2088684000538641 /* CYLNetWorkManager.h in Headers */,
+				E79791E02088684000538641 /* CYLResponse.h in Headers */,
+				E79791E42088684000538641 /* ReformerProtocol.h in Headers */,
+				E79791E52088684000538641 /* CYLApiBaseManager.h in Headers */,
+				E79791DB2088684000538641 /* Constant.h in Headers */,
+				E79791FE2088684000538641 /* CYLTansitionManager.h in Headers */,
+				E79791FB2088684000538641 /* CYLBaseTransitionAnimation.h in Headers */,
+				E797920E2088684000538641 /* UIScrollView+Refresh.h in Headers */,
+				E79791FD2088684000538641 /* CYLInteractiveTrasition.h in Headers */,
+				E79791FF2088684000538641 /* CYLTransitionHeader.h in Headers */,
+				E79791EB2088684000538641 /* CYLWebViewController.h in Headers */,
+				E79791EA2088684000538641 /* CYLWebHandle.h in Headers */,
+				E79792122088684000538641 /* CYLRefershHeader.h in Headers */,
+				E79791DC2088684000538641 /* CYLNetworkConfigration.h in Headers */,
+				E79792052088684000538641 /* UIView+MJExtension.h in Headers */,
+				E79791E92088684000538641 /* CYLWebView.h in Headers */,
+				E79791F42088684000538641 /* CYLCardPopUpController.h in Headers */,
+				E79792112088684000538641 /* CYLRefereshTool.h in Headers */,
+				E79791F32088684000538641 /* MagicMoveTransitionAnimation.h in Headers */,
+				E367F75820843CC00058FB4A /* CYLAppBaseFrameWork.h in Headers */,
+				E797920F2088684000538641 /* CYLRefreshFooter.h in Headers */,
+				E79791EE2088684000538641 /* LSFileAssistant.h in Headers */,
+				E79791F52088684000538641 /* SpreadTransitionAnimation.h in Headers */,
+				E79791DF2088684000538641 /* CYLNetWorkCache.h in Headers */,
+				E79792092088684000538641 /* Animator.h in Headers */,
+				E79792102088684000538641 /* CYLRefereshBaseView.h in Headers */,
+				E79791EF2088684000538641 /* TKFileManager.h in Headers */,
+				E79792032088684000538641 /* CYLRefereshConstant.h in Headers */,
+				E79791FA2088684000538641 /* CardPopUpTransitionAnimation.h in Headers */,
+				E79792002088684000538641 /* UIImage+Blur.h in Headers */,
+				E79791FC2088684000538641 /* FXBlurView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E367F75220843CC00058FB4A /* CYLAppBaseFrameWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E367F75B20843CC00058FB4A /* Build configuration list for PBXNativeTarget "CYLAppBaseFrameWork" */;
+			buildPhases = (
+				C71BB6E0269C80B974A0D872 /* [CP] Check Pods Manifest.lock */,
+				E367F74E20843CC00058FB4A /* Sources */,
+				E367F74F20843CC00058FB4A /* Frameworks */,
+				E367F75020843CC00058FB4A /* Headers */,
+				E367F75120843CC00058FB4A /* Resources */,
+				160116275F8E0706FA3AA0A4 /* [CP] Copy Pods Resources */,
+				E797919120885EF700538641 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CYLAppBaseFrameWork;
+			productName = CYLAppBaseFrameWork;
+			productReference = E367F75320843CC00058FB4A /* CYLAppBaseFrameWork.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E367F74A20843CC00058FB4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Gary;
+				TargetAttributes = {
+					E367F75220843CC00058FB4A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					E797921520886C9C00538641 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E367F74D20843CC00058FB4A /* Build configuration list for PBXProject "CYLAppBaseFrameWork" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E367F74920843CC00058FB4A;
+			productRefGroup = E367F75420843CC00058FB4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E367F75220843CC00058FB4A /* CYLAppBaseFrameWork */,
+				E797921520886C9C00538641 /* CYLAppBaseFrameWorks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E367F75120843CC00058FB4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		160116275F8E0706FA3AA0A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-CYLAppBaseFrameWork/Pods-CYLAppBaseFrameWork-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C71BB6E0269C80B974A0D872 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CYLAppBaseFrameWork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E797919120885EF700538641 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\n\n# 如果工程名称和Framework的Target名称不一样的话，要自定义FMKNAME\n\n# 例如: FMK_NAME = \"MyFramework\"\n\nFMK_NAME=\"CYLAppBaseFrameWork\"\n\n# Install dir will be the final output to the framework.\n\n# The following line create it in the root\n\nfolder of the current project.\n\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\n\nWRK_DIR=build\n\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\n\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# -configuration ${CONFIGURATION}\n\n# Clean and Building both architectures.\n\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos clean build\n\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator clean build\n\n# Cleaning the oldest.\n\nif [ -d \"${INSTALL_DIR}\" ]\n\nthen\n\nrm -rf \"${INSTALL_DIR}\"\n\nfi\n\nmkdir -p \"${INSTALL_DIR}\"\n\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\n\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"\n\nopen \"${INSTALL_DIR}\"";
+		};
+		E797921920886CA500538641 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\n\n# 如果工程名称和Framework的Target名称不一样的话，要自定义FMKNAME\n\n# 例如: FMK_NAME = \"MyFramework\"\n\nFMK_NAME=\"CYLAppBaseFrameWork\"\n\n# Install dir will be the final output to the framework.\n\n# The following line create it in the root\n\nfolder of the current project.\n\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\n\nWRK_DIR=build\n\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\n\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# -configuration ${CONFIGURATION}\n\n# Clean and Building both architectures.\n\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos clean build\n\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator clean build\n\n# Cleaning the oldest.\n\nif [ -d \"${INSTALL_DIR}\" ]\n\nthen\n\nrm -rf \"${INSTALL_DIR}\"\n\nfi\n\nmkdir -p \"${INSTALL_DIR}\"\n\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\n\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"\n\nopen \"${INSTALL_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E367F74E20843CC00058FB4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79791F82088684000538641 /* SpreadTransitionAnimation.m in Sources */,
+				E79791F92088684000538641 /* CYLCardPopUpController.m in Sources */,
+				E79791F62088684000538641 /* CardPopUpTransitionAnimation.m in Sources */,
+				E79791E82088684000538641 /* CYLWebView.m in Sources */,
+				E79791E72088684000538641 /* CYLWebHandle.m in Sources */,
+				E79791E62088684000538641 /* CYLWebViewController.m in Sources */,
+				E797920C2088684000538641 /* CYLRefereshConstant.m in Sources */,
+				E79791F22088684000538641 /* UIImage+Blur.m in Sources */,
+				E79791F02088684000538641 /* CYLTansitionManager.m in Sources */,
+				E797920B2088684000538641 /* CYLRefreshFooter.m in Sources */,
+				E79791EC2088684000538641 /* TKFileManager.m in Sources */,
+				E79791E22088684000538641 /* CYLNetworkConfigration.m in Sources */,
+				E797920A2088684000538641 /* CYLRefereshBaseView.m in Sources */,
+				E79791F72088684000538641 /* MagicMoveTransitionAnimation.m in Sources */,
+				E79791ED2088684000538641 /* LSFileAssistant.m in Sources */,
+				E79791DA2088684000538641 /* CYLNetWorkCache.m in Sources */,
+				E79792062088684000538641 /* CYLRefershHeader.m in Sources */,
+				E79791E32088684000538641 /* CYLApiBaseManager.m in Sources */,
+				E79791E12088684000538641 /* CYLNetWorkManager.m in Sources */,
+				E79792082088684000538641 /* Animator.m in Sources */,
+				E79792072088684000538641 /* CYLRefereshTool.m in Sources */,
+				E79791DE2088684000538641 /* CYLResponse.m in Sources */,
+				E797920D2088684000538641 /* UIView+MJExtension.m in Sources */,
+				E79791F12088684000538641 /* CYLInteractiveTrasition.m in Sources */,
+				E79792012088684000538641 /* FXBlurView.m in Sources */,
+				E79792022088684000538641 /* CYLBaseTransitionAnimation.m in Sources */,
+				E79792042088684000538641 /* UIScrollView+Refresh.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E367F75920843CC00058FB4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E367F75A20843CC00058FB4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E367F75C20843CC00058FB4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4181406B70A0C613BC44D313 /* Pods-CYLAppBaseFrameWork.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WNNZLJCCS5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CYLAppBaseFrameWork/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry\"",
+					"\"$(SRCROOT)/CYLAppBaseFrameWork.framework\"",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chinapex.-CYLAppBaseFrameWork.CYLAppBaseFrameWork";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E367F75D20843CC00058FB4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 789F4A85B7A5ACB881A5A01C /* Pods-CYLAppBaseFrameWork.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WNNZLJCCS5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CYLAppBaseFrameWork/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry\"",
+					"\"$(SRCROOT)/CYLAppBaseFrameWork.framework\"",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chinapex.-CYLAppBaseFrameWork.CYLAppBaseFrameWork";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E797921720886C9D00538641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNNZLJCCS5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E797921820886C9D00538641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNNZLJCCS5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E367F74D20843CC00058FB4A /* Build configuration list for PBXProject "CYLAppBaseFrameWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E367F75920843CC00058FB4A /* Debug */,
+				E367F75A20843CC00058FB4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E367F75B20843CC00058FB4A /* Build configuration list for PBXNativeTarget "CYLAppBaseFrameWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E367F75C20843CC00058FB4A /* Debug */,
+				E367F75D20843CC00058FB4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E797921620886C9D00538641 /* Build configuration list for PBXAggregateTarget "CYLAppBaseFrameWorks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E797921720886C9D00538641 /* Debug */,
+				E797921820886C9D00538641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E367F74A20843CC00058FB4A /* Project object */;
+}
