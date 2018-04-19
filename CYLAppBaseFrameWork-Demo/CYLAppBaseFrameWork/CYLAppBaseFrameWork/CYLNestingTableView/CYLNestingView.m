@@ -31,6 +31,9 @@
     }];
 }
 
+#pragma mark - scrollControll
+
+
 #pragma mark - delegate datasource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
@@ -46,6 +49,10 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     return self.subTableView;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return self.mainTableView.bounds.size.height - self.mainTableView.tableHeaderView.bounds.size.height;
 }
 
 #pragma mark - getter setter
