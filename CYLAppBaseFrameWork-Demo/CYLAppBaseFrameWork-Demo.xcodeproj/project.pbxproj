@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6699364DF095F734C45E4694 /* libPods-CYLAppBaseFrameWork-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CDF611A57EB18EAEF520055 /* libPods-CYLAppBaseFrameWork-Demo.a */; };
 		E7716ACD208833E100A3A0EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7716ACC208833E100A3A0EF /* AppDelegate.m */; };
 		E7716AD0208833E100A3A0EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7716ACF208833E100A3A0EF /* ViewController.m */; };
 		E7716AD3208833E100A3A0EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7716AD1208833E100A3A0EF /* Main.storyboard */; };
 		E7716AD5208833E100A3A0EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7716AD4208833E100A3A0EF /* Assets.xcassets */; };
 		E7716AD8208833E100A3A0EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7716AD6208833E100A3A0EF /* LaunchScreen.storyboard */; };
 		E7716ADB208833E100A3A0EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7716ADA208833E100A3A0EF /* main.m */; };
+		E797921B20886CF400538641 /* CYLAppBaseFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E797921A20886CF400538641 /* CYLAppBaseFrameWork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +30,7 @@
 		E7716AD7208833E100A3A0EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7716AD9208833E100A3A0EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7716ADA208833E100A3A0EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E797921A20886CF400538641 /* CYLAppBaseFrameWork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CYLAppBaseFrameWork.framework; path = CYLAppBaseFrameWork/Products/CYLAppBaseFrameWork.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6699364DF095F734C45E4694 /* libPods-CYLAppBaseFrameWork-Demo.a in Frameworks */,
+				E797921B20886CF400538641 /* CYLAppBaseFrameWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +83,7 @@
 		E7716ACA208833E100A3A0EF /* CYLAppBaseFrameWork-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				E797921A20886CF400538641 /* CYLAppBaseFrameWork.framework */,
 				E7716ACB208833E100A3A0EF /* AppDelegate.h */,
 				E7716ACC208833E100A3A0EF /* AppDelegate.m */,
 				E7716ACE208833E100A3A0EF /* ViewController.h */,
@@ -359,11 +361,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WNNZLJCCS5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CYLAppBaseFrameWork-Demo",
+					"$(PROJECT_DIR)/CYLAppBaseFrameWork/Products",
+				);
 				INFOPLIST_FILE = "CYLAppBaseFrameWork-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CYLAppBaseFrameWork-Demo",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chinapex.demo.CYLAppBaseFrameWork-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
 			};
 			name = Debug;
 		};
@@ -374,11 +386,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WNNZLJCCS5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CYLAppBaseFrameWork-Demo",
+					"$(PROJECT_DIR)/CYLAppBaseFrameWork/Products",
+				);
 				INFOPLIST_FILE = "CYLAppBaseFrameWork-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CYLAppBaseFrameWork-Demo",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chinapex.demo.CYLAppBaseFrameWork-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
 			};
 			name = Release;
 		};
