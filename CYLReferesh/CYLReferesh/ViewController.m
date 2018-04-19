@@ -57,7 +57,8 @@
 
 - (UITableView *)tableView{
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height-64) style:UITableViewStylePlain];
+        CGFloat navH = self.navigationController.navigationBar.frame.size.height;
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, navH, self.view.frame.size.width, self.view.frame.size.height-64) style:UITableViewStylePlain];
         _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     }
     return _tableView;
