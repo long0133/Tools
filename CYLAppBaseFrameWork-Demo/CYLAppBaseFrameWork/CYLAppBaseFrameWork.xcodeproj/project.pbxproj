@@ -9,44 +9,63 @@
 /* Begin PBXBuildFile section */
 		514F23339366777DFDC74D87 /* libPods-CYLAppBaseFrameWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BEF2B68741C6F23094A7DC /* libPods-CYLAppBaseFrameWork.a */; };
 		E367F75820843CC00058FB4A /* CYLAppBaseFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F75620843CC00058FB4A /* CYLAppBaseFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E367F76D20843EF20058FB4A /* CYLApiBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F76020843EF20058FB4A /* CYLApiBaseManager.m */; };
-		E367F76E20843EF20058FB4A /* ReformerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F76120843EF20058FB4A /* ReformerProtocol.h */; };
-		E367F76F20843EF20058FB4A /* CYLApiBaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F76220843EF20058FB4A /* CYLApiBaseManager.h */; };
-		E367F77020843EF20058FB4A /* CYLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F76420843EF20058FB4A /* CYLResponse.m */; };
-		E367F77120843EF20058FB4A /* CYLNetWorkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F76520843EF20058FB4A /* CYLNetWorkManager.h */; };
-		E367F77220843EF20058FB4A /* CYLNetworkConfigration.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F76620843EF20058FB4A /* CYLNetworkConfigration.m */; };
-		E367F77320843EF20058FB4A /* Constant.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F76720843EF20058FB4A /* Constant.h */; };
-		E367F77420843EF20058FB4A /* CYLNetWorkCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F76820843EF20058FB4A /* CYLNetWorkCache.h */; };
-		E367F77520843EF20058FB4A /* CYLNetworkConfigration.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F76920843EF20058FB4A /* CYLNetworkConfigration.h */; };
-		E367F77620843EF20058FB4A /* CYLNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F76A20843EF20058FB4A /* CYLNetWorkManager.m */; };
-		E367F77720843EF20058FB4A /* CYLResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F76B20843EF20058FB4A /* CYLResponse.h */; };
-		E367F77820843EF20058FB4A /* CYLNetWorkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F76C20843EF20058FB4A /* CYLNetWorkCache.m */; };
-		E367F77E20843EFC0058FB4A /* LSFileAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F77A20843EFC0058FB4A /* LSFileAssistant.m */; };
-		E367F77F20843EFC0058FB4A /* TKFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F77B20843EFC0058FB4A /* TKFileManager.m */; };
-		E367F78020843EFC0058FB4A /* LSFileAssistant.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F77C20843EFC0058FB4A /* LSFileAssistant.h */; };
-		E367F78120843EFC0058FB4A /* TKFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F77D20843EFC0058FB4A /* TKFileManager.h */; };
-		E367F789208440210058FB4A /* CYLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F783208440210058FB4A /* CYLWebViewController.m */; };
-		E367F78A208440210058FB4A /* CYLWebHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F784208440210058FB4A /* CYLWebHandle.h */; };
-		E367F78B208440210058FB4A /* CYLWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F785208440210058FB4A /* CYLWebView.h */; };
-		E367F78C208440210058FB4A /* CYLWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F786208440210058FB4A /* CYLWebViewController.h */; };
-		E367F78D208440210058FB4A /* CYLWebHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F787208440210058FB4A /* CYLWebHandle.m */; };
-		E367F78E208440210058FB4A /* CYLWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F788208440210058FB4A /* CYLWebView.m */; };
-		E367F7A2208449E90058FB4A /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F792208449E90058FB4A /* Animator.m */; };
-		E367F7A3208449E90058FB4A /* Animator.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F793208449E90058FB4A /* Animator.h */; };
-		E367F7A4208449E90058FB4A /* CYLRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F794208449E90058FB4A /* CYLRefreshFooter.m */; };
-		E367F7A5208449E90058FB4A /* CYLRefershHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F795208449E90058FB4A /* CYLRefershHeader.m */; };
-		E367F7A6208449E90058FB4A /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F796208449E90058FB4A /* UIView+MJExtension.m */; };
-		E367F7A7208449E90058FB4A /* CYLRefereshConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F797208449E90058FB4A /* CYLRefereshConstant.h */; };
-		E367F7A8208449E90058FB4A /* UIScrollView+Refresh.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F798208449E90058FB4A /* UIScrollView+Refresh.h */; };
-		E367F7A9208449E90058FB4A /* CYLRefereshTool.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F799208449E90058FB4A /* CYLRefereshTool.h */; };
-		E367F7AA208449E90058FB4A /* CYLRefereshBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F79A208449E90058FB4A /* CYLRefereshBaseView.h */; };
-		E367F7AB208449E90058FB4A /* CYLRefershHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F79B208449E90058FB4A /* CYLRefershHeader.h */; };
-		E367F7AC208449E90058FB4A /* CYLRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F79C208449E90058FB4A /* CYLRefreshFooter.h */; };
-		E367F7AD208449E90058FB4A /* CYLRefereshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F79D208449E90058FB4A /* CYLRefereshBaseView.m */; };
-		E367F7AE208449E90058FB4A /* CYLRefereshTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F79E208449E90058FB4A /* CYLRefereshTool.m */; };
-		E367F7AF208449E90058FB4A /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F79F208449E90058FB4A /* UIScrollView+Refresh.m */; };
-		E367F7B0208449E90058FB4A /* CYLRefereshConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = E367F7A0208449E90058FB4A /* CYLRefereshConstant.m */; };
-		E367F7B1208449E90058FB4A /* UIView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F7A1208449E90058FB4A /* UIView+MJExtension.h */; };
+		E79791232088469000538641 /* CYLNetWorkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791112088469000538641 /* CYLNetWorkCache.m */; };
+		E79791242088469000538641 /* Constant.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791122088469000538641 /* Constant.h */; };
+		E79791252088469000538641 /* CYLNetworkConfigration.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791132088469000538641 /* CYLNetworkConfigration.h */; };
+		E79791262088469000538641 /* CYLNetWorkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791142088469000538641 /* CYLNetWorkManager.h */; };
+		E79791272088469000538641 /* CYLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791152088469000538641 /* CYLResponse.m */; };
+		E79791282088469000538641 /* CYLNetWorkCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791162088469000538641 /* CYLNetWorkCache.h */; };
+		E79791292088469000538641 /* CYLResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791172088469000538641 /* CYLResponse.h */; };
+		E797912A2088469000538641 /* CYLNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791182088469000538641 /* CYLNetWorkManager.m */; };
+		E797912B2088469000538641 /* CYLNetworkConfigration.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791192088469000538641 /* CYLNetworkConfigration.m */; };
+		E797912C2088469000538641 /* CYLApiBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E797911B2088469000538641 /* CYLApiBaseManager.m */; };
+		E797912D2088469000538641 /* ReformerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E797911C2088469000538641 /* ReformerProtocol.h */; };
+		E797912E2088469000538641 /* CYLApiBaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E797911D2088469000538641 /* CYLApiBaseManager.h */; };
+		E797912F2088469000538641 /* TKFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E797911F2088469000538641 /* TKFileManager.m */; };
+		E79791302088469000538641 /* LSFileAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791202088469000538641 /* LSFileAssistant.m */; };
+		E79791312088469000538641 /* LSFileAssistant.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791212088469000538641 /* LSFileAssistant.h */; };
+		E79791322088469000538641 /* TKFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791222088469000538641 /* TKFileManager.h */; };
+		E7979145208846B700538641 /* CYLRefereshConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = E7979134208846B700538641 /* CYLRefereshConstant.h */; };
+		E7979146208846B700538641 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = E7979135208846B700538641 /* UIScrollView+Refresh.m */; };
+		E7979147208846B700538641 /* UIView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = E7979136208846B700538641 /* UIView+MJExtension.h */; };
+		E7979148208846B700538641 /* CYLRefershHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E7979137208846B700538641 /* CYLRefershHeader.m */; };
+		E7979149208846B700538641 /* CYLRefereshTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E7979138208846B700538641 /* CYLRefereshTool.m */; };
+		E797914A208846B700538641 /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = E797913A208846B700538641 /* Animator.m */; };
+		E797914B208846B700538641 /* Animator.h in Headers */ = {isa = PBXBuildFile; fileRef = E797913B208846B700538641 /* Animator.h */; };
+		E797914C208846B700538641 /* CYLRefereshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = E797913C208846B700538641 /* CYLRefereshBaseView.m */; };
+		E797914D208846B700538641 /* CYLRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = E797913D208846B700538641 /* CYLRefreshFooter.m */; };
+		E797914E208846B700538641 /* CYLRefereshConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = E797913E208846B700538641 /* CYLRefereshConstant.m */; };
+		E797914F208846B700538641 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E797913F208846B700538641 /* UIView+MJExtension.m */; };
+		E7979150208846B700538641 /* UIScrollView+Refresh.h in Headers */ = {isa = PBXBuildFile; fileRef = E7979140208846B700538641 /* UIScrollView+Refresh.h */; };
+		E7979151208846B700538641 /* CYLRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = E7979141208846B700538641 /* CYLRefreshFooter.h */; };
+		E7979152208846B700538641 /* CYLRefereshBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = E7979142208846B700538641 /* CYLRefereshBaseView.h */; };
+		E7979153208846B700538641 /* CYLRefereshTool.h in Headers */ = {isa = PBXBuildFile; fileRef = E7979143208846B700538641 /* CYLRefereshTool.h */; };
+		E7979154208846B700538641 /* CYLRefershHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E7979144208846B700538641 /* CYLRefershHeader.h */; };
+		E797916A208846C200538641 /* CYLTansitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7979156208846C100538641 /* CYLTansitionManager.m */; };
+		E797916B208846C200538641 /* CYLInteractiveTrasition.m in Sources */ = {isa = PBXBuildFile; fileRef = E7979157208846C100538641 /* CYLInteractiveTrasition.m */; };
+		E797916C208846C200538641 /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = E7979158208846C100538641 /* UIImage+Blur.m */; };
+		E797916D208846C200538641 /* MagicMoveTransitionAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = E797915A208846C100538641 /* MagicMoveTransitionAnimation.h */; };
+		E797916E208846C200538641 /* CYLCardPopUpController.h in Headers */ = {isa = PBXBuildFile; fileRef = E797915B208846C100538641 /* CYLCardPopUpController.h */; };
+		E797916F208846C200538641 /* SpreadTransitionAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = E797915C208846C100538641 /* SpreadTransitionAnimation.h */; };
+		E7979170208846C200538641 /* CardPopUpTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E797915D208846C100538641 /* CardPopUpTransitionAnimation.m */; };
+		E7979171208846C200538641 /* MagicMoveTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E797915E208846C100538641 /* MagicMoveTransitionAnimation.m */; };
+		E7979172208846C200538641 /* SpreadTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E797915F208846C100538641 /* SpreadTransitionAnimation.m */; };
+		E7979173208846C200538641 /* CYLCardPopUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7979160208846C100538641 /* CYLCardPopUpController.m */; };
+		E7979174208846C200538641 /* CardPopUpTransitionAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = E7979161208846C100538641 /* CardPopUpTransitionAnimation.h */; };
+		E7979175208846C200538641 /* CYLBaseTransitionAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = E7979162208846C100538641 /* CYLBaseTransitionAnimation.h */; };
+		E7979176208846C200538641 /* FXBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = E7979163208846C100538641 /* FXBlurView.h */; };
+		E7979177208846C200538641 /* CYLInteractiveTrasition.h in Headers */ = {isa = PBXBuildFile; fileRef = E7979164208846C100538641 /* CYLInteractiveTrasition.h */; };
+		E7979178208846C200538641 /* CYLTansitionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E7979165208846C100538641 /* CYLTansitionManager.h */; };
+		E7979179208846C200538641 /* CYLTransitionHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E7979166208846C100538641 /* CYLTransitionHeader.h */; };
+		E797917A208846C200538641 /* UIImage+Blur.h in Headers */ = {isa = PBXBuildFile; fileRef = E7979167208846C100538641 /* UIImage+Blur.h */; };
+		E797917B208846C200538641 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7979168208846C100538641 /* FXBlurView.m */; };
+		E797917C208846C200538641 /* CYLBaseTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E7979169208846C100538641 /* CYLBaseTransitionAnimation.m */; };
+		E7979184208846CB00538641 /* CYLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E797917E208846CB00538641 /* CYLWebViewController.m */; };
+		E7979185208846CB00538641 /* CYLWebHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = E797917F208846CB00538641 /* CYLWebHandle.m */; };
+		E7979186208846CB00538641 /* CYLWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7979180208846CB00538641 /* CYLWebView.m */; };
+		E7979187208846CB00538641 /* CYLWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = E7979181208846CB00538641 /* CYLWebView.h */; };
+		E7979188208846CB00538641 /* CYLWebHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = E7979182208846CB00538641 /* CYLWebHandle.h */; };
+		E7979189208846CB00538641 /* CYLWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E7979183208846CB00538641 /* CYLWebViewController.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,44 +75,63 @@
 		E367F75320843CC00058FB4A /* CYLAppBaseFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CYLAppBaseFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E367F75620843CC00058FB4A /* CYLAppBaseFrameWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLAppBaseFrameWork.h; sourceTree = "<group>"; };
 		E367F75720843CC00058FB4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E367F76020843EF20058FB4A /* CYLApiBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLApiBaseManager.m; sourceTree = "<group>"; };
-		E367F76120843EF20058FB4A /* ReformerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReformerProtocol.h; sourceTree = "<group>"; };
-		E367F76220843EF20058FB4A /* CYLApiBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLApiBaseManager.h; sourceTree = "<group>"; };
-		E367F76420843EF20058FB4A /* CYLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLResponse.m; sourceTree = "<group>"; };
-		E367F76520843EF20058FB4A /* CYLNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLNetWorkManager.h; sourceTree = "<group>"; };
-		E367F76620843EF20058FB4A /* CYLNetworkConfigration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLNetworkConfigration.m; sourceTree = "<group>"; };
-		E367F76720843EF20058FB4A /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
-		E367F76820843EF20058FB4A /* CYLNetWorkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLNetWorkCache.h; sourceTree = "<group>"; };
-		E367F76920843EF20058FB4A /* CYLNetworkConfigration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLNetworkConfigration.h; sourceTree = "<group>"; };
-		E367F76A20843EF20058FB4A /* CYLNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLNetWorkManager.m; sourceTree = "<group>"; };
-		E367F76B20843EF20058FB4A /* CYLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLResponse.h; sourceTree = "<group>"; };
-		E367F76C20843EF20058FB4A /* CYLNetWorkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLNetWorkCache.m; sourceTree = "<group>"; };
-		E367F77A20843EFC0058FB4A /* LSFileAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFileAssistant.m; sourceTree = "<group>"; };
-		E367F77B20843EFC0058FB4A /* TKFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKFileManager.m; sourceTree = "<group>"; };
-		E367F77C20843EFC0058FB4A /* LSFileAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFileAssistant.h; sourceTree = "<group>"; };
-		E367F77D20843EFC0058FB4A /* TKFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKFileManager.h; sourceTree = "<group>"; };
-		E367F783208440210058FB4A /* CYLWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLWebViewController.m; sourceTree = "<group>"; };
-		E367F784208440210058FB4A /* CYLWebHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLWebHandle.h; sourceTree = "<group>"; };
-		E367F785208440210058FB4A /* CYLWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLWebView.h; sourceTree = "<group>"; };
-		E367F786208440210058FB4A /* CYLWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLWebViewController.h; sourceTree = "<group>"; };
-		E367F787208440210058FB4A /* CYLWebHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLWebHandle.m; sourceTree = "<group>"; };
-		E367F788208440210058FB4A /* CYLWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLWebView.m; sourceTree = "<group>"; };
-		E367F792208449E90058FB4A /* Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animator.m; sourceTree = "<group>"; };
-		E367F793208449E90058FB4A /* Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animator.h; sourceTree = "<group>"; };
-		E367F794208449E90058FB4A /* CYLRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLRefreshFooter.m; sourceTree = "<group>"; };
-		E367F795208449E90058FB4A /* CYLRefershHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLRefershHeader.m; sourceTree = "<group>"; };
-		E367F796208449E90058FB4A /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
-		E367F797208449E90058FB4A /* CYLRefereshConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLRefereshConstant.h; sourceTree = "<group>"; };
-		E367F798208449E90058FB4A /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
-		E367F799208449E90058FB4A /* CYLRefereshTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLRefereshTool.h; sourceTree = "<group>"; };
-		E367F79A208449E90058FB4A /* CYLRefereshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLRefereshBaseView.h; sourceTree = "<group>"; };
-		E367F79B208449E90058FB4A /* CYLRefershHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLRefershHeader.h; sourceTree = "<group>"; };
-		E367F79C208449E90058FB4A /* CYLRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLRefreshFooter.h; sourceTree = "<group>"; };
-		E367F79D208449E90058FB4A /* CYLRefereshBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLRefereshBaseView.m; sourceTree = "<group>"; };
-		E367F79E208449E90058FB4A /* CYLRefereshTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLRefereshTool.m; sourceTree = "<group>"; };
-		E367F79F208449E90058FB4A /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
-		E367F7A0208449E90058FB4A /* CYLRefereshConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLRefereshConstant.m; sourceTree = "<group>"; };
-		E367F7A1208449E90058FB4A /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
+		E79791112088469000538641 /* CYLNetWorkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLNetWorkCache.m; sourceTree = "<group>"; };
+		E79791122088469000538641 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		E79791132088469000538641 /* CYLNetworkConfigration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLNetworkConfigration.h; sourceTree = "<group>"; };
+		E79791142088469000538641 /* CYLNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLNetWorkManager.h; sourceTree = "<group>"; };
+		E79791152088469000538641 /* CYLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLResponse.m; sourceTree = "<group>"; };
+		E79791162088469000538641 /* CYLNetWorkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLNetWorkCache.h; sourceTree = "<group>"; };
+		E79791172088469000538641 /* CYLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLResponse.h; sourceTree = "<group>"; };
+		E79791182088469000538641 /* CYLNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLNetWorkManager.m; sourceTree = "<group>"; };
+		E79791192088469000538641 /* CYLNetworkConfigration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLNetworkConfigration.m; sourceTree = "<group>"; };
+		E797911B2088469000538641 /* CYLApiBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLApiBaseManager.m; sourceTree = "<group>"; };
+		E797911C2088469000538641 /* ReformerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReformerProtocol.h; sourceTree = "<group>"; };
+		E797911D2088469000538641 /* CYLApiBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLApiBaseManager.h; sourceTree = "<group>"; };
+		E797911F2088469000538641 /* TKFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKFileManager.m; sourceTree = "<group>"; };
+		E79791202088469000538641 /* LSFileAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFileAssistant.m; sourceTree = "<group>"; };
+		E79791212088469000538641 /* LSFileAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFileAssistant.h; sourceTree = "<group>"; };
+		E79791222088469000538641 /* TKFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKFileManager.h; sourceTree = "<group>"; };
+		E7979134208846B700538641 /* CYLRefereshConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLRefereshConstant.h; sourceTree = "<group>"; };
+		E7979135208846B700538641 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
+		E7979136208846B700538641 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
+		E7979137208846B700538641 /* CYLRefershHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLRefershHeader.m; sourceTree = "<group>"; };
+		E7979138208846B700538641 /* CYLRefereshTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLRefereshTool.m; sourceTree = "<group>"; };
+		E797913A208846B700538641 /* Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animator.m; sourceTree = "<group>"; };
+		E797913B208846B700538641 /* Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animator.h; sourceTree = "<group>"; };
+		E797913C208846B700538641 /* CYLRefereshBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLRefereshBaseView.m; sourceTree = "<group>"; };
+		E797913D208846B700538641 /* CYLRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLRefreshFooter.m; sourceTree = "<group>"; };
+		E797913E208846B700538641 /* CYLRefereshConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLRefereshConstant.m; sourceTree = "<group>"; };
+		E797913F208846B700538641 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		E7979140208846B700538641 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
+		E7979141208846B700538641 /* CYLRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLRefreshFooter.h; sourceTree = "<group>"; };
+		E7979142208846B700538641 /* CYLRefereshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLRefereshBaseView.h; sourceTree = "<group>"; };
+		E7979143208846B700538641 /* CYLRefereshTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLRefereshTool.h; sourceTree = "<group>"; };
+		E7979144208846B700538641 /* CYLRefershHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLRefershHeader.h; sourceTree = "<group>"; };
+		E7979156208846C100538641 /* CYLTansitionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTansitionManager.m; sourceTree = "<group>"; };
+		E7979157208846C100538641 /* CYLInteractiveTrasition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLInteractiveTrasition.m; sourceTree = "<group>"; };
+		E7979158208846C100538641 /* UIImage+Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Blur.m"; sourceTree = "<group>"; };
+		E797915A208846C100538641 /* MagicMoveTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicMoveTransitionAnimation.h; sourceTree = "<group>"; };
+		E797915B208846C100538641 /* CYLCardPopUpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLCardPopUpController.h; sourceTree = "<group>"; };
+		E797915C208846C100538641 /* SpreadTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpreadTransitionAnimation.h; sourceTree = "<group>"; };
+		E797915D208846C100538641 /* CardPopUpTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardPopUpTransitionAnimation.m; sourceTree = "<group>"; };
+		E797915E208846C100538641 /* MagicMoveTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicMoveTransitionAnimation.m; sourceTree = "<group>"; };
+		E797915F208846C100538641 /* SpreadTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpreadTransitionAnimation.m; sourceTree = "<group>"; };
+		E7979160208846C100538641 /* CYLCardPopUpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLCardPopUpController.m; sourceTree = "<group>"; };
+		E7979161208846C100538641 /* CardPopUpTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardPopUpTransitionAnimation.h; sourceTree = "<group>"; };
+		E7979162208846C100538641 /* CYLBaseTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLBaseTransitionAnimation.h; sourceTree = "<group>"; };
+		E7979163208846C100538641 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		E7979164208846C100538641 /* CYLInteractiveTrasition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLInteractiveTrasition.h; sourceTree = "<group>"; };
+		E7979165208846C100538641 /* CYLTansitionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTansitionManager.h; sourceTree = "<group>"; };
+		E7979166208846C100538641 /* CYLTransitionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTransitionHeader.h; sourceTree = "<group>"; };
+		E7979167208846C100538641 /* UIImage+Blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Blur.h"; sourceTree = "<group>"; };
+		E7979168208846C100538641 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		E7979169208846C100538641 /* CYLBaseTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLBaseTransitionAnimation.m; sourceTree = "<group>"; };
+		E797917E208846CB00538641 /* CYLWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLWebViewController.m; sourceTree = "<group>"; };
+		E797917F208846CB00538641 /* CYLWebHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLWebHandle.m; sourceTree = "<group>"; };
+		E7979180208846CB00538641 /* CYLWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLWebView.m; sourceTree = "<group>"; };
+		E7979181208846CB00538641 /* CYLWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLWebView.h; sourceTree = "<group>"; };
+		E7979182208846CB00538641 /* CYLWebHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLWebHandle.h; sourceTree = "<group>"; };
+		E7979183208846CB00538641 /* CYLWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLWebViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,108 +184,144 @@
 		E367F75520843CC00058FB4A /* CYLAppBaseFrameWork */ = {
 			isa = PBXGroup;
 			children = (
-				E367F790208449E90058FB4A /* CYLReferesh */,
-				E367F782208440210058FB4A /* CYLWebViewContainer */,
-				E367F75E20843EF20058FB4A /* CYLNetworkManager */,
+				E797917D208846CB00538641 /* CYLWebViewContainer */,
+				E7979155208846C100538641 /* CYLTransitioning */,
+				E7979133208846B600538641 /* CYLReferesh */,
+				E797910F2088469000538641 /* CYLNetworkManager */,
+				E797911E2088469000538641 /* FileManager */,
 				E367F75620843CC00058FB4A /* CYLAppBaseFrameWork.h */,
 				E367F75720843CC00058FB4A /* Info.plist */,
 			);
 			path = CYLAppBaseFrameWork;
 			sourceTree = "<group>";
 		};
-		E367F75E20843EF20058FB4A /* CYLNetworkManager */ = {
+		E797910F2088469000538641 /* CYLNetworkManager */ = {
 			isa = PBXGroup;
 			children = (
-				E367F77920843EFC0058FB4A /* FileManager */,
-				E367F75F20843EF20058FB4A /* API */,
-				E367F76320843EF20058FB4A /* NetWork */,
+				E79791102088469000538641 /* NetWork */,
+				E797911A2088469000538641 /* API */,
 			);
 			name = CYLNetworkManager;
-			path = ../../CYLNetWorkManager/CYLNetWorkManager/CYLNetworkManager;
+			path = ../../../CYLNetWorkManager/CYLNetWorkManager/CYLNetworkManager;
 			sourceTree = "<group>";
 		};
-		E367F75F20843EF20058FB4A /* API */ = {
+		E79791102088469000538641 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
-				E367F76020843EF20058FB4A /* CYLApiBaseManager.m */,
-				E367F76120843EF20058FB4A /* ReformerProtocol.h */,
-				E367F76220843EF20058FB4A /* CYLApiBaseManager.h */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		E367F76320843EF20058FB4A /* NetWork */ = {
-			isa = PBXGroup;
-			children = (
-				E367F76420843EF20058FB4A /* CYLResponse.m */,
-				E367F76520843EF20058FB4A /* CYLNetWorkManager.h */,
-				E367F76620843EF20058FB4A /* CYLNetworkConfigration.m */,
-				E367F76720843EF20058FB4A /* Constant.h */,
-				E367F76820843EF20058FB4A /* CYLNetWorkCache.h */,
-				E367F76920843EF20058FB4A /* CYLNetworkConfigration.h */,
-				E367F76A20843EF20058FB4A /* CYLNetWorkManager.m */,
-				E367F76B20843EF20058FB4A /* CYLResponse.h */,
-				E367F76C20843EF20058FB4A /* CYLNetWorkCache.m */,
+				E79791112088469000538641 /* CYLNetWorkCache.m */,
+				E79791122088469000538641 /* Constant.h */,
+				E79791132088469000538641 /* CYLNetworkConfigration.h */,
+				E79791142088469000538641 /* CYLNetWorkManager.h */,
+				E79791152088469000538641 /* CYLResponse.m */,
+				E79791162088469000538641 /* CYLNetWorkCache.h */,
+				E79791172088469000538641 /* CYLResponse.h */,
+				E79791182088469000538641 /* CYLNetWorkManager.m */,
+				E79791192088469000538641 /* CYLNetworkConfigration.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
 		};
-		E367F77920843EFC0058FB4A /* FileManager */ = {
+		E797911A2088469000538641 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				E367F77A20843EFC0058FB4A /* LSFileAssistant.m */,
-				E367F77B20843EFC0058FB4A /* TKFileManager.m */,
-				E367F77C20843EFC0058FB4A /* LSFileAssistant.h */,
-				E367F77D20843EFC0058FB4A /* TKFileManager.h */,
+				E797911B2088469000538641 /* CYLApiBaseManager.m */,
+				E797911C2088469000538641 /* ReformerProtocol.h */,
+				E797911D2088469000538641 /* CYLApiBaseManager.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E797911E2088469000538641 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				E797911F2088469000538641 /* TKFileManager.m */,
+				E79791202088469000538641 /* LSFileAssistant.m */,
+				E79791212088469000538641 /* LSFileAssistant.h */,
+				E79791222088469000538641 /* TKFileManager.h */,
 			);
 			name = FileManager;
-			path = ../FileManager;
+			path = ../../../CYLNetWorkManager/CYLNetWorkManager/FileManager;
 			sourceTree = "<group>";
 		};
-		E367F782208440210058FB4A /* CYLWebViewContainer */ = {
+		E7979133208846B600538641 /* CYLReferesh */ = {
 			isa = PBXGroup;
 			children = (
-				E367F783208440210058FB4A /* CYLWebViewController.m */,
-				E367F784208440210058FB4A /* CYLWebHandle.h */,
-				E367F785208440210058FB4A /* CYLWebView.h */,
-				E367F786208440210058FB4A /* CYLWebViewController.h */,
-				E367F787208440210058FB4A /* CYLWebHandle.m */,
-				E367F788208440210058FB4A /* CYLWebView.m */,
-			);
-			name = CYLWebViewContainer;
-			path = ../../CYLWebViewContainer/CYLWebViewContainer/CYLWebViewContainer;
-			sourceTree = "<group>";
-		};
-		E367F790208449E90058FB4A /* CYLReferesh */ = {
-			isa = PBXGroup;
-			children = (
-				E367F791208449E90058FB4A /* Animator */,
-				E367F794208449E90058FB4A /* CYLRefreshFooter.m */,
-				E367F795208449E90058FB4A /* CYLRefershHeader.m */,
-				E367F796208449E90058FB4A /* UIView+MJExtension.m */,
-				E367F797208449E90058FB4A /* CYLRefereshConstant.h */,
-				E367F798208449E90058FB4A /* UIScrollView+Refresh.h */,
-				E367F799208449E90058FB4A /* CYLRefereshTool.h */,
-				E367F79A208449E90058FB4A /* CYLRefereshBaseView.h */,
-				E367F79B208449E90058FB4A /* CYLRefershHeader.h */,
-				E367F79C208449E90058FB4A /* CYLRefreshFooter.h */,
-				E367F79D208449E90058FB4A /* CYLRefereshBaseView.m */,
-				E367F79E208449E90058FB4A /* CYLRefereshTool.m */,
-				E367F79F208449E90058FB4A /* UIScrollView+Refresh.m */,
-				E367F7A0208449E90058FB4A /* CYLRefereshConstant.m */,
-				E367F7A1208449E90058FB4A /* UIView+MJExtension.h */,
+				E7979134208846B700538641 /* CYLRefereshConstant.h */,
+				E7979135208846B700538641 /* UIScrollView+Refresh.m */,
+				E7979136208846B700538641 /* UIView+MJExtension.h */,
+				E7979137208846B700538641 /* CYLRefershHeader.m */,
+				E7979138208846B700538641 /* CYLRefereshTool.m */,
+				E7979139208846B700538641 /* Animator */,
+				E797913C208846B700538641 /* CYLRefereshBaseView.m */,
+				E797913D208846B700538641 /* CYLRefreshFooter.m */,
+				E797913E208846B700538641 /* CYLRefereshConstant.m */,
+				E797913F208846B700538641 /* UIView+MJExtension.m */,
+				E7979140208846B700538641 /* UIScrollView+Refresh.h */,
+				E7979141208846B700538641 /* CYLRefreshFooter.h */,
+				E7979142208846B700538641 /* CYLRefereshBaseView.h */,
+				E7979143208846B700538641 /* CYLRefereshTool.h */,
+				E7979144208846B700538641 /* CYLRefershHeader.h */,
 			);
 			name = CYLReferesh;
-			path = ../../CYLReferesh/CYLReferesh/CYLReferesh;
+			path = ../../../CYLReferesh/CYLReferesh/CYLReferesh;
 			sourceTree = "<group>";
 		};
-		E367F791208449E90058FB4A /* Animator */ = {
+		E7979139208846B700538641 /* Animator */ = {
 			isa = PBXGroup;
 			children = (
-				E367F792208449E90058FB4A /* Animator.m */,
-				E367F793208449E90058FB4A /* Animator.h */,
+				E797913A208846B700538641 /* Animator.m */,
+				E797913B208846B700538641 /* Animator.h */,
 			);
 			path = Animator;
+			sourceTree = "<group>";
+		};
+		E7979155208846C100538641 /* CYLTransitioning */ = {
+			isa = PBXGroup;
+			children = (
+				E7979156208846C100538641 /* CYLTansitionManager.m */,
+				E7979157208846C100538641 /* CYLInteractiveTrasition.m */,
+				E7979158208846C100538641 /* UIImage+Blur.m */,
+				E7979159208846C100538641 /* TransitionAnimation */,
+				E7979162208846C100538641 /* CYLBaseTransitionAnimation.h */,
+				E7979163208846C100538641 /* FXBlurView.h */,
+				E7979164208846C100538641 /* CYLInteractiveTrasition.h */,
+				E7979165208846C100538641 /* CYLTansitionManager.h */,
+				E7979166208846C100538641 /* CYLTransitionHeader.h */,
+				E7979167208846C100538641 /* UIImage+Blur.h */,
+				E7979168208846C100538641 /* FXBlurView.m */,
+				E7979169208846C100538641 /* CYLBaseTransitionAnimation.m */,
+			);
+			name = CYLTransitioning;
+			path = ../../../CYLTransitioning;
+			sourceTree = "<group>";
+		};
+		E7979159208846C100538641 /* TransitionAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				E797915A208846C100538641 /* MagicMoveTransitionAnimation.h */,
+				E797915B208846C100538641 /* CYLCardPopUpController.h */,
+				E797915C208846C100538641 /* SpreadTransitionAnimation.h */,
+				E797915D208846C100538641 /* CardPopUpTransitionAnimation.m */,
+				E797915E208846C100538641 /* MagicMoveTransitionAnimation.m */,
+				E797915F208846C100538641 /* SpreadTransitionAnimation.m */,
+				E7979160208846C100538641 /* CYLCardPopUpController.m */,
+				E7979161208846C100538641 /* CardPopUpTransitionAnimation.h */,
+			);
+			path = TransitionAnimation;
+			sourceTree = "<group>";
+		};
+		E797917D208846CB00538641 /* CYLWebViewContainer */ = {
+			isa = PBXGroup;
+			children = (
+				E797917E208846CB00538641 /* CYLWebViewController.m */,
+				E797917F208846CB00538641 /* CYLWebHandle.m */,
+				E7979180208846CB00538641 /* CYLWebView.m */,
+				E7979181208846CB00538641 /* CYLWebView.h */,
+				E7979182208846CB00538641 /* CYLWebHandle.h */,
+				E7979183208846CB00538641 /* CYLWebViewController.h */,
+			);
+			name = CYLWebViewContainer;
+			path = ../../../CYLWebViewContainer/CYLWebViewContainer/CYLWebViewContainer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,27 +331,37 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E367F76E20843EF20058FB4A /* ReformerProtocol.h in Headers */,
-				E367F77520843EF20058FB4A /* CYLNetworkConfigration.h in Headers */,
-				E367F77720843EF20058FB4A /* CYLResponse.h in Headers */,
-				E367F78B208440210058FB4A /* CYLWebView.h in Headers */,
-				E367F76F20843EF20058FB4A /* CYLApiBaseManager.h in Headers */,
-				E367F77120843EF20058FB4A /* CYLNetWorkManager.h in Headers */,
-				E367F7B1208449E90058FB4A /* UIView+MJExtension.h in Headers */,
-				E367F78C208440210058FB4A /* CYLWebViewController.h in Headers */,
-				E367F7AA208449E90058FB4A /* CYLRefereshBaseView.h in Headers */,
-				E367F7A3208449E90058FB4A /* Animator.h in Headers */,
-				E367F78120843EFC0058FB4A /* TKFileManager.h in Headers */,
-				E367F7A9208449E90058FB4A /* CYLRefereshTool.h in Headers */,
-				E367F77420843EF20058FB4A /* CYLNetWorkCache.h in Headers */,
-				E367F77320843EF20058FB4A /* Constant.h in Headers */,
-				E367F7AB208449E90058FB4A /* CYLRefershHeader.h in Headers */,
-				E367F7A7208449E90058FB4A /* CYLRefereshConstant.h in Headers */,
+				E7979175208846C200538641 /* CYLBaseTransitionAnimation.h in Headers */,
+				E797916E208846C200538641 /* CYLCardPopUpController.h in Headers */,
+				E79791242088469000538641 /* Constant.h in Headers */,
+				E797912E2088469000538641 /* CYLApiBaseManager.h in Headers */,
+				E79791252088469000538641 /* CYLNetworkConfigration.h in Headers */,
+				E79791262088469000538641 /* CYLNetWorkManager.h in Headers */,
+				E7979150208846B700538641 /* UIScrollView+Refresh.h in Headers */,
+				E797914B208846B700538641 /* Animator.h in Headers */,
+				E797916F208846C200538641 /* SpreadTransitionAnimation.h in Headers */,
+				E7979178208846C200538641 /* CYLTansitionManager.h in Headers */,
+				E7979145208846B700538641 /* CYLRefereshConstant.h in Headers */,
+				E7979179208846C200538641 /* CYLTransitionHeader.h in Headers */,
 				E367F75820843CC00058FB4A /* CYLAppBaseFrameWork.h in Headers */,
-				E367F78020843EFC0058FB4A /* LSFileAssistant.h in Headers */,
-				E367F7A8208449E90058FB4A /* UIScrollView+Refresh.h in Headers */,
-				E367F7AC208449E90058FB4A /* CYLRefreshFooter.h in Headers */,
-				E367F78A208440210058FB4A /* CYLWebHandle.h in Headers */,
+				E7979151208846B700538641 /* CYLRefreshFooter.h in Headers */,
+				E7979187208846CB00538641 /* CYLWebView.h in Headers */,
+				E797916D208846C200538641 /* MagicMoveTransitionAnimation.h in Headers */,
+				E7979177208846C200538641 /* CYLInteractiveTrasition.h in Headers */,
+				E7979189208846CB00538641 /* CYLWebViewController.h in Headers */,
+				E7979153208846B700538641 /* CYLRefereshTool.h in Headers */,
+				E7979147208846B700538641 /* UIView+MJExtension.h in Headers */,
+				E79791322088469000538641 /* TKFileManager.h in Headers */,
+				E7979188208846CB00538641 /* CYLWebHandle.h in Headers */,
+				E7979176208846C200538641 /* FXBlurView.h in Headers */,
+				E7979154208846B700538641 /* CYLRefershHeader.h in Headers */,
+				E79791292088469000538641 /* CYLResponse.h in Headers */,
+				E7979174208846C200538641 /* CardPopUpTransitionAnimation.h in Headers */,
+				E797912D2088469000538641 /* ReformerProtocol.h in Headers */,
+				E7979152208846B700538641 /* CYLRefereshBaseView.h in Headers */,
+				E797917A208846C200538641 /* UIImage+Blur.h in Headers */,
+				E79791282088469000538641 /* CYLNetWorkCache.h in Headers */,
+				E79791312088469000538641 /* LSFileAssistant.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +409,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = E367F74920843CC00058FB4A;
 			productRefGroup = E367F75420843CC00058FB4A /* Products */;
@@ -359,7 +444,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYLAppBaseFrameWork/Pods-CYLAppBaseFrameWork-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-CYLAppBaseFrameWork/Pods-CYLAppBaseFrameWork-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C71BB6E0269C80B974A0D872 /* [CP] Check Pods Manifest.lock */ = {
@@ -387,24 +472,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E367F7A2208449E90058FB4A /* Animator.m in Sources */,
-				E367F76D20843EF20058FB4A /* CYLApiBaseManager.m in Sources */,
-				E367F77020843EF20058FB4A /* CYLResponse.m in Sources */,
-				E367F7A6208449E90058FB4A /* UIView+MJExtension.m in Sources */,
-				E367F7A4208449E90058FB4A /* CYLRefreshFooter.m in Sources */,
-				E367F78E208440210058FB4A /* CYLWebView.m in Sources */,
-				E367F7AE208449E90058FB4A /* CYLRefereshTool.m in Sources */,
-				E367F7A5208449E90058FB4A /* CYLRefershHeader.m in Sources */,
-				E367F77220843EF20058FB4A /* CYLNetworkConfigration.m in Sources */,
-				E367F78D208440210058FB4A /* CYLWebHandle.m in Sources */,
-				E367F77F20843EFC0058FB4A /* TKFileManager.m in Sources */,
-				E367F7AD208449E90058FB4A /* CYLRefereshBaseView.m in Sources */,
-				E367F77620843EF20058FB4A /* CYLNetWorkManager.m in Sources */,
-				E367F77820843EF20058FB4A /* CYLNetWorkCache.m in Sources */,
-				E367F7B0208449E90058FB4A /* CYLRefereshConstant.m in Sources */,
-				E367F7AF208449E90058FB4A /* UIScrollView+Refresh.m in Sources */,
-				E367F789208440210058FB4A /* CYLWebViewController.m in Sources */,
-				E367F77E20843EFC0058FB4A /* LSFileAssistant.m in Sources */,
+				E797916C208846C200538641 /* UIImage+Blur.m in Sources */,
+				E797914A208846B700538641 /* Animator.m in Sources */,
+				E797914F208846B700538641 /* UIView+MJExtension.m in Sources */,
+				E7979173208846C200538641 /* CYLCardPopUpController.m in Sources */,
+				E797912F2088469000538641 /* TKFileManager.m in Sources */,
+				E797912B2088469000538641 /* CYLNetworkConfigration.m in Sources */,
+				E79791232088469000538641 /* CYLNetWorkCache.m in Sources */,
+				E7979146208846B700538641 /* UIScrollView+Refresh.m in Sources */,
+				E797917B208846C200538641 /* FXBlurView.m in Sources */,
+				E797916B208846C200538641 /* CYLInteractiveTrasition.m in Sources */,
+				E7979171208846C200538641 /* MagicMoveTransitionAnimation.m in Sources */,
+				E7979149208846B700538641 /* CYLRefereshTool.m in Sources */,
+				E7979172208846C200538641 /* SpreadTransitionAnimation.m in Sources */,
+				E7979186208846CB00538641 /* CYLWebView.m in Sources */,
+				E797917C208846C200538641 /* CYLBaseTransitionAnimation.m in Sources */,
+				E797914E208846B700538641 /* CYLRefereshConstant.m in Sources */,
+				E7979184208846CB00538641 /* CYLWebViewController.m in Sources */,
+				E7979148208846B700538641 /* CYLRefershHeader.m in Sources */,
+				E797912C2088469000538641 /* CYLApiBaseManager.m in Sources */,
+				E7979170208846C200538641 /* CardPopUpTransitionAnimation.m in Sources */,
+				E797912A2088469000538641 /* CYLNetWorkManager.m in Sources */,
+				E79791302088469000538641 /* LSFileAssistant.m in Sources */,
+				E797916A208846C200538641 /* CYLTansitionManager.m in Sources */,
+				E797914D208846B700538641 /* CYLRefreshFooter.m in Sources */,
+				E797914C208846B700538641 /* CYLRefereshBaseView.m in Sources */,
+				E79791272088469000538641 /* CYLResponse.m in Sources */,
+				E7979185208846CB00538641 /* CYLWebHandle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

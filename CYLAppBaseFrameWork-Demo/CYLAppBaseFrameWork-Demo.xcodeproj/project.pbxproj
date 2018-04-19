@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6699364DF095F734C45E4694 /* libPods-CYLAppBaseFrameWork-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CDF611A57EB18EAEF520055 /* libPods-CYLAppBaseFrameWork-Demo.a */; };
 		E7716ACD208833E100A3A0EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7716ACC208833E100A3A0EF /* AppDelegate.m */; };
 		E7716AD0208833E100A3A0EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7716ACF208833E100A3A0EF /* ViewController.m */; };
 		E7716AD3208833E100A3A0EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7716AD1208833E100A3A0EF /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		094D1B83C4297D02ABD0D014 /* Pods-CYLAppBaseFrameWork-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYLAppBaseFrameWork-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CYLAppBaseFrameWork-Demo/Pods-CYLAppBaseFrameWork-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		8CDF611A57EB18EAEF520055 /* libPods-CYLAppBaseFrameWork-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYLAppBaseFrameWork-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B8441AE223EDFC83038BD90 /* Pods-CYLAppBaseFrameWork-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYLAppBaseFrameWork-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CYLAppBaseFrameWork-Demo/Pods-CYLAppBaseFrameWork-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		E7716AC8208833E100A3A0EF /* CYLAppBaseFrameWork-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CYLAppBaseFrameWork-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7716ACB208833E100A3A0EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E7716ACC208833E100A3A0EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6699364DF095F734C45E4694 /* libPods-CYLAppBaseFrameWork-Demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1568014D9397D84D16BED357 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				094D1B83C4297D02ABD0D014 /* Pods-CYLAppBaseFrameWork-Demo.debug.xcconfig */,
+				9B8441AE223EDFC83038BD90 /* Pods-CYLAppBaseFrameWork-Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B5D56BE5733C1DE26B2E7511 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CDF611A57EB18EAEF520055 /* libPods-CYLAppBaseFrameWork-Demo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E7716ABF208833E100A3A0EF = {
 			isa = PBXGroup;
 			children = (
 				E7716ACA208833E100A3A0EF /* CYLAppBaseFrameWork-Demo */,
 				E7716AC9208833E100A3A0EF /* Products */,
+				1568014D9397D84D16BED357 /* Pods */,
+				B5D56BE5733C1DE26B2E7511 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7716ADE208833E100A3A0EF /* Build configuration list for PBXNativeTarget "CYLAppBaseFrameWork-Demo" */;
 			buildPhases = (
+				EB2FBDEFD03B962C6956B795 /* [CP] Check Pods Manifest.lock */,
 				E7716AC4208833E100A3A0EF /* Sources */,
 				E7716AC5208833E100A3A0EF /* Frameworks */,
 				E7716AC6208833E100A3A0EF /* Resources */,
+				9C78A6F746B0CBFCE9B00F2F /* [CP] Embed Pods Frameworks */,
+				691206ECBF150C44B3DF6C9D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		691206ECBF150C44B3DF6C9D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYLAppBaseFrameWork-Demo/Pods-CYLAppBaseFrameWork-Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C78A6F746B0CBFCE9B00F2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYLAppBaseFrameWork-Demo/Pods-CYLAppBaseFrameWork-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB2FBDEFD03B962C6956B795 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CYLAppBaseFrameWork-Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E7716AC4208833E100A3A0EF /* Sources */ = {
@@ -276,6 +354,7 @@
 		};
 		E7716ADF208833E100A3A0EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 094D1B83C4297D02ABD0D014 /* Pods-CYLAppBaseFrameWork-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +369,7 @@
 		};
 		E7716AE0208833E100A3A0EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B8441AE223EDFC83038BD90 /* Pods-CYLAppBaseFrameWork-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
