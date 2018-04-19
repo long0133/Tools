@@ -8,7 +8,7 @@
 
 #import "CYLNetWorkManager.h"
 #import <AFNetworking.h>
-#import "CYLNetworkConfigration.h"
+//#import "CYLNetworkConfigration.h"
 #import "CYLNetWorkCache.h"
 #import <CoreTelephony/CoreTelephonyDefines.h>
 #import <CoreTelephony/CTCellularData.h>
@@ -21,6 +21,7 @@ static CYLNetWorkManager *_instance;
 @property (nonatomic, strong) AFHTTPSessionManager *manner;
 @property (nonatomic, strong) NSThread *netWorkThread;
 @property (nonatomic, strong) NSRunLoop *netWorkRunLoop;
+@property (nonatomic, strong) NSURL *baseURL;
 @end
 
 @implementation CYLNetWorkManager
@@ -288,11 +289,16 @@ static CYLNetWorkManager *_instance;
 #pragma mark - getter setter
 - (AFHTTPSessionManager *)manner{
     if (!_manner) {
-        _manner = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:[CYLNetworkConfigration baseUrl]]];
+        NSAssert(_baseURL != nil, @"CYLNetWorkManager's base url cannot be nil, use instance method -(void)setBaseUrl: to set one");
+        _manner = [[AFHTTPSessionManager alloc] initWithBaseURL:_baseURL];
         _manner.requestSerializer.timeoutInterval = 10;
         _manner.responseSerializer = [AFHTTPResponseSerializer serializer];
     }
     return _manner;
+}
+
+- (void)setBaseUrl:(NSURL *)baseurl{
+    _baseURL = baseurl;
 }
 
 @end

@@ -8,5 +8,5 @@
 
 #import <Foundation/Foundation.h>
 @interface CYLNetworkConfigration : NSObject
-+ (NSString*)baseUrl;
+//+ (NSString*)baseUrl;
 @end

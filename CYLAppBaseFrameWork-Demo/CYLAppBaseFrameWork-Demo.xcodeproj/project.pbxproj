@@ -13,7 +13,7 @@
 		E7716AD5208833E100A3A0EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7716AD4208833E100A3A0EF /* Assets.xcassets */; };
 		E7716AD8208833E100A3A0EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7716AD6208833E100A3A0EF /* LaunchScreen.storyboard */; };
 		E7716ADB208833E100A3A0EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7716ADA208833E100A3A0EF /* main.m */; };
-		E797921B20886CF400538641 /* CYLAppBaseFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E797921A20886CF400538641 /* CYLAppBaseFrameWork.framework */; };
+		E797921F2088704800538641 /* CYLAppBaseFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E797921E2088704800538641 /* CYLAppBaseFrameWork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,7 @@
 		E7716AD7208833E100A3A0EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7716AD9208833E100A3A0EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7716ADA208833E100A3A0EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E797921A20886CF400538641 /* CYLAppBaseFrameWork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CYLAppBaseFrameWork.framework; path = CYLAppBaseFrameWork/Products/CYLAppBaseFrameWork.framework; sourceTree = SOURCE_ROOT; };
+		E797921E2088704800538641 /* CYLAppBaseFrameWork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CYLAppBaseFrameWork.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E797921B20886CF400538641 /* CYLAppBaseFrameWork.framework in Frameworks */,
+				E797921F2088704800538641 /* CYLAppBaseFrameWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 		E7716ACA208833E100A3A0EF /* CYLAppBaseFrameWork-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				E797921A20886CF400538641 /* CYLAppBaseFrameWork.framework */,
+				E797921E2088704800538641 /* CYLAppBaseFrameWork.framework */,
 				E7716ACB208833E100A3A0EF /* AppDelegate.h */,
 				E7716ACC208833E100A3A0EF /* AppDelegate.m */,
 				E7716ACE208833E100A3A0EF /* ViewController.h */,

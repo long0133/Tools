@@ -17,21 +17,21 @@ FOUNDATION_EXPORT const unsigned char CYLAppBaseFrameWorkVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <CYLAppBaseFrameWork/PublicHeader.h>
 
 /* network */
-#import <CYLAppBaseFrameWork/CYLNetworkManager/NetWork/CYLNetWorkManager.h>
-#import <CYLAppBaseFrameWork/CYLNetworkManager/NetWork/CYLResponse.h>
-#import <CYLAppBaseFrameWork/CYLNetworkManager/NetWork/Constant.h>
-#import <CYLAppBaseFrameWork/CYLNetworkManager/NetWork/ReformerProtocol.h>
-#import <CYLAppBaseFrameWork/CYLNetworkManager/NetWork/CYLApiBaseManager.h>
+#import <CYLAppBaseFrameWork/CYLNetWorkManager.h>
+#import <CYLAppBaseFrameWork/CYLResponse.h>
+#import <CYLAppBaseFrameWork/Constant.h>
+#import <CYLAppBaseFrameWork/ReformerProtocol.h>
+#import <CYLAppBaseFrameWork/CYLApiBaseManager.h>
 
 /* referesh */
-#import <CYLAppBaseFrameWork/CYLReferesh/UIScrollView+Refresh.h>
+#import <CYLAppBaseFrameWork/UIScrollView+Refresh.h>
 
 /* transitionging */
-#import <CYLAppBaseFrameWork/CYLTransitioning/CYLTransitionHeader.h>
-#import <CYLAppBaseFrameWork/CYLTransitioning/CYLBaseTransitionAnimation.h>
-#import <CYLAppBaseFrameWork/CYLTransitioning/CYLTansitionManager.h>
-#import <CYLAppBaseFrameWork/CYLTransitioning/CYLInteractiveTrasition.h>
+#import <CYLAppBaseFrameWork/CYLTransitionHeader.h>
+#import <CYLAppBaseFrameWork/CYLBaseTransitionAnimation.h>
+#import <CYLAppBaseFrameWork/CYLTansitionManager.h>
+#import <CYLAppBaseFrameWork/CYLInteractiveTrasition.h>
 
 /* webview */
-#import <CYLAppBaseFrameWork/CYLWebViewContainer/CYLWebViewController.h>
+#import <CYLAppBaseFrameWork/CYLWebViewController.h>
 

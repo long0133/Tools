@@ -21,6 +21,7 @@ typedef NS_ENUM(NSInteger,CYLNetWorkStatus) {
 };
 @interface CYLNetWorkManager : NSObject
 + (instancetype)shareInstance;
+- (void)setBaseUrl:(NSURL*)baseurl;
 - (CYLNetWorkStatus)currentNetWorkStatus;
 
 #pragma mark - 网络请求
