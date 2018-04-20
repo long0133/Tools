@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47EAF8C1D6E7F67269341689 /* libPods-CYLAppBaseFrameWork-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CDF611A57EB18EAEF520055 /* libPods-CYLAppBaseFrameWork-Demo.a */; };
 		E7716ACD208833E100A3A0EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7716ACC208833E100A3A0EF /* AppDelegate.m */; };
 		E7716AD0208833E100A3A0EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7716ACF208833E100A3A0EF /* ViewController.m */; };
 		E7716AD3208833E100A3A0EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7716AD1208833E100A3A0EF /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E797921F2088704800538641 /* CYLAppBaseFrameWork.framework in Frameworks */,
+				47EAF8C1D6E7F67269341689 /* libPods-CYLAppBaseFrameWork-Demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,5 +11,6 @@ end
 target 'CYLAppBaseFrameWork' do
 pod 'AFNetworking'
 pod 'Masonry'
+pod 'libextobjc'
 project 'CYLAppBaseFrameWork/CYLAppBaseFrameWork.xcodeproj'
 end
