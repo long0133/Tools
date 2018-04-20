@@ -50,17 +50,20 @@ PODS:
   - libextobjc/RuntimeExtensions (0.4.1)
   - libextobjc/UmbrellaHeader (0.4.1)
   - Masonry (1.1.0)
+  - ReactiveObjC (3.1.0)
 
 DEPENDENCIES:
   - AFNetworking
   - libextobjc
   - Masonry
+  - ReactiveObjC
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
 
-PODFILE CHECKSUM: 201867e616a604e58acc65346e47ab540b3b7b87
+PODFILE CHECKSUM: e88f59b2e999234e485b9ea70a2c759d996ccaf8
 
 COCOAPODS: 1.4.0
