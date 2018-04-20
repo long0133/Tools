@@ -23,6 +23,10 @@
 /* Begin PBXBuildFile section */
 		1236922BC8B5C3F8AF8088C7 /* libPods-CYLAppBaseFrameWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F72F843EEAF0A802002A47 /* libPods-CYLAppBaseFrameWork.a */; };
 		E367F75820843CC00058FB4A /* CYLAppBaseFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F75620843CC00058FB4A /* CYLAppBaseFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3B3467A2089E344005AA263 /* ZJNButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E3B346782089E343005AA263 /* ZJNButton.h */; };
+		E3B3467B2089E344005AA263 /* ZJNButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B346792089E343005AA263 /* ZJNButton.m */; };
+		E3B3467E2089E3A8005AA263 /* CYLCountDownButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E3B3467C2089E3A8005AA263 /* CYLCountDownButton.h */; };
+		E3B3467F2089E3A8005AA263 /* CYLCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B3467D2089E3A8005AA263 /* CYLCountDownButton.m */; };
 		E79791DA2088684000538641 /* CYLNetWorkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E797919A2088684000538641 /* CYLNetWorkCache.m */; };
 		E79791DB2088684000538641 /* Constant.h in Headers */ = {isa = PBXBuildFile; fileRef = E797919B2088684000538641 /* Constant.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E79791DC2088684000538641 /* CYLNetworkConfigration.h in Headers */ = {isa = PBXBuildFile; fileRef = E797919C2088684000538641 /* CYLNetworkConfigration.h */; };
@@ -88,6 +92,10 @@
 		E367F75320843CC00058FB4A /* CYLAppBaseFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CYLAppBaseFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E367F75620843CC00058FB4A /* CYLAppBaseFrameWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLAppBaseFrameWork.h; sourceTree = "<group>"; };
 		E367F75720843CC00058FB4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3B346782089E343005AA263 /* ZJNButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNButton.h; sourceTree = "<group>"; };
+		E3B346792089E343005AA263 /* ZJNButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNButton.m; sourceTree = "<group>"; };
+		E3B3467C2089E3A8005AA263 /* CYLCountDownButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLCountDownButton.h; sourceTree = "<group>"; };
+		E3B3467D2089E3A8005AA263 /* CYLCountDownButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLCountDownButton.m; sourceTree = "<group>"; };
 		E797919A2088684000538641 /* CYLNetWorkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLNetWorkCache.m; sourceTree = "<group>"; };
 		E797919B2088684000538641 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		E797919C2088684000538641 /* CYLNetworkConfigration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLNetworkConfigration.h; sourceTree = "<group>"; };
@@ -215,6 +223,10 @@
 		E367F8182089CD330058FB4A /* UIWidgets */ = {
 			isa = PBXGroup;
 			children = (
+				E3B346782089E343005AA263 /* ZJNButton.h */,
+				E3B346792089E343005AA263 /* ZJNButton.m */,
+				E3B3467C2089E3A8005AA263 /* CYLCountDownButton.h */,
+				E3B3467D2089E3A8005AA263 /* CYLCountDownButton.m */,
 			);
 			path = UIWidgets;
 			sourceTree = "<group>";
@@ -358,6 +370,7 @@
 				E79791FE2088684000538641 /* CYLTansitionManager.h in Headers */,
 				E79791FB2088684000538641 /* CYLBaseTransitionAnimation.h in Headers */,
 				E797920E2088684000538641 /* UIScrollView+Refresh.h in Headers */,
+				E3B3467E2089E3A8005AA263 /* CYLCountDownButton.h in Headers */,
 				E79791FD2088684000538641 /* CYLInteractiveTrasition.h in Headers */,
 				E79791FF2088684000538641 /* CYLTransitionHeader.h in Headers */,
 				E79791EB2088684000538641 /* CYLWebViewController.h in Headers */,
@@ -365,6 +378,7 @@
 				E79792122088684000538641 /* CYLRefershHeader.h in Headers */,
 				E79791DC2088684000538641 /* CYLNetworkConfigration.h in Headers */,
 				E79792052088684000538641 /* UIView+MJExtension.h in Headers */,
+				E3B3467A2089E344005AA263 /* ZJNButton.h in Headers */,
 				E79791E92088684000538641 /* CYLWebView.h in Headers */,
 				E79791F42088684000538641 /* CYLCardPopUpController.h in Headers */,
 				E79792112088684000538641 /* CYLRefereshTool.h in Headers */,
@@ -527,6 +541,7 @@
 				E79791F92088684000538641 /* CYLCardPopUpController.m in Sources */,
 				E79791F62088684000538641 /* CardPopUpTransitionAnimation.m in Sources */,
 				E79791E82088684000538641 /* CYLWebView.m in Sources */,
+				E3B3467B2089E344005AA263 /* ZJNButton.m in Sources */,
 				E79791E72088684000538641 /* CYLWebHandle.m in Sources */,
 				E79791E62088684000538641 /* CYLWebViewController.m in Sources */,
 				E797920C2088684000538641 /* CYLRefereshConstant.m in Sources */,
@@ -546,6 +561,7 @@
 				E79792072088684000538641 /* CYLRefereshTool.m in Sources */,
 				E79791DE2088684000538641 /* CYLResponse.m in Sources */,
 				E797920D2088684000538641 /* UIView+MJExtension.m in Sources */,
+				E3B3467F2089E3A8005AA263 /* CYLCountDownButton.m in Sources */,
 				E79791F12088684000538641 /* CYLInteractiveTrasition.m in Sources */,
 				E79792012088684000538641 /* FXBlurView.m in Sources */,
 				E79792022088684000538641 /* CYLBaseTransitionAnimation.m in Sources */,
