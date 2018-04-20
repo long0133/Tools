@@ -83,9 +83,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4181406B70A0C613BC44D313 /* Pods-CYLAppBaseFrameWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYLAppBaseFrameWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CYLAppBaseFrameWork/Pods-CYLAppBaseFrameWork.debug.xcconfig"; sourceTree = "<group>"; };
+		25EF33A826596973BC2CBB77 /* Pods-CYLAppBaseFrameWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYLAppBaseFrameWork.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CYLAppBaseFrameWork/Pods-CYLAppBaseFrameWork.release.xcconfig"; sourceTree = "<group>"; };
 		73F72F843EEAF0A802002A47 /* libPods-CYLAppBaseFrameWork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYLAppBaseFrameWork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		789F4A85B7A5ACB881A5A01C /* Pods-CYLAppBaseFrameWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYLAppBaseFrameWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-CYLAppBaseFrameWork/Pods-CYLAppBaseFrameWork.release.xcconfig"; sourceTree = "<group>"; };
 		E367F75320843CC00058FB4A /* CYLAppBaseFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CYLAppBaseFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E367F75620843CC00058FB4A /* CYLAppBaseFrameWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLAppBaseFrameWork.h; sourceTree = "<group>"; };
 		E367F75720843CC00058FB4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -147,6 +146,7 @@
 		E79791D82088684000538641 /* CYLRefereshTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLRefereshTool.h; sourceTree = "<group>"; };
 		E79791D92088684000538641 /* CYLRefershHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLRefershHeader.h; sourceTree = "<group>"; };
 		E797922F208890C400538641 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F169485C4DC906F4145DD87E /* Pods-CYLAppBaseFrameWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYLAppBaseFrameWork.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CYLAppBaseFrameWork/Pods-CYLAppBaseFrameWork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,8 +164,8 @@
 		1639E4F3398054FA11DDC842 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4181406B70A0C613BC44D313 /* Pods-CYLAppBaseFrameWork.debug.xcconfig */,
-				789F4A85B7A5ACB881A5A01C /* Pods-CYLAppBaseFrameWork.release.xcconfig */,
+				F169485C4DC906F4145DD87E /* Pods-CYLAppBaseFrameWork.debug.xcconfig */,
+				25EF33A826596973BC2CBB77 /* Pods-CYLAppBaseFrameWork.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -668,7 +668,7 @@
 		};
 		E367F75C20843CC00058FB4A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4181406B70A0C613BC44D313 /* Pods-CYLAppBaseFrameWork.debug.xcconfig */;
+			baseConfigurationReference = F169485C4DC906F4145DD87E /* Pods-CYLAppBaseFrameWork.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
@@ -708,7 +708,7 @@
 		};
 		E367F75D20843CC00058FB4A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 789F4A85B7A5ACB881A5A01C /* Pods-CYLAppBaseFrameWork.release.xcconfig */;
+			baseConfigurationReference = 25EF33A826596973BC2CBB77 /* Pods-CYLAppBaseFrameWork.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;

@@ -10,6 +10,7 @@
 #define PrefixHeader_pch
 
 #import <Masonry/Masonry.h>
+#import <ReactiveObjC.h>
 #import "UIView+MJExtension.h"
 #endif /* PrefixHeader_pch */
 
