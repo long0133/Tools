@@ -79,13 +79,6 @@
 		E79792102088684000538641 /* CYLRefereshBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791D72088684000538641 /* CYLRefereshBaseView.h */; };
 		E79792112088684000538641 /* CYLRefereshTool.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791D82088684000538641 /* CYLRefereshTool.h */; };
 		E79792122088684000538641 /* CYLRefershHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791D92088684000538641 /* CYLRefershHeader.h */; };
-		E797922520888ED500538641 /* CYLNestingView.h in Headers */ = {isa = PBXBuildFile; fileRef = E797922320888ED500538641 /* CYLNestingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E797922620888ED500538641 /* CYLNestingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E797922420888ED500538641 /* CYLNestingView.m */; };
-		E797922920888EF200538641 /* CYLNestMainTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = E797922720888EF200538641 /* CYLNestMainTableView.h */; };
-		E797922A20888EF200538641 /* CYLNestMainTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E797922820888EF200538641 /* CYLNestMainTableView.m */; };
-		E797922D20888F0500538641 /* CYLNestSubTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = E797922B20888F0500538641 /* CYLNestSubTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E797922E20888F0500538641 /* CYLNestSubTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E797922C20888F0500538641 /* CYLNestSubTableView.m */; };
-		E7979231208893C500538641 /* CYLNestMainTableViewDatasource.h in Headers */ = {isa = PBXBuildFile; fileRef = E7979230208893C500538641 /* CYLNestMainTableViewDatasource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -152,14 +145,7 @@
 		E79791D72088684000538641 /* CYLRefereshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLRefereshBaseView.h; sourceTree = "<group>"; };
 		E79791D82088684000538641 /* CYLRefereshTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLRefereshTool.h; sourceTree = "<group>"; };
 		E79791D92088684000538641 /* CYLRefershHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLRefershHeader.h; sourceTree = "<group>"; };
-		E797922320888ED500538641 /* CYLNestingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLNestingView.h; sourceTree = "<group>"; };
-		E797922420888ED500538641 /* CYLNestingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLNestingView.m; sourceTree = "<group>"; };
-		E797922720888EF200538641 /* CYLNestMainTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLNestMainTableView.h; sourceTree = "<group>"; };
-		E797922820888EF200538641 /* CYLNestMainTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLNestMainTableView.m; sourceTree = "<group>"; };
-		E797922B20888F0500538641 /* CYLNestSubTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLNestSubTableView.h; sourceTree = "<group>"; };
-		E797922C20888F0500538641 /* CYLNestSubTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLNestSubTableView.m; sourceTree = "<group>"; };
 		E797922F208890C400538641 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		E7979230208893C500538641 /* CYLNestMainTableViewDatasource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLNestMainTableViewDatasource.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,7 +197,6 @@
 		E367F75520843CC00058FB4A /* CYLAppBaseFrameWork */ = {
 			isa = PBXGroup;
 			children = (
-				E79792202088735000538641 /* CYLNestingTableView */,
 				E79791982088684000538641 /* CYLNetworkManager */,
 				E79791C82088684000538641 /* CYLReferesh */,
 				E79791B32088684000538641 /* CYLTransitioning */,
@@ -348,20 +333,6 @@
 			path = Animator;
 			sourceTree = "<group>";
 		};
-		E79792202088735000538641 /* CYLNestingTableView */ = {
-			isa = PBXGroup;
-			children = (
-				E797922320888ED500538641 /* CYLNestingView.h */,
-				E797922420888ED500538641 /* CYLNestingView.m */,
-				E797922720888EF200538641 /* CYLNestMainTableView.h */,
-				E797922820888EF200538641 /* CYLNestMainTableView.m */,
-				E797922B20888F0500538641 /* CYLNestSubTableView.h */,
-				E797922C20888F0500538641 /* CYLNestSubTableView.m */,
-				E7979230208893C500538641 /* CYLNestMainTableViewDatasource.h */,
-			);
-			path = CYLNestingTableView;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -378,10 +349,6 @@
 				E79791FB2088684000538641 /* CYLBaseTransitionAnimation.h in Headers */,
 				E797920E2088684000538641 /* UIScrollView+Refresh.h in Headers */,
 				E79791FD2088684000538641 /* CYLInteractiveTrasition.h in Headers */,
-				E7979231208893C500538641 /* CYLNestMainTableViewDatasource.h in Headers */,
-				E797922520888ED500538641 /* CYLNestingView.h in Headers */,
-				E797922920888EF200538641 /* CYLNestMainTableView.h in Headers */,
-				E797922D20888F0500538641 /* CYLNestSubTableView.h in Headers */,
 				E79791FF2088684000538641 /* CYLTransitionHeader.h in Headers */,
 				E79791EB2088684000538641 /* CYLWebViewController.h in Headers */,
 				E79791EA2088684000538641 /* CYLWebHandle.h in Headers */,
@@ -548,7 +515,6 @@
 			files = (
 				E79791F82088684000538641 /* SpreadTransitionAnimation.m in Sources */,
 				E79791F92088684000538641 /* CYLCardPopUpController.m in Sources */,
-				E797922A20888EF200538641 /* CYLNestMainTableView.m in Sources */,
 				E79791F62088684000538641 /* CardPopUpTransitionAnimation.m in Sources */,
 				E79791E82088684000538641 /* CYLWebView.m in Sources */,
 				E79791E72088684000538641 /* CYLWebHandle.m in Sources */,
@@ -561,12 +527,10 @@
 				E79791E22088684000538641 /* CYLNetworkConfigration.m in Sources */,
 				E797920A2088684000538641 /* CYLRefereshBaseView.m in Sources */,
 				E79791F72088684000538641 /* MagicMoveTransitionAnimation.m in Sources */,
-				E797922E20888F0500538641 /* CYLNestSubTableView.m in Sources */,
 				E79791ED2088684000538641 /* LSFileAssistant.m in Sources */,
 				E79791DA2088684000538641 /* CYLNetWorkCache.m in Sources */,
 				E79792062088684000538641 /* CYLRefershHeader.m in Sources */,
 				E79791E32088684000538641 /* CYLApiBaseManager.m in Sources */,
-				E797922620888ED500538641 /* CYLNestingView.m in Sources */,
 				E79791E12088684000538641 /* CYLNetWorkManager.m in Sources */,
 				E79792082088684000538641 /* Animator.m in Sources */,
 				E79792072088684000538641 /* CYLRefereshTool.m in Sources */,

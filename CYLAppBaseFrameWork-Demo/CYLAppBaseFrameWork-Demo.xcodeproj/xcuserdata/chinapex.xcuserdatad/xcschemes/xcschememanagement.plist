@@ -4,15 +4,10 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CYLAppBaseFrameWork.xcscheme</key>
+		<key>CYLAppBaseFrameWork-Demo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
-		</dict>
-		<key>CYLAppBaseFrameWorks.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 </dict>
