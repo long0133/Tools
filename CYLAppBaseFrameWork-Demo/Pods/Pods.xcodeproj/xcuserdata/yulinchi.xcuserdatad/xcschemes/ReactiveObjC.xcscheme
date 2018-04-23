@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ABC3B7E4377ADFB87BEC538B4FCDB5DF"
-               BlueprintName = "Pods-CYLAppBaseFrameWork"
+               BlueprintIdentifier = "EF81CD9957C6CC0E78D6A3449B92F781"
+               BlueprintName = "ReactiveObjC"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libPods-CYLAppBaseFrameWork.a">
+               BuildableName = "libReactiveObjC.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

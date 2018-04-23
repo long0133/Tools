@@ -21,11 +21,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		1236922BC8B5C3F8AF8088C7 /* libPods-CYLAppBaseFrameWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F72F843EEAF0A802002A47 /* libPods-CYLAppBaseFrameWork.a */; };
 		E367F75820843CC00058FB4A /* CYLAppBaseFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F75620843CC00058FB4A /* CYLAppBaseFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E3B3467A2089E344005AA263 /* ZJNButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E3B346782089E343005AA263 /* ZJNButton.h */; };
+		E3B3467A2089E344005AA263 /* ZJNButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E3B346782089E343005AA263 /* ZJNButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3B3467B2089E344005AA263 /* ZJNButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B346792089E343005AA263 /* ZJNButton.m */; };
-		E3B3467E2089E3A8005AA263 /* CYLCountDownButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E3B3467C2089E3A8005AA263 /* CYLCountDownButton.h */; };
+		E3B3467E2089E3A8005AA263 /* CYLCountDownButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E3B3467C2089E3A8005AA263 /* CYLCountDownButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3B3467F2089E3A8005AA263 /* CYLCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B3467D2089E3A8005AA263 /* CYLCountDownButton.m */; };
 		E79791DA2088684000538641 /* CYLNetWorkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E797919A2088684000538641 /* CYLNetWorkCache.m */; };
 		E79791DB2088684000538641 /* Constant.h in Headers */ = {isa = PBXBuildFile; fileRef = E797919B2088684000538641 /* Constant.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -162,7 +161,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1236922BC8B5C3F8AF8088C7 /* libPods-CYLAppBaseFrameWork.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,15 +368,15 @@
 				E79791FE2088684000538641 /* CYLTansitionManager.h in Headers */,
 				E79791FB2088684000538641 /* CYLBaseTransitionAnimation.h in Headers */,
 				E797920E2088684000538641 /* UIScrollView+Refresh.h in Headers */,
-				E3B3467E2089E3A8005AA263 /* CYLCountDownButton.h in Headers */,
 				E79791FD2088684000538641 /* CYLInteractiveTrasition.h in Headers */,
+				E3B3467E2089E3A8005AA263 /* CYLCountDownButton.h in Headers */,
 				E79791FF2088684000538641 /* CYLTransitionHeader.h in Headers */,
+				E3B3467A2089E344005AA263 /* ZJNButton.h in Headers */,
 				E79791EB2088684000538641 /* CYLWebViewController.h in Headers */,
 				E79791EA2088684000538641 /* CYLWebHandle.h in Headers */,
 				E79792122088684000538641 /* CYLRefershHeader.h in Headers */,
 				E79791DC2088684000538641 /* CYLNetworkConfigration.h in Headers */,
 				E79792052088684000538641 /* UIView+MJExtension.h in Headers */,
-				E3B3467A2089E344005AA263 /* ZJNButton.h in Headers */,
 				E79791E92088684000538641 /* CYLWebView.h in Headers */,
 				E79791F42088684000538641 /* CYLCardPopUpController.h in Headers */,
 				E79792112088684000538641 /* CYLRefereshTool.h in Headers */,
@@ -688,6 +686,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = NO;
@@ -718,7 +717,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
@@ -728,6 +727,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = NO;
@@ -758,7 +758,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};

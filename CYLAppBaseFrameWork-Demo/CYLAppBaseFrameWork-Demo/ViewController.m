@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import <CYLAppBaseFrameWork/CYLAppBaseFrameWork.h>
-#import <ReactiveObjC.h>
 
 @interface ViewController ()
 
@@ -19,6 +18,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    CYLCountDownButton *btn = [[CYLCountDownButton alloc] initWithPeriod:10 beginCountBlock:^{
+        NSLog(@"begin");
+    } countToZeroBlock:^{
+        NSLog(@"end");
+    }];
+    
+    btn.frame = CGRectMake(200, 100, 50, 30);
+    [btn setTitle:@"countDown" forState:UIControlStateNormal];;
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    btn.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:btn];
 }
 
 @end
