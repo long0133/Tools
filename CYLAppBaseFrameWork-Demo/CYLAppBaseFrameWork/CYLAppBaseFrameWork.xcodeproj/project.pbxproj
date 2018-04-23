@@ -21,11 +21,28 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		A08419BC164B854CAFD9567F /* libPods-CYLAppBaseFrameWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F72F843EEAF0A802002A47 /* libPods-CYLAppBaseFrameWork.a */; };
 		E367F75820843CC00058FB4A /* CYLAppBaseFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F75620843CC00058FB4A /* CYLAppBaseFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3B3467A2089E344005AA263 /* ZJNButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E3B346782089E343005AA263 /* ZJNButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3B3467B2089E344005AA263 /* ZJNButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B346792089E343005AA263 /* ZJNButton.m */; };
 		E3B3467E2089E3A8005AA263 /* CYLCountDownButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E3B3467C2089E3A8005AA263 /* CYLCountDownButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3B3467F2089E3A8005AA263 /* CYLCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B3467D2089E3A8005AA263 /* CYLCountDownButton.m */; };
+		E7704876208DB02A00B2D0C1 /* IDMPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E7704866208DB02A00B2D0C1 /* IDMPhotoBrowser.bundle */; };
+		E7704877208DB02A00B2D0C1 /* IDMCaptionView.h in Headers */ = {isa = PBXBuildFile; fileRef = E7704867208DB02A00B2D0C1 /* IDMCaptionView.h */; };
+		E7704878208DB02A00B2D0C1 /* IDMPBLocalizations.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E7704868208DB02A00B2D0C1 /* IDMPBLocalizations.bundle */; };
+		E7704879208DB02A00B2D0C1 /* IDMZoomingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = E7704869208DB02A00B2D0C1 /* IDMZoomingScrollView.h */; };
+		E770487A208DB02A00B2D0C1 /* IDMPhoto.h in Headers */ = {isa = PBXBuildFile; fileRef = E770486A208DB02A00B2D0C1 /* IDMPhoto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E770487B208DB02A00B2D0C1 /* IDMPhotoBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = E770486B208DB02A00B2D0C1 /* IDMPhotoBrowser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E770487C208DB02A00B2D0C1 /* IDMTapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E770486C208DB02A00B2D0C1 /* IDMTapDetectingImageView.m */; };
+		E770487D208DB02A00B2D0C1 /* IDMTapDetectingView.h in Headers */ = {isa = PBXBuildFile; fileRef = E770486D208DB02A00B2D0C1 /* IDMTapDetectingView.h */; };
+		E770487E208DB02A00B2D0C1 /* IDMCaptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E770486E208DB02A00B2D0C1 /* IDMCaptionView.m */; };
+		E770487F208DB02A00B2D0C1 /* IDMPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = E770486F208DB02A00B2D0C1 /* IDMPhoto.m */; };
+		E7704880208DB02A00B2D0C1 /* IDMZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7704870208DB02A00B2D0C1 /* IDMZoomingScrollView.m */; };
+		E7704881208DB02A00B2D0C1 /* IDMPhotoProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E7704871208DB02A00B2D0C1 /* IDMPhotoProtocol.h */; };
+		E7704882208DB02A00B2D0C1 /* IDMPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = E7704872208DB02A00B2D0C1 /* IDMPhotoBrowser.m */; };
+		E7704883208DB02A00B2D0C1 /* IDMPBConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = E7704873208DB02A00B2D0C1 /* IDMPBConstants.h */; };
+		E7704884208DB02A00B2D0C1 /* IDMTapDetectingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7704874208DB02A00B2D0C1 /* IDMTapDetectingView.m */; };
+		E7704885208DB02A00B2D0C1 /* IDMTapDetectingImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = E7704875208DB02A00B2D0C1 /* IDMTapDetectingImageView.h */; };
 		E79791DA2088684000538641 /* CYLNetWorkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E797919A2088684000538641 /* CYLNetWorkCache.m */; };
 		E79791DB2088684000538641 /* Constant.h in Headers */ = {isa = PBXBuildFile; fileRef = E797919B2088684000538641 /* Constant.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E79791DC2088684000538641 /* CYLNetworkConfigration.h in Headers */ = {isa = PBXBuildFile; fileRef = E797919C2088684000538641 /* CYLNetworkConfigration.h */; };
@@ -95,6 +112,22 @@
 		E3B346792089E343005AA263 /* ZJNButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNButton.m; sourceTree = "<group>"; };
 		E3B3467C2089E3A8005AA263 /* CYLCountDownButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLCountDownButton.h; sourceTree = "<group>"; };
 		E3B3467D2089E3A8005AA263 /* CYLCountDownButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLCountDownButton.m; sourceTree = "<group>"; };
+		E7704866208DB02A00B2D0C1 /* IDMPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IDMPhotoBrowser.bundle; sourceTree = "<group>"; };
+		E7704867208DB02A00B2D0C1 /* IDMCaptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMCaptionView.h; sourceTree = "<group>"; };
+		E7704868208DB02A00B2D0C1 /* IDMPBLocalizations.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IDMPBLocalizations.bundle; sourceTree = "<group>"; };
+		E7704869208DB02A00B2D0C1 /* IDMZoomingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMZoomingScrollView.h; sourceTree = "<group>"; };
+		E770486A208DB02A00B2D0C1 /* IDMPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPhoto.h; sourceTree = "<group>"; };
+		E770486B208DB02A00B2D0C1 /* IDMPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPhotoBrowser.h; sourceTree = "<group>"; };
+		E770486C208DB02A00B2D0C1 /* IDMTapDetectingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMTapDetectingImageView.m; sourceTree = "<group>"; };
+		E770486D208DB02A00B2D0C1 /* IDMTapDetectingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMTapDetectingView.h; sourceTree = "<group>"; };
+		E770486E208DB02A00B2D0C1 /* IDMCaptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMCaptionView.m; sourceTree = "<group>"; };
+		E770486F208DB02A00B2D0C1 /* IDMPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPhoto.m; sourceTree = "<group>"; };
+		E7704870208DB02A00B2D0C1 /* IDMZoomingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMZoomingScrollView.m; sourceTree = "<group>"; };
+		E7704871208DB02A00B2D0C1 /* IDMPhotoProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPhotoProtocol.h; sourceTree = "<group>"; };
+		E7704872208DB02A00B2D0C1 /* IDMPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPhotoBrowser.m; sourceTree = "<group>"; };
+		E7704873208DB02A00B2D0C1 /* IDMPBConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPBConstants.h; sourceTree = "<group>"; };
+		E7704874208DB02A00B2D0C1 /* IDMTapDetectingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMTapDetectingView.m; sourceTree = "<group>"; };
+		E7704875208DB02A00B2D0C1 /* IDMTapDetectingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMTapDetectingImageView.h; sourceTree = "<group>"; };
 		E797919A2088684000538641 /* CYLNetWorkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLNetWorkCache.m; sourceTree = "<group>"; };
 		E797919B2088684000538641 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		E797919C2088684000538641 /* CYLNetworkConfigration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLNetworkConfigration.h; sourceTree = "<group>"; };
@@ -161,6 +194,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A08419BC164B854CAFD9567F /* libPods-CYLAppBaseFrameWork.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,12 +255,36 @@
 		E367F8182089CD330058FB4A /* UIWidgets */ = {
 			isa = PBXGroup;
 			children = (
+				E7704865208DB02A00B2D0C1 /* IDMPhotoBrowser */,
 				E3B346782089E343005AA263 /* ZJNButton.h */,
 				E3B346792089E343005AA263 /* ZJNButton.m */,
 				E3B3467C2089E3A8005AA263 /* CYLCountDownButton.h */,
 				E3B3467D2089E3A8005AA263 /* CYLCountDownButton.m */,
 			);
 			path = UIWidgets;
+			sourceTree = "<group>";
+		};
+		E7704865208DB02A00B2D0C1 /* IDMPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				E7704866208DB02A00B2D0C1 /* IDMPhotoBrowser.bundle */,
+				E7704867208DB02A00B2D0C1 /* IDMCaptionView.h */,
+				E7704868208DB02A00B2D0C1 /* IDMPBLocalizations.bundle */,
+				E7704869208DB02A00B2D0C1 /* IDMZoomingScrollView.h */,
+				E770486A208DB02A00B2D0C1 /* IDMPhoto.h */,
+				E770486B208DB02A00B2D0C1 /* IDMPhotoBrowser.h */,
+				E770486C208DB02A00B2D0C1 /* IDMTapDetectingImageView.m */,
+				E770486D208DB02A00B2D0C1 /* IDMTapDetectingView.h */,
+				E770486E208DB02A00B2D0C1 /* IDMCaptionView.m */,
+				E770486F208DB02A00B2D0C1 /* IDMPhoto.m */,
+				E7704870208DB02A00B2D0C1 /* IDMZoomingScrollView.m */,
+				E7704871208DB02A00B2D0C1 /* IDMPhotoProtocol.h */,
+				E7704872208DB02A00B2D0C1 /* IDMPhotoBrowser.m */,
+				E7704873208DB02A00B2D0C1 /* IDMPBConstants.h */,
+				E7704874208DB02A00B2D0C1 /* IDMTapDetectingView.m */,
+				E7704875208DB02A00B2D0C1 /* IDMTapDetectingImageView.h */,
+			);
+			path = IDMPhotoBrowser;
 			sourceTree = "<group>";
 		};
 		E79791982088684000538641 /* CYLNetworkManager */ = {
@@ -362,16 +420,20 @@
 			files = (
 				E79791DD2088684000538641 /* CYLNetWorkManager.h in Headers */,
 				E79791E02088684000538641 /* CYLResponse.h in Headers */,
+				E770487D208DB02A00B2D0C1 /* IDMTapDetectingView.h in Headers */,
 				E79791E42088684000538641 /* ReformerProtocol.h in Headers */,
 				E79791E52088684000538641 /* CYLApiBaseManager.h in Headers */,
 				E79791DB2088684000538641 /* Constant.h in Headers */,
 				E79791FE2088684000538641 /* CYLTansitionManager.h in Headers */,
+				E7704885208DB02A00B2D0C1 /* IDMTapDetectingImageView.h in Headers */,
 				E79791FB2088684000538641 /* CYLBaseTransitionAnimation.h in Headers */,
 				E797920E2088684000538641 /* UIScrollView+Refresh.h in Headers */,
 				E79791FD2088684000538641 /* CYLInteractiveTrasition.h in Headers */,
 				E3B3467E2089E3A8005AA263 /* CYLCountDownButton.h in Headers */,
 				E79791FF2088684000538641 /* CYLTransitionHeader.h in Headers */,
+				E770487B208DB02A00B2D0C1 /* IDMPhotoBrowser.h in Headers */,
 				E3B3467A2089E344005AA263 /* ZJNButton.h in Headers */,
+				E770487A208DB02A00B2D0C1 /* IDMPhoto.h in Headers */,
 				E79791EB2088684000538641 /* CYLWebViewController.h in Headers */,
 				E79791EA2088684000538641 /* CYLWebHandle.h in Headers */,
 				E79792122088684000538641 /* CYLRefershHeader.h in Headers */,
@@ -379,12 +441,15 @@
 				E79792052088684000538641 /* UIView+MJExtension.h in Headers */,
 				E79791E92088684000538641 /* CYLWebView.h in Headers */,
 				E79791F42088684000538641 /* CYLCardPopUpController.h in Headers */,
+				E7704881208DB02A00B2D0C1 /* IDMPhotoProtocol.h in Headers */,
 				E79792112088684000538641 /* CYLRefereshTool.h in Headers */,
+				E7704879208DB02A00B2D0C1 /* IDMZoomingScrollView.h in Headers */,
 				E79791F32088684000538641 /* MagicMoveTransitionAnimation.h in Headers */,
 				E367F75820843CC00058FB4A /* CYLAppBaseFrameWork.h in Headers */,
 				E797920F2088684000538641 /* CYLRefreshFooter.h in Headers */,
 				E79791EE2088684000538641 /* LSFileAssistant.h in Headers */,
 				E79791F52088684000538641 /* SpreadTransitionAnimation.h in Headers */,
+				E7704877208DB02A00B2D0C1 /* IDMCaptionView.h in Headers */,
 				E79791DF2088684000538641 /* CYLNetWorkCache.h in Headers */,
 				E79792092088684000538641 /* Animator.h in Headers */,
 				E79792102088684000538641 /* CYLRefereshBaseView.h in Headers */,
@@ -393,6 +458,7 @@
 				E79791FA2088684000538641 /* CardPopUpTransitionAnimation.h in Headers */,
 				E79792002088684000538641 /* UIImage+Blur.h in Headers */,
 				E79791FC2088684000538641 /* FXBlurView.h in Headers */,
+				E7704883208DB02A00B2D0C1 /* IDMPBConstants.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +529,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7704876208DB02A00B2D0C1 /* IDMPhotoBrowser.bundle in Resources */,
+				E7704878208DB02A00B2D0C1 /* IDMPBLocalizations.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,14 +603,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E770487E208DB02A00B2D0C1 /* IDMCaptionView.m in Sources */,
 				E79791F82088684000538641 /* SpreadTransitionAnimation.m in Sources */,
 				E79791F92088684000538641 /* CYLCardPopUpController.m in Sources */,
 				E79791F62088684000538641 /* CardPopUpTransitionAnimation.m in Sources */,
+				E7704882208DB02A00B2D0C1 /* IDMPhotoBrowser.m in Sources */,
 				E79791E82088684000538641 /* CYLWebView.m in Sources */,
 				E3B3467B2089E344005AA263 /* ZJNButton.m in Sources */,
 				E79791E72088684000538641 /* CYLWebHandle.m in Sources */,
 				E79791E62088684000538641 /* CYLWebViewController.m in Sources */,
 				E797920C2088684000538641 /* CYLRefereshConstant.m in Sources */,
+				E770487F208DB02A00B2D0C1 /* IDMPhoto.m in Sources */,
 				E79791F22088684000538641 /* UIImage+Blur.m in Sources */,
 				E79791F02088684000538641 /* CYLTansitionManager.m in Sources */,
 				E797920B2088684000538641 /* CYLRefreshFooter.m in Sources */,
@@ -552,18 +623,21 @@
 				E79791F72088684000538641 /* MagicMoveTransitionAnimation.m in Sources */,
 				E79791ED2088684000538641 /* LSFileAssistant.m in Sources */,
 				E79791DA2088684000538641 /* CYLNetWorkCache.m in Sources */,
+				E770487C208DB02A00B2D0C1 /* IDMTapDetectingImageView.m in Sources */,
 				E79792062088684000538641 /* CYLRefershHeader.m in Sources */,
 				E79791E32088684000538641 /* CYLApiBaseManager.m in Sources */,
 				E79791E12088684000538641 /* CYLNetWorkManager.m in Sources */,
 				E79792082088684000538641 /* Animator.m in Sources */,
 				E79792072088684000538641 /* CYLRefereshTool.m in Sources */,
 				E79791DE2088684000538641 /* CYLResponse.m in Sources */,
+				E7704880208DB02A00B2D0C1 /* IDMZoomingScrollView.m in Sources */,
 				E797920D2088684000538641 /* UIView+MJExtension.m in Sources */,
 				E3B3467F2089E3A8005AA263 /* CYLCountDownButton.m in Sources */,
 				E79791F12088684000538641 /* CYLInteractiveTrasition.m in Sources */,
 				E79792012088684000538641 /* FXBlurView.m in Sources */,
 				E79792022088684000538641 /* CYLBaseTransitionAnimation.m in Sources */,
 				E79792042088684000538641 /* UIScrollView+Refresh.m in Sources */,
+				E7704884208DB02A00B2D0C1 /* IDMTapDetectingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
