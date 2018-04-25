@@ -35,6 +35,8 @@ FOUNDATION_EXPORT const unsigned char CYLAppBaseFrameWorkVersionString[];
 /* webview */
 #import <CYLAppBaseFrameWork/CYLWebViewController.h>
 
+/* uiwidgets */
 #import <CYLAppBaseFrameWork/ZJNButton.h>
 #import <CYLAppBaseFrameWork/CYLCountDownButton.h>
 
+#import <CYLAppBaseFrameWork/HYFAppInfo.h>

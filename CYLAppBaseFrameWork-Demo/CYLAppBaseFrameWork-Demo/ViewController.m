@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <CYLAppBaseFrameWork/CYLAppBaseFrameWork.h>
+#import "Account.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    Account *account = [Account randomMnemonicAccount];
+    NSLog(@"%@",account);
 }
 
 @end

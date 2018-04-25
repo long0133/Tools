@@ -41,7 +41,7 @@
 			[self handleSingleTap:touch];
 			break;
 		case 2:
-#warning 取消双击效果
+// 取消双击效果
 //			[self handleDoubleTap:touch];
 			break;
 		case 3:

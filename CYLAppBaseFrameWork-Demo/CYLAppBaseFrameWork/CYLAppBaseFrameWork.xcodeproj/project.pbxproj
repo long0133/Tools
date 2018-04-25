@@ -21,7 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		A08419BC164B854CAFD9567F /* libPods-CYLAppBaseFrameWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F72F843EEAF0A802002A47 /* libPods-CYLAppBaseFrameWork.a */; };
+		1C13029464156E033709FA03 /* libPods-CYLAppBaseFrameWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D299CF95D16F21D7E619657 /* libPods-CYLAppBaseFrameWork.a */; };
 		E35421E620901E4D00D9E3C9 /* HYFAppInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = E35421E420901E4D00D9E3C9 /* HYFAppInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E35421E720901E4D00D9E3C9 /* HYFAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E35421E520901E4D00D9E3C9 /* HYFAppInfo.m */; };
 		E367F75820843CC00058FB4A /* CYLAppBaseFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F75620843CC00058FB4A /* CYLAppBaseFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,8 +33,6 @@
 		E7704877208DB02A00B2D0C1 /* IDMCaptionView.h in Headers */ = {isa = PBXBuildFile; fileRef = E7704867208DB02A00B2D0C1 /* IDMCaptionView.h */; };
 		E7704878208DB02A00B2D0C1 /* IDMPBLocalizations.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E7704868208DB02A00B2D0C1 /* IDMPBLocalizations.bundle */; };
 		E7704879208DB02A00B2D0C1 /* IDMZoomingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = E7704869208DB02A00B2D0C1 /* IDMZoomingScrollView.h */; };
-		E770487A208DB02A00B2D0C1 /* IDMPhoto.h in Headers */ = {isa = PBXBuildFile; fileRef = E770486A208DB02A00B2D0C1 /* IDMPhoto.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E770487B208DB02A00B2D0C1 /* IDMPhotoBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = E770486B208DB02A00B2D0C1 /* IDMPhotoBrowser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E770487C208DB02A00B2D0C1 /* IDMTapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E770486C208DB02A00B2D0C1 /* IDMTapDetectingImageView.m */; };
 		E770487D208DB02A00B2D0C1 /* IDMTapDetectingView.h in Headers */ = {isa = PBXBuildFile; fileRef = E770486D208DB02A00B2D0C1 /* IDMTapDetectingView.h */; };
 		E770487E208DB02A00B2D0C1 /* IDMCaptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E770486E208DB02A00B2D0C1 /* IDMCaptionView.m */; };
@@ -106,7 +104,7 @@
 
 /* Begin PBXFileReference section */
 		25EF33A826596973BC2CBB77 /* Pods-CYLAppBaseFrameWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYLAppBaseFrameWork.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CYLAppBaseFrameWork/Pods-CYLAppBaseFrameWork.release.xcconfig"; sourceTree = "<group>"; };
-		73F72F843EEAF0A802002A47 /* libPods-CYLAppBaseFrameWork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYLAppBaseFrameWork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D299CF95D16F21D7E619657 /* libPods-CYLAppBaseFrameWork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYLAppBaseFrameWork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35421E420901E4D00D9E3C9 /* HYFAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYFAppInfo.h; sourceTree = "<group>"; };
 		E35421E520901E4D00D9E3C9 /* HYFAppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYFAppInfo.m; sourceTree = "<group>"; };
 		E367F75320843CC00058FB4A /* CYLAppBaseFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CYLAppBaseFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,7 +198,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A08419BC164B854CAFD9567F /* libPods-CYLAppBaseFrameWork.a in Frameworks */,
+				1C13029464156E033709FA03 /* libPods-CYLAppBaseFrameWork.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +217,7 @@
 		48AF7ACBC360677E97C0898F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				73F72F843EEAF0A802002A47 /* libPods-CYLAppBaseFrameWork.a */,
+				9D299CF95D16F21D7E619657 /* libPods-CYLAppBaseFrameWork.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -450,9 +448,7 @@
 				E79791FD2088684000538641 /* CYLInteractiveTrasition.h in Headers */,
 				E3B3467E2089E3A8005AA263 /* CYLCountDownButton.h in Headers */,
 				E79791FF2088684000538641 /* CYLTransitionHeader.h in Headers */,
-				E770487B208DB02A00B2D0C1 /* IDMPhotoBrowser.h in Headers */,
 				E3B3467A2089E344005AA263 /* ZJNButton.h in Headers */,
-				E770487A208DB02A00B2D0C1 /* IDMPhoto.h in Headers */,
 				E79791EB2088684000538641 /* CYLWebViewController.h in Headers */,
 				E79791EA2088684000538641 /* CYLWebHandle.h in Headers */,
 				E79792122088684000538641 /* CYLRefershHeader.h in Headers */,

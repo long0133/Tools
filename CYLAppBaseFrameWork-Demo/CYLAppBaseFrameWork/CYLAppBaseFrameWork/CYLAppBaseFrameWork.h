@@ -39,10 +39,4 @@ FOUNDATION_EXPORT const unsigned char CYLAppBaseFrameWorkVersionString[];
 #import <CYLAppBaseFrameWork/ZJNButton.h>
 #import <CYLAppBaseFrameWork/CYLCountDownButton.h>
 
-/* phototBrowser */
-#import <CYLAppBaseFrameWork/IDMPhoto.h>
-#import <CYLAppBaseFrameWork/IDMPhotoBrowser.h>
-
-#import <CYLAppBaseFrameWork/Attributes.h>
-
 #import <CYLAppBaseFrameWork/HYFAppInfo.h>
