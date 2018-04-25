@@ -60,7 +60,7 @@ caption = _caption;
     for (UIImage *image in imagesArray) {
         if ([image isKindOfClass:[UIImage class]]) {
             IDMPhoto *photo = [IDMPhoto photoWithImage:image];
-            photo.placeholderImage = smallPlaceHolder;
+//            photo.placeholderImage = smallPlaceHolder;
             [photos addObject:photo];
         }
     }
@@ -74,7 +74,7 @@ caption = _caption;
     for (NSString *path in pathsArray) {
         if ([path isKindOfClass:[NSString class]]) {
             IDMPhoto *photo = [IDMPhoto photoWithFilePath:path];
-            photo.placeholderImage = smallPlaceHolder;
+//            photo.placeholderImage = smallPlaceHolder;
             [photos addObject:photo];
         }
     }
@@ -92,7 +92,7 @@ caption = _caption;
         }
         else if ([url isKindOfClass:[NSString class]]) {
             IDMPhoto *photo = [IDMPhoto photoWithURL:[NSURL URLWithString:url]];
-            photo.placeholderImage = smallPlaceHolder;
+//            photo.placeholderImage = smallPlaceHolder;
             [photos addObject:photo];
         }
     }
@@ -142,14 +142,12 @@ caption = _caption;
         } else if (_photoURL) {
             // Load async from web (using SDWebImageManager)
 			
-            [[SDWebImageManager sharedManager] downloadImageWithURL:_photoURL options:SDWebImageRetryFailed progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+            [[SDWebImageManager sharedManager] loadImageWithURL:_photoURL options:SDWebImageRetryFailed progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
                 CGFloat progress = ((CGFloat)receivedSize)/((CGFloat)expectedSize);
-                
                 if (self.progressUpdateBlock) {
                     self.progressUpdateBlock(progress);
                 }
-
-            } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+            } completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, SDImageCacheType cacheType, BOOL finished, NSURL * _Nullable imageURL) {
                 if (image) {
                     self.underlyingImage = image;
                 }

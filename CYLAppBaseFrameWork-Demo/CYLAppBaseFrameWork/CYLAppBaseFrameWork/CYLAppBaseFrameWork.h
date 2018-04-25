@@ -42,3 +42,7 @@ FOUNDATION_EXPORT const unsigned char CYLAppBaseFrameWorkVersionString[];
 /* phototBrowser */
 #import <CYLAppBaseFrameWork/IDMPhoto.h>
 #import <CYLAppBaseFrameWork/IDMPhotoBrowser.h>
+
+#import <CYLAppBaseFrameWork/Attributes.h>
+
+#import <CYLAppBaseFrameWork/HYFAppInfo.h>

@@ -22,6 +22,8 @@
 
 /* Begin PBXBuildFile section */
 		A08419BC164B854CAFD9567F /* libPods-CYLAppBaseFrameWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F72F843EEAF0A802002A47 /* libPods-CYLAppBaseFrameWork.a */; };
+		E35421E620901E4D00D9E3C9 /* HYFAppInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = E35421E420901E4D00D9E3C9 /* HYFAppInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E35421E720901E4D00D9E3C9 /* HYFAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E35421E520901E4D00D9E3C9 /* HYFAppInfo.m */; };
 		E367F75820843CC00058FB4A /* CYLAppBaseFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F75620843CC00058FB4A /* CYLAppBaseFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3B3467A2089E344005AA263 /* ZJNButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E3B346782089E343005AA263 /* ZJNButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3B3467B2089E344005AA263 /* ZJNButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B346792089E343005AA263 /* ZJNButton.m */; };
@@ -105,9 +107,13 @@
 /* Begin PBXFileReference section */
 		25EF33A826596973BC2CBB77 /* Pods-CYLAppBaseFrameWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYLAppBaseFrameWork.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CYLAppBaseFrameWork/Pods-CYLAppBaseFrameWork.release.xcconfig"; sourceTree = "<group>"; };
 		73F72F843EEAF0A802002A47 /* libPods-CYLAppBaseFrameWork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYLAppBaseFrameWork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E35421E420901E4D00D9E3C9 /* HYFAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYFAppInfo.h; sourceTree = "<group>"; };
+		E35421E520901E4D00D9E3C9 /* HYFAppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYFAppInfo.m; sourceTree = "<group>"; };
 		E367F75320843CC00058FB4A /* CYLAppBaseFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CYLAppBaseFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E367F75620843CC00058FB4A /* CYLAppBaseFrameWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLAppBaseFrameWork.h; sourceTree = "<group>"; };
 		E367F75720843CC00058FB4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3A8FD52208ECE9B00CB1077 /* Attributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Attributes.h; sourceTree = "<group>"; };
+		E3A8FD53208ED0C100CB1077 /* CYLUIConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLUIConstant.h; sourceTree = "<group>"; };
 		E3B346782089E343005AA263 /* ZJNButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNButton.h; sourceTree = "<group>"; };
 		E3B346792089E343005AA263 /* ZJNButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNButton.m; sourceTree = "<group>"; };
 		E3B3467C2089E3A8005AA263 /* CYLCountDownButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLCountDownButton.h; sourceTree = "<group>"; };
@@ -218,6 +224,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E35421E320901E3D00D9E3C9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E35421E420901E4D00D9E3C9 /* HYFAppInfo.h */,
+				E35421E520901E4D00D9E3C9 /* HYFAppInfo.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		E367F74920843CC00058FB4A = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +254,7 @@
 		E367F75520843CC00058FB4A /* CYLAppBaseFrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				E35421E320901E3D00D9E3C9 /* Other */,
 				E367F8182089CD330058FB4A /* UIWidgets */,
 				E79791982088684000538641 /* CYLNetworkManager */,
 				E79791AE2088684000538641 /* FileManager */,
@@ -246,7 +262,9 @@
 				E79791B32088684000538641 /* CYLTransitioning */,
 				E79791A72088684000538641 /* CYLWebViewContainer */,
 				E367F75620843CC00058FB4A /* CYLAppBaseFrameWork.h */,
+				E3A8FD52208ECE9B00CB1077 /* Attributes.h */,
 				E797922F208890C400538641 /* PrefixHeader.pch */,
+				E3A8FD53208ED0C100CB1077 /* CYLUIConstant.h */,
 				E367F75720843CC00058FB4A /* Info.plist */,
 			);
 			path = CYLAppBaseFrameWork;
@@ -418,6 +436,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E35421E620901E4D00D9E3C9 /* HYFAppInfo.h in Headers */,
 				E79791DD2088684000538641 /* CYLNetWorkManager.h in Headers */,
 				E79791E02088684000538641 /* CYLResponse.h in Headers */,
 				E770487D208DB02A00B2D0C1 /* IDMTapDetectingView.h in Headers */,
@@ -638,6 +657,7 @@
 				E79792022088684000538641 /* CYLBaseTransitionAnimation.m in Sources */,
 				E79792042088684000538641 /* UIScrollView+Refresh.m in Sources */,
 				E7704884208DB02A00B2D0C1 /* IDMTapDetectingView.m in Sources */,
+				E35421E720901E4D00D9E3C9 /* HYFAppInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
