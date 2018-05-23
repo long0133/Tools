@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="dPS-1f-Qpw" customClass="LookWalletCodeView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SUV-jQ-gGd">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kgi-HB-ewg">
+                    <rect key="frame" x="30" y="136.5" width="260" height="295"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ecg-dn-hhf">
+                            <rect key="frame" x="30" y="30" width="200" height="200"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ecg-dn-hhf" secondAttribute="height" id="6OG-ip-7gg"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="257-eY-3jJ">
+                            <rect key="frame" x="0.0" y="250" width="260" height="45"/>
+                            <color key="backgroundColor" red="0.99215686270000003" green="0.85098039219999999" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="EJn-kK-pGy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="使用冷钱包扫描，下一步">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="SureButtonCilick:" destination="dPS-1f-Qpw" eventType="touchUpInside" id="xQ0-Fs-g07"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="257-eY-3jJ" firstAttribute="leading" secondItem="Kgi-HB-ewg" secondAttribute="leading" id="53j-PZ-kqo"/>
+                        <constraint firstItem="257-eY-3jJ" firstAttribute="top" secondItem="ecg-dn-hhf" secondAttribute="bottom" constant="20" id="Drl-LK-sjD"/>
+                        <constraint firstAttribute="trailing" secondItem="257-eY-3jJ" secondAttribute="trailing" id="bfc-5d-ibY"/>
+                        <constraint firstAttribute="bottom" secondItem="257-eY-3jJ" secondAttribute="bottom" id="eaE-ir-YxD"/>
+                        <constraint firstAttribute="trailing" secondItem="ecg-dn-hhf" secondAttribute="trailing" constant="30" id="hzl-Cw-436"/>
+                        <constraint firstItem="ecg-dn-hhf" firstAttribute="top" secondItem="Kgi-HB-ewg" secondAttribute="top" constant="30" id="k5J-9M-PJq"/>
+                        <constraint firstItem="ecg-dn-hhf" firstAttribute="leading" secondItem="Kgi-HB-ewg" secondAttribute="leading" constant="30" id="sdW-wW-wKm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Kgi-HB-ewg" firstAttribute="centerY" secondItem="SUV-jQ-gGd" secondAttribute="centerY" id="1ML-Do-OZN"/>
+                <constraint firstItem="Kgi-HB-ewg" firstAttribute="leading" secondItem="dPS-1f-Qpw" secondAttribute="leading" constant="30" id="3YL-zT-mEx"/>
+                <constraint firstItem="SUV-jQ-gGd" firstAttribute="leading" secondItem="dPS-1f-Qpw" secondAttribute="leading" id="Q5y-ep-SZs"/>
+                <constraint firstAttribute="bottom" secondItem="SUV-jQ-gGd" secondAttribute="bottom" id="RAV-1k-Kul"/>
+                <constraint firstItem="Kgi-HB-ewg" firstAttribute="centerX" secondItem="SUV-jQ-gGd" secondAttribute="centerX" id="WvO-ez-cVi"/>
+                <constraint firstAttribute="trailing" secondItem="SUV-jQ-gGd" secondAttribute="trailing" id="Xhn-S9-D6t"/>
+                <constraint firstAttribute="trailing" secondItem="Kgi-HB-ewg" secondAttribute="trailing" constant="30" id="gxR-P2-7j0"/>
+                <constraint firstItem="SUV-jQ-gGd" firstAttribute="top" secondItem="dPS-1f-Qpw" secondAttribute="top" id="lZ2-sR-rLX"/>
+            </constraints>
+            <connections>
+                <outlet property="alertContView" destination="Kgi-HB-ewg" id="Sli-sP-fhq"/>
+                <outlet property="alertSureButton" destination="257-eY-3jJ" id="B1L-jt-dvI"/>
+                <outlet property="codeImageView" destination="ecg-dn-hhf" id="6qm-e0-vlb"/>
+                <outlet property="maskView" destination="SUV-jQ-gGd" id="F6M-kB-SVq"/>
+            </connections>
+            <point key="canvasLocation" x="-201" y="-169"/>
+        </view>
+    </objects>
+</document>

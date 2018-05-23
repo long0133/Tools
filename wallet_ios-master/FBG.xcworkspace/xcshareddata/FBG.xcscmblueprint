@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "994EE7A21D578BFD256D3CF9C16FF2F199C899AE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EDED7EAA4232CFF0C61EDCF9CA5725F5251879DF" : 9223372036854775807,
+    "994EE7A21D578BFD256D3CF9C16FF2F199C899AE" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E478FA2C-B204-4723-B487-9A2936A44BB3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EDED7EAA4232CFF0C61EDCF9CA5725F5251879DF" : "..\/Downloads\/webView",
+    "994EE7A21D578BFD256D3CF9C16FF2F199C899AE" : "FBG\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FBG",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FBG.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/xtaci\/cryptobox_ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "994EE7A21D578BFD256D3CF9C16FF2F199C899AE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/wuzaozhou\/webView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EDED7EAA4232CFF0C61EDCF9CA5725F5251879DF"
+    }
+  ]
+}

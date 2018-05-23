@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddWalletSucessVC">
+            <connections>
+                <outlet property="enterWalletBtn" destination="5qq-xZ-z40" id="tD7-cb-Jx1"/>
+                <outlet property="headImage" destination="68l-jr-oTT" id="l1w-sc-gqi"/>
+                <outlet property="infoLB" destination="AfP-sx-fwb" id="ypR-MR-F7P"/>
+                <outlet property="sucessLB" destination="L4C-4X-iWr" id="5eW-gv-6G9"/>
+                <outlet property="sureButton" destination="QJy-3B-OFC" id="NGK-9Y-eLz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" tag="998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_wallet_success_neo" translatesAutoresizingMaskIntoConstraints="NO" id="68l-jr-oTT">
+                    <rect key="frame" x="88.5" y="81" width="144" height="122"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJy-3B-OFC">
+                    <rect key="frame" x="40" y="453" width="240" height="45"/>
+                    <color key="backgroundColor" red="1" green="0.51869422197341919" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="zrH-ST-QEy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="进入钱包开始备份">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sureButtonCilick:" destination="-1" eventType="touchUpInside" id="bnO-eT-zWc"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" tag="999" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加成功" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4C-4X-iWr">
+                    <rect key="frame" x="125.5" y="243" width="69.5" height="21"/>
+                    <color key="tintColor" red="0.061078853905200958" green="0.56859415769577026" blue="0.36264759302139282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.067442692816257477" green="0.56854897737503052" blue="0.36679691076278687" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请及时进入钱包并备份种子保障钱包的安全，种子一经备份则会在APP上消失，需要牢记，否则钱包无法找回" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfP-sx-fwb">
+                    <rect key="frame" x="25" y="284" width="270" height="50.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qq-xZ-z40">
+                    <rect key="frame" x="87" y="503" width="146" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="VtE-Np-F8e"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="暂不备份，直接进入钱包">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="enterWalletBtnClicked:" destination="-1" eventType="touchUpInside" id="LUX-Sh-xi0"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DIj-st-RRG">
+                    <rect key="frame" x="87" y="535" width="146" height="1"/>
+                    <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="IPe-Nr-u5X"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5qq-xZ-z40" firstAttribute="top" secondItem="QJy-3B-OFC" secondAttribute="bottom" constant="5" id="14w-cc-2QT"/>
+                <constraint firstAttribute="trailing" secondItem="AfP-sx-fwb" secondAttribute="trailing" constant="25" id="5KP-d3-YzR"/>
+                <constraint firstItem="AfP-sx-fwb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="7IS-py-2sc"/>
+                <constraint firstItem="DIj-st-RRG" firstAttribute="width" secondItem="5qq-xZ-z40" secondAttribute="width" id="8dE-A1-xQ2"/>
+                <constraint firstItem="AfP-sx-fwb" firstAttribute="centerX" secondItem="L4C-4X-iWr" secondAttribute="centerX" id="AUZ-W9-NgH"/>
+                <constraint firstItem="L4C-4X-iWr" firstAttribute="centerX" secondItem="68l-jr-oTT" secondAttribute="centerX" id="BHe-xj-ELs"/>
+                <constraint firstAttribute="bottom" secondItem="5qq-xZ-z40" secondAttribute="bottom" constant="20" id="Hpa-BV-sl5"/>
+                <constraint firstAttribute="trailing" secondItem="QJy-3B-OFC" secondAttribute="trailing" constant="40" id="K0D-WU-LLQ"/>
+                <constraint firstItem="68l-jr-oTT" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.5" id="KIz-0w-Qfb"/>
+                <constraint firstItem="68l-jr-oTT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ndu-DC-3oD"/>
+                <constraint firstItem="DIj-st-RRG" firstAttribute="centerX" secondItem="5qq-xZ-z40" secondAttribute="centerX" id="Tit-Fp-LrX"/>
+                <constraint firstItem="AfP-sx-fwb" firstAttribute="top" secondItem="L4C-4X-iWr" secondAttribute="bottom" constant="20" id="UH5-Fw-pB2"/>
+                <constraint firstItem="L4C-4X-iWr" firstAttribute="top" secondItem="68l-jr-oTT" secondAttribute="bottom" constant="40" id="XIa-4W-dqo"/>
+                <constraint firstItem="5qq-xZ-z40" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Zps-5B-oSd"/>
+                <constraint firstItem="QJy-3B-OFC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eYh-9X-AHZ"/>
+                <constraint firstItem="DIj-st-RRG" firstAttribute="baseline" secondItem="5qq-xZ-z40" secondAttribute="baseline" constant="6" id="fRU-KV-wxV"/>
+            </constraints>
+            <point key="canvasLocation" x="119" y="-30"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add_wallet_success_neo" width="144" height="122"/>
+    </resources>
+</document>

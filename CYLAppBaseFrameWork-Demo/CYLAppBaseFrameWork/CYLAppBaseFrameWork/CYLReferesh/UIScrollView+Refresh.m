@@ -148,9 +148,11 @@ static BOOL isObserving = false; /**< 是否观察中 */
 }
 
 - (void)dealloc{
-    [self removeObserver:self forKeyPath:CYLRefreshKeyPathContentOffset];
-    [self removeObserver:self forKeyPath:CYLRefreshKeyPathContentSize];
-    [self removeObserver:self forKeyPath:CYLRefreshKeyPathPanState];
+    if (isObserving) {
+        [self removeObserver:self forKeyPath:CYLRefreshKeyPathContentOffset];
+        [self removeObserver:self forKeyPath:CYLRefreshKeyPathContentSize];
+        [self removeObserver:self forKeyPath:CYLRefreshKeyPathPanState];
+    }
     
     isObserving = false;
 }

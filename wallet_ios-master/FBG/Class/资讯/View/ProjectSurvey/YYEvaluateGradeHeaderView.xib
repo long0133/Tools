@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="skb-7h-JAT" customClass="YYEvaluateGradeHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="225"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyR-SS-sRf">
+                    <rect key="frame" x="20" y="0.0" width="346" height="36"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="项目评分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAi-bk-qsL">
+                            <rect key="frame" x="0.0" y="18" width="61.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ajd-Kv-Xkh" customClass="DBHGradeView">
+                            <rect key="frame" x="73.5" y="22" width="65" height="10"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="65" id="10J-qf-FVU"/>
+                                <constraint firstAttribute="height" constant="10" id="iu8-ZP-mZu"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMg-KH-Eov">
+                            <rect key="frame" x="148.5" y="18" width="37" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.99215686270000003" green="0.51764705879999995" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11人已评" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xk-op-1n0">
+                            <rect key="frame" x="286.5" y="18" width="59.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="IAi-bk-qsL" firstAttribute="leading" secondItem="vyR-SS-sRf" secondAttribute="leading" id="EkH-nf-yGZ"/>
+                        <constraint firstAttribute="bottom" secondItem="IAi-bk-qsL" secondAttribute="bottom" id="Epd-nj-BIw"/>
+                        <constraint firstAttribute="trailing" secondItem="3xk-op-1n0" secondAttribute="trailing" id="Gqt-Ej-8IR"/>
+                        <constraint firstItem="eMg-KH-Eov" firstAttribute="leading" secondItem="Ajd-Kv-Xkh" secondAttribute="trailing" constant="10" id="JP3-z5-fUp"/>
+                        <constraint firstItem="eMg-KH-Eov" firstAttribute="centerY" secondItem="Ajd-Kv-Xkh" secondAttribute="centerY" id="R9t-dG-Q3l"/>
+                        <constraint firstItem="3xk-op-1n0" firstAttribute="centerY" secondItem="eMg-KH-Eov" secondAttribute="centerY" id="UyH-wF-cCE"/>
+                        <constraint firstAttribute="height" constant="36" id="Voi-oB-baS"/>
+                        <constraint firstItem="3xk-op-1n0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eMg-KH-Eov" secondAttribute="trailing" constant="10" id="e9a-eR-FdU"/>
+                        <constraint firstItem="Ajd-Kv-Xkh" firstAttribute="centerY" secondItem="IAi-bk-qsL" secondAttribute="centerY" id="lLf-gn-DEF"/>
+                        <constraint firstItem="Ajd-Kv-Xkh" firstAttribute="leading" secondItem="IAi-bk-qsL" secondAttribute="trailing" constant="12" id="vla-9T-sGX"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PaT-2o-f4v" customClass="D5FlowButtonView">
+                    <rect key="frame" x="20" y="54" width="346" height="88"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="87.5" id="M4J-Hl-RdM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vyR-SS-sRf" firstAttribute="top" secondItem="skb-7h-JAT" secondAttribute="top" id="COZ-sl-kK3"/>
+                <constraint firstItem="PaT-2o-f4v" firstAttribute="centerX" secondItem="vyR-SS-sRf" secondAttribute="centerX" id="HeF-iK-4Bm"/>
+                <constraint firstItem="PaT-2o-f4v" firstAttribute="top" secondItem="vyR-SS-sRf" secondAttribute="bottom" constant="18" id="LPQ-M9-iAa"/>
+                <constraint firstItem="vyR-SS-sRf" firstAttribute="centerX" secondItem="skb-7h-JAT" secondAttribute="centerX" id="cJX-fP-07K"/>
+                <constraint firstItem="vyR-SS-sRf" firstAttribute="leading" secondItem="skb-7h-JAT" secondAttribute="leading" constant="20" id="lAg-nX-OvY"/>
+                <constraint firstItem="PaT-2o-f4v" firstAttribute="width" secondItem="vyR-SS-sRf" secondAttribute="width" id="q5I-pD-NLW"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="PaT-2o-f4v" secondAttribute="bottom" id="uYZ-qG-XLc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="gradeLabel" destination="eMg-KH-Eov" id="Lg2-fv-Hh2"/>
+                <outlet property="gradeTipLabel" destination="3xk-op-1n0" id="000-fM-vvt"/>
+                <outlet property="gradeView" destination="Ajd-Kv-Xkh" id="QqB-3B-i00"/>
+                <outlet property="tagView" destination="PaT-2o-f4v" id="gPy-i0-QB4"/>
+                <outlet property="tagViewHeightConstraint" destination="M4J-Hl-RdM" id="FMl-lk-h7j"/>
+                <outlet property="titleLabel" destination="IAi-bk-qsL" id="D55-l0-n47"/>
+                <outlet property="topHeightConstraint" destination="Voi-oB-baS" id="Qb4-hZ-Qnm"/>
+                <outlet property="topView" destination="vyR-SS-sRf" id="gxS-hH-4nX"/>
+            </connections>
+            <point key="canvasLocation" x="-288" y="-323.5"/>
+        </view>
+    </objects>
+</document>

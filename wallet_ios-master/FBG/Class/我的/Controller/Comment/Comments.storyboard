@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Comment Detail View Controller-->
+        <scene sceneID="r0C-BM-Wph">
+            <objects>
+                <viewController storyboardIdentifier="COMMENTDETAIL_STORYBOARD_ID" id="7WW-Vv-MMO" customClass="DBHCommentDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jts-tR-ThU"/>
+                        <viewControllerLayoutGuide type="bottom" id="x2m-u4-FCH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cbm-kF-ASi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="213" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="rbD-so-eCX">
+                                <rect key="frame" x="0.0" y="21" width="375" height="596"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="7WW-Vv-MMO" id="TaF-s6-T31"/>
+                                    <outlet property="delegate" destination="7WW-Vv-MMO" id="qn0-KI-n1L"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XGX-1G-iYU">
+                                <rect key="frame" x="-0.5" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HNM-mK-7m8" customClass="DBHPlaceHolderTextView">
+                                        <rect key="frame" x="15" y="8" width="345" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="send" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="7WW-Vv-MMO" id="6YC-3P-or9"/>
+                                        </connections>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="HNM-mK-7m8" firstAttribute="centerY" secondItem="XGX-1G-iYU" secondAttribute="centerY" id="Vtz-Ra-fKv"/>
+                                    <constraint firstAttribute="height" constant="50" id="b2f-k2-n9b"/>
+                                    <constraint firstItem="HNM-mK-7m8" firstAttribute="top" secondItem="XGX-1G-iYU" secondAttribute="top" constant="8" id="nqd-vz-SkT"/>
+                                    <constraint firstItem="HNM-mK-7m8" firstAttribute="centerX" secondItem="XGX-1G-iYU" secondAttribute="centerX" id="vOB-ht-Blu"/>
+                                    <constraint firstItem="HNM-mK-7m8" firstAttribute="leading" secondItem="XGX-1G-iYU" secondAttribute="leading" constant="15" id="zxJ-im-4kW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rbD-so-eCX" firstAttribute="width" secondItem="cbm-kF-ASi" secondAttribute="width" id="Mcs-mD-rze"/>
+                            <constraint firstItem="XGX-1G-iYU" firstAttribute="top" secondItem="rbD-so-eCX" secondAttribute="bottom" id="RLo-iR-1AO"/>
+                            <constraint firstItem="XGX-1G-iYU" firstAttribute="width" secondItem="cbm-kF-ASi" secondAttribute="width" id="SJ5-sD-COI"/>
+                            <constraint firstItem="XGX-1G-iYU" firstAttribute="centerX" secondItem="cbm-kF-ASi" secondAttribute="centerX" id="XeX-HQ-4T7"/>
+                            <constraint firstItem="rbD-so-eCX" firstAttribute="top" secondItem="Jts-tR-ThU" secondAttribute="bottom" constant="1" id="ZkG-Rh-MEg"/>
+                            <constraint firstItem="rbD-so-eCX" firstAttribute="centerX" secondItem="cbm-kF-ASi" secondAttribute="centerX" id="pbx-6k-Dee"/>
+                            <constraint firstItem="x2m-u4-FCH" firstAttribute="top" secondItem="XGX-1G-iYU" secondAttribute="bottom" id="qah-z7-Eq0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="rbD-so-eCX" id="q5S-1P-Faa"/>
+                        <outlet property="textView" destination="HNM-mK-7m8" id="XpJ-8B-6LK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8E9-sO-pIC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="-477.21139430284859"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6vD-vb-Kfo">
+            <objects>
+                <viewController id="Gex-Rb-uhd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p6u-a2-dHL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ibc-Wa-BxO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

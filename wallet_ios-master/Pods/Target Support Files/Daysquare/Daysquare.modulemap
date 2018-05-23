@@ -1,0 +1,6 @@
+framework module Daysquare {
+  umbrella header "Daysquare-umbrella.h"
+
+  export *
+  module * { export * }
+}

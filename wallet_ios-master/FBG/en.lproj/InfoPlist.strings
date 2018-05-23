@@ -1,0 +1,19 @@
+/* 
+  InfoPlist.strings
+  FBG
+
+  Created by mac on 2017/7/28.
+  Copyright © 2017年 ButtonRoot. All rights reserved.
+*/
+
+CFBundleDisplayName = "Inwecrypto";
+
+/*权限声明*/
+NSPhotoLibraryUsageDescription = "App will access your album permissions in the saved picture service";
+NSCameraUsageDescription = "App will access your album permissions in the scanned QR code service";
+NSPhotoLibraryAddUsageDescription = "App will access your album permissions in the saved picture service";
+NSMicrophoneUsageDescription = "App will access your microphone permissions in the record audio service";
+NSAppleMusicUsageDescription = "App will access your applemusic permissions in the saved video service";
+NSRemindersUsageDescription = "App will access your reminders permissions in the market reminder service";
+
+NSFaceIDUsageDescription = "App will access your Face ID when login";

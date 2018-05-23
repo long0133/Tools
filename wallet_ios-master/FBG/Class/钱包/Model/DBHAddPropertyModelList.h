@@ -1,0 +1,27 @@
+//
+//  DBHAddPropertyModelList.h
+//
+//  Created by   on 2018/2/12
+//  Copyright (c) 2018 __MyCompanyName__. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+
+
+@interface DBHAddPropertyModelList : NSObject <NSCoding, NSCopying>
+
+@property (nonatomic, strong) NSString *address;
+@property (nonatomic, strong) NSString *icon;
+@property (nonatomic, assign) double listIdentifier;
+@property (nonatomic, strong) NSString *createdAt;
+@property (nonatomic, strong) NSString *categoryId;
+@property (nonatomic, strong) NSString *updatedAt;
+@property (nonatomic, strong) NSString *gas;
+@property (nonatomic, strong) NSString *name;
+
++ (instancetype)modelObjectWithDictionary:(NSDictionary *)dict;
+- (instancetype)initWithDictionary:(NSDictionary *)dict;
+- (NSDictionary *)dictionaryRepresentation;
+
+@end

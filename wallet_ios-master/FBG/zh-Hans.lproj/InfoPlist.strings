@@ -1,0 +1,20 @@
+/* 
+  InfoPlist.strings
+  FBG
+
+  Created by mac on 2017/7/28.
+  Copyright © 2017年 ButtonRoot. All rights reserved.
+*/
+
+CFBundleDisplayName = "Inwecrypto";
+
+/*权限声明*/
+NSPhotoLibraryUsageDescription = "此应用会在保存图片服务中访问您的相册权限";
+NSCameraUsageDescription = "此应用会在扫描二维码服务中访问您的相机权限";
+NSPhotoLibraryAddUsageDescription = "此应用会在保存图片服务中访问您的相册权限";
+
+NSMicrophoneUsageDescription = "此应用会在录制音频服务中访问您的麦克风权限";
+NSAppleMusicUsageDescription = "此应用会在保存视频服务中访问您的媒体资料库";
+NSRemindersUsageDescription = "此应用会在行情提醒服务中访问您的提醒事项";
+
+NSFaceIDUsageDescription = "此应用会在登录时请求您的Face ID";

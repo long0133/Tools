@@ -1,0 +1,118 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Charts (3.0.2):
+    - Charts/Core (= 3.0.2)
+  - Charts/Core (3.0.2)
+  - CHKLineChart (1.6.0)
+  - Daysquare (0.1.0)
+  - HyphenateLite (3.3.9)
+  - IQKeyboardManager (4.0.13)
+  - JKBigInteger (0.0.1)
+  - JSONModel (1.7.0)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.0.0)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.15.3)
+  - QBImagePickerController (3.4.0)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SnapKit (4.0.0)
+  - TTTAttributedLabel (2.0.0)
+  - TwitterCore (3.1.0)
+  - TwitterKit (3.3.0):
+    - TwitterCore (>= 3.1.0)
+  - TZImagePickerController (1.7.9)
+  - UMengAnalytics-NO-IDFA (4.2.5)
+  - YUSegment (1.0.1)
+  - YYCache (1.0.4)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - Charts (= 3.0.2)
+  - CHKLineChart (~> 1.6.0)
+  - Daysquare (= 0.1.0)
+  - HyphenateLite
+  - IQKeyboardManager (~> 4.0.8)
+  - JKBigInteger (~> 0.0.1)
+  - JSONModel (~> 1.7.0)
+  - Masonry (~> 1.1.0)
+  - MBProgressHUD (~> 1.0.0)
+  - MJExtension (~> 3.0.13)
+  - MJRefresh (~> 3.1.12)
+  - QBImagePickerController (~> 3.4.0)
+  - SDWebImage (~> 3.7)
+  - SnapKit (~> 4.0.0)
+  - TTTAttributedLabel
+  - TwitterKit (~> 3.3.0)
+  - TZImagePickerController (~> 1.7.9)
+  - UMengAnalytics-NO-IDFA
+  - YUSegment (= 1.0.1)
+  - YYCache (~> 1.0.4)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - Charts
+    - CHKLineChart
+    - Daysquare
+    - HyphenateLite
+    - IQKeyboardManager
+    - JKBigInteger
+    - JSONModel
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - QBImagePickerController
+    - SDWebImage
+    - SnapKit
+    - TTTAttributedLabel
+    - TwitterCore
+    - TwitterKit
+    - TZImagePickerController
+    - UMengAnalytics-NO-IDFA
+    - YUSegment
+    - YYCache
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
+  CHKLineChart: 0c03b07af330c4fbc67ca6501d6d9144cc76ece9
+  Daysquare: 682586c9b2a96958633e2f967a43054a718d1a09
+  HyphenateLite: ea4401abe02101c627e4adc989b01ae21ca63f27
+  IQKeyboardManager: 8eab4d8111418414619d1df8e4779ce5d0f8d7e2
+  JKBigInteger: 7f3894ca331bf271a8e2ee0d5329707ca6eda6e0
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  TwitterCore: 644d59e75abccb26cf0a9050d2c4dea0e5412241
+  TwitterKit: a2e60ddcedbf54091eac6f27685ca7a87681e1d7
+  TZImagePickerController: 0a8ff228d287ebdd7d485e8c42a2a932894f1fba
+  UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
+  YUSegment: 6e527a2e4ad60404ef67bd766b4dcf6d59419c9c
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+
+PODFILE CHECKSUM: 83671bfc487aebfcb812a6d7af2c3e424b931e27
+
+COCOAPODS: 1.5.0

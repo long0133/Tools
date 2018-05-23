@@ -1,0 +1,229 @@
+//
+//  FBG-PrefixHeader.pch
+//  FBG
+//
+//  Created by mac on 2017/7/12.
+//  Copyright © 2017年 ButtonRoot. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#ifndef FBG_PrefixHeader_pch
+#define FBG_PrefixHeader_pch
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+#endif
+
+#ifdef DEBUG
+#define NSLog(FORMAT, ...) fprintf(__stderrp,"%s %s:%d\t%s\t%s\n",__TIME__,[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, __FUNCTION__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define NSLog(...)
+#endif
+
+#pragma mark ------ Notification name --------
+#define NOTIFICATION_NAME_ISHIDEZERO @"NOTIFICATION_NAME_ISHIDEZERO"
+#define NOTIFICATION_NAME_REFRESHWALLETLIST @"NOTIFICATION_NAME_REFRESHWALLETLIST"
+
+
+#define COMMENT_HAS_CHANGED @"COMMENT_HAS_CHANGED"
+#define COMMENT_HAS_ADDED @"COMMENT_HAS_ADDED"
+#define LAST_USER_EMAIL @"LAST_USER_EMAIL"
+
+#pragma mark - UserDefaults的key(key必须放在获取UserDefaults之前)
+// 是否登录
+#define IS_LOGIN_KEY @"isLogin"
+// 是否隐藏币种为0
+#define IS_HIDE_ZERO_KEY @"isHideZero"
+// 是否显示资讯首页的引导key
+#define IS_SHOW_INFO_GUIDE @"isShowInfoGuide"
+// 是否显示钱包首页的引导key
+#define IS_SHOW_WALLET_GUIDE @"isShowWalletGuide"
+// 是否显示添加钱包的引导key
+#define IS_SHOW_ADD_WALLET_GUIDE @"isShowAddWalletGuide"
+// 是否显示钱包详情的引导key
+#define IS_SHOW_WALLET_DETAIL_GUIDE @"isShowWalletDetailGuide"
+// 网络状态key
+#define APP_NETWORK_API_KEY @"appNetWorkApi"
+// 钱包状态key
+#define APP_WALLET_STATUS_KEY @"appWalletStatus"
+// 推送注册ID key
+#define APP_DEVICE_ID @"appDeviceId"
+
+#define CHECK_STATUS @"CHECK_STATUS"
+#define UPDATE_HIT @"UPDATE_HIT"
+
+#define DOWNLOAD_URL @"DOWNLOAD_URL"
+#define SERVER_VERSION @"SERVER_VERSION"
+#define CHECK_STATUS_OBJECT @"CHECK_STATUS_OBJECT"
+#define FORCE @"FORCE"
+
+
+#define PROJECT_SCORE_CHANGED @"PROJECT_SCORE_CHANGED"
+
+#pragma mark - 第三方
+//微信登录
+// access_token openid refresh_token unionid
+
+#define WXDoctor_App_ID @"wxd1931d4a0e462***"  // 注册微信时的AppID
+#define WXDoctor_App_Secret @"d0dd6b58da42cbc4f4b715c70e65c***" // 注册时得到的AppSecret
+#define WXPatient_App_ID @"wxbd02bfeea4292***"
+#define WXPatient_App_Secret @"4a788217f363358276309ab655707***"
+#define WX_ACCESS_TOKEN @"access_token"
+#define WX_OPEN_ID @"openid"
+#define WX_REFRESH_TOKEN @"refresh_token"
+#define WX_UNION_ID @"unionid"
+#define WX_BASE_URL @"https://api.weixin.qq.com/sns"
+
+// 友盟
+#define UM_APP_KEY @"5acc84a3f29d987be80000e3"
+#define APPLE_ID  @"1354320892"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#pragma mark - 强/弱引用
+/** 弱引用*/
+#define kWeakSelf(type)   __weak typeof(type) weak##type = type;
+/** 强引用*/
+#define kStrongSelf(type) __strong typeof(type) type = weak##type;
+
+#pragma mark - 判断设备版本号是否是7.0以上
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+
+#pragma mark - 获取屏幕尺寸
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+#define STATUS_HEIGHT ([UIApplication sharedApplication].statusBarFrame.size.height)
+
+#define CHECKVERSION @"https://inwecrypto-china.oss-cn-shanghai.aliyuncs.com/" //检查更新
+#define TELE_SHARE(title, url) @"https://t.me/share/url?text=title&url=url"
+
+#pragma mark - 当前语言
+#define CURRENT_SYSTEM_LANGUAGE ([[NSLocale preferredLanguages] objectAtIndex:0])
+#define SYSTEM_LANGUAGE_IS_ZH [CURRENT_SYSTEM_LANGUAGE containsString:@"zh"]
+
+#pragma mark - GCD
+// 子线程执行
+#define GCDBack(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
+// 将code调到主线程执行，与主线程同步
+#define GCDMain(block) dispatch_async(dispatch_get_main_queue(), block)
+// 不堵塞线程并在主线程的延迟执行 timer:延迟时间，单位：秒；与主线程同步
+#define GCDMainDelay(timer,block) dispatch_after(dispatch_time(DISPATCH_TIME_NOW, INT64_C(timer) * NSEC_PER_SEC), dispatch_get_main_queue(), block)
+
+#pragma mark - 图片
+#define Default_Person_Image [UIImage imageNamed:@"默认头像"]
+#define Default_NoData_Image [UIImage imageNamed:@"暂无数据"]
+#define Default_General_Image [UIImage imageNamed:@"tao"]
+
+//#define IS_APPSTORE_APP YES
+#define IS_APPSTORE_APP NO // ❤️❤️环境切换❤️❤️ 是否是上架到appstore的app
+
+#pragma mark - 颜色
+/**
+ *  主色调
+ */
+#define MAIN_ORANGE_COLOR COLORFROM16(0xFF841C, 1)
+
+/**
+ *  白色
+ */
+#define WHITE_COLOR [UIColor whiteColor]
+
+/**
+ *  浅白背景色
+ */
+#define LIGHT_WHITE_BGCOLOR COLORFROM16(0xF8F8F8, 1)
+
+
+#pragma mark - 从NSUserDefaults获取对象
+// 获取NSUserDefaults对象
+#define USER_DEFAULTS [NSUserDefaults standardUserDefaults]
+//网络状态
+#define APP_APIEHEAD [USER_DEFAULTS stringForKey:APP_NETWORK_API_KEY]
+
+#pragma mark - 测试环境
+#define TESTAPIEHEAD1 @"https://dev.inwecrypto.com:4431/v2/api/"  //网络请求头
+#define TESTAPIEHEAD2 @"https://dev.inwecrypto.com:4431/v1/"  //网络请求头
+#define TESTAPIEHEAD3 @"https://dev.inwecrypto.com:4431/v2/"  //网络请求头
+#define TESTAPIEHEAD4 @"http://testnet.inwecrypto.com/newsdetail2?art_id="  //网络请求头
+#define TESTAPIEHEAD5 @"http://testnet.inwecrypto.com/share2app?code="  //网络请求头
+#define TESTAPIEHEAD6 @"http://testnet.inwecrypto.com/newsdetail?art_id="  //分享网络请求头
+#define IMAGEHEAD @"https://china.inwecrypto.com:4431/"  //图片头
+#define TESTHELPCENTER @"http://testnet.inwecrypto.com/%@/helpcenter"
+#define TEST_REDPACKET_CONTRACT_ADDRESS @"0x6834eA7cA59dd7B0F463B63E46048a41805ef869" // 红包合约地址
+
+#pragma mark - 正式环境
+#define APIEHEAD1 @"https://china.inwecrypto.com:4431/v2/api/"  //网络请求头
+#define APIEHEAD2 @"https://china.inwecrypto.com:4431/v1/"  //网络请求头
+#define APIEHEAD3 @"https://china.inwecrypto.com:4431/v2/"  //网络请求头
+#define APIEHEAD4 @"http://inwecrypto.com/newsdetail2?art_id="  //网络请求头
+#define APIEHEAD5 @"http://inwecrypto.com/share2app?code="  //网络请求头
+#define APIEHEAD6 @"http://inwecrypto.com/newsdetail?art_id="  //分享网络请求头
+#define IMAGEHEAD1 @"https://china.inwecrypto.com:4431/"  //图片头
+#define HELPCENTER @"http://inwecrypto.com/%@/helpcenter" //帮助中心
+#define UPDATE_APP_URL  @"https://fir.im/InWeCrypto"
+#define REDPACKET_CONTRACT_ADDRESS @"" // 红包合约地址
+
+#define KEYCHAIN_KEY(address) [NSString stringWithFormat:@"%@_%@_%@", address, [UserSignData share].user.email, [APP_APIEHEAD isEqualToString:APIEHEAD1] ? @"APPKEYCHAIN" : @"TESTAPPKEYCHIN"]
+//钱包状态
+#define APP_WALLETSTATUS [USER_DEFAULTS stringForKey:APP_WALLET_STATUS_KEY]
+//推送注册id 用于登录
+#define APP_DEVICEID [USER_DEFAULTS stringForKey:APP_DEVICE_ID]
+
+#pragma mark - 其他(import)
+#import "LCProgressHUD.h"
+#import "CoustromViewController.h"
+#import "NSArray+Tool.h"
+#import "NSDictionary+Tool.h"
+#import "NSMutableString+Tool.h"
+#import "NSObject+Tool.h"
+#import "UIColor+Tool.h"
+#import "UIImage+Tool.h"
+#import "UIView+Tool.h"
+#import "NSString+Tool.h"
+#import "UIViewController+Tool.h"
+#import "UIButton+SDSetImage.h"
+#import "UIImageView+SDSetImage.h"
+#import "UserSignData.h"
+#import "ObjcRuntime.h"
+#import "PPNetworkHelper.h"
+#import "PassWordView.h"
+#import "AlertView.h"
+#import "AAGlobalMacro.h"
+#import "UIScrollView+EmptyDataSet.h"
+//#include <Unichain/Unichain.h>
+#import <Neomobile/Neomobile.h>
+#import "PDKeyChain.h"
+#import "JKBigInteger.h"
+#import "JKBigDecimal.h"
+#import "Masonry.h"
+#import "MJRefresh.h"
+#import "NSString+Null.h"
+#import "EaseUI.h"
+#import "KKWebView.h"
+#import "UIButton+Tool.h"
+#import "MyNavigationController.h"
+#import "MJExtension.h"
+#import "UIView+Extension.h"
+#import "YYRedPacketModels.h"
+#import "DBHWalletManagerForNeoDataModels.h"
+/**
+ *  语言工具类
+ */
+#import "DBHLanguageTool.h"
+
+/**
+ *  根据传入的字符串计算出所占高度
+ */
+#import "NSString+Height.h"
+
+/**
+ *  根据颜色返回一张图片
+ */
+#import "UIImage+ImageForColor.h"
+
+#import "AppDelegate.h"
+#import "OtherHeader.pch"
+#endif /* FBG_PrefixHeader_pch */
+

@@ -21,7 +21,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		1C13029464156E033709FA03 /* libPods-CYLAppBaseFrameWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D299CF95D16F21D7E619657 /* libPods-CYLAppBaseFrameWork.a */; };
 		E35421E620901E4D00D9E3C9 /* HYFAppInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = E35421E420901E4D00D9E3C9 /* HYFAppInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E35421E720901E4D00D9E3C9 /* HYFAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E35421E520901E4D00D9E3C9 /* HYFAppInfo.m */; };
 		E367F75820843CC00058FB4A /* CYLAppBaseFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = E367F75620843CC00058FB4A /* CYLAppBaseFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -64,7 +63,7 @@
 		E79791EC2088684000538641 /* TKFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791AF2088684000538641 /* TKFileManager.m */; };
 		E79791ED2088684000538641 /* LSFileAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791B02088684000538641 /* LSFileAssistant.m */; };
 		E79791EE2088684000538641 /* LSFileAssistant.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791B12088684000538641 /* LSFileAssistant.h */; };
-		E79791EF2088684000538641 /* TKFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791B22088684000538641 /* TKFileManager.h */; };
+		E79791EF2088684000538641 /* TKFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791B22088684000538641 /* TKFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E79791F02088684000538641 /* CYLTansitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791B42088684000538641 /* CYLTansitionManager.m */; };
 		E79791F12088684000538641 /* CYLInteractiveTrasition.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791B52088684000538641 /* CYLInteractiveTrasition.m */; };
 		E79791F22088684000538641 /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791B62088684000538641 /* UIImage+Blur.m */; };
@@ -198,7 +197,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C13029464156E033709FA03 /* libPods-CYLAppBaseFrameWork.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +432,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E79791EF2088684000538641 /* TKFileManager.h in Headers */,
 				E35421E620901E4D00D9E3C9 /* HYFAppInfo.h in Headers */,
 				E79791DD2088684000538641 /* CYLNetWorkManager.h in Headers */,
 				E79791E02088684000538641 /* CYLResponse.h in Headers */,
@@ -468,7 +467,6 @@
 				E79791DF2088684000538641 /* CYLNetWorkCache.h in Headers */,
 				E79792092088684000538641 /* Animator.h in Headers */,
 				E79792102088684000538641 /* CYLRefereshBaseView.h in Headers */,
-				E79791EF2088684000538641 /* TKFileManager.h in Headers */,
 				E79792032088684000538641 /* CYLRefereshConstant.h in Headers */,
 				E79791FA2088684000538641 /* CardPopUpTransitionAnimation.h in Headers */,
 				E79792002088684000538641 /* UIImage+Blur.h in Headers */,

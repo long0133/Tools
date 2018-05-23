@@ -31,7 +31,7 @@
 
 - (void)callApiDidSuccess:(CYLApiBaseManager *)apiManager{
     id t = [apiManager fetchDataWithReformer:_reformer];
-    NSLog(@"%@",t);
+    NSLog(@"%@",[apiManager class]);
 }
 
 - (void)callApiDidFailed:(NSError *)error{

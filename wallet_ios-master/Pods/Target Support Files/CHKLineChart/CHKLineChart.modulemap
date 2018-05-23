@@ -1,0 +1,6 @@
+framework module CHKLineChart {
+  umbrella header "CHKLineChart-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChoseWalletView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xGV-wX-jlE">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOV-RV-eA0">
+                    <rect key="frame" x="30" y="134" width="260" height="300"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择以下钱包" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ga-JC-dFy">
+                            <rect key="frame" x="66" y="10" width="128.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="6Ga-JC-dFy" firstAttribute="top" secondItem="cOV-RV-eA0" secondAttribute="top" constant="10" id="d2u-Pi-tsG"/>
+                        <constraint firstAttribute="height" constant="300" id="tNi-0p-Yj4"/>
+                        <constraint firstItem="6Ga-JC-dFy" firstAttribute="centerX" secondItem="cOV-RV-eA0" secondAttribute="centerX" id="ygo-XU-ooE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="xGV-wX-jlE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MVH-gH-9fI"/>
+                <constraint firstItem="cOV-RV-eA0" firstAttribute="centerY" secondItem="xGV-wX-jlE" secondAttribute="centerY" id="Reh-56-Xp7"/>
+                <constraint firstItem="xGV-wX-jlE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Yrg-Eh-xgS"/>
+                <constraint firstAttribute="trailing" secondItem="xGV-wX-jlE" secondAttribute="trailing" id="f4d-bU-8o9"/>
+                <constraint firstAttribute="bottom" secondItem="xGV-wX-jlE" secondAttribute="bottom" id="jP7-XS-ZHO"/>
+                <constraint firstItem="cOV-RV-eA0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="kPe-2z-tMp"/>
+                <constraint firstItem="cOV-RV-eA0" firstAttribute="centerX" secondItem="xGV-wX-jlE" secondAttribute="centerX" id="yCb-ir-vZ1"/>
+                <constraint firstAttribute="trailing" secondItem="cOV-RV-eA0" secondAttribute="trailing" constant="30" id="zRy-yc-rcj"/>
+            </constraints>
+            <connections>
+                <outlet property="contentView" destination="cOV-RV-eA0" id="lVP-yr-yT1"/>
+                <outlet property="masView" destination="xGV-wX-jlE" id="fPM-oh-6Wt"/>
+            </connections>
+            <point key="canvasLocation" x="-58" y="-155"/>
+        </view>
+    </objects>
+</document>

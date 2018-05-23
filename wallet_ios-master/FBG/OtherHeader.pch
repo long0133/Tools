@@ -1,0 +1,167 @@
+//
+//  OtherHeader.pch
+//  Jiatingquan
+//
+//  Created by DBH on 16/9/14.
+//  Copyright © 2016年 邓毕华. All rights reserved.
+//
+
+#ifndef OtherHeader_pch
+#define OtherHeader_pch
+
+#pragma mark - 常量字符串
+#define NEO                     @"NEO"
+#define ETH                     @"ETH"
+#define GAS                     @"Gas"
+
+
+#pragma mark - 字段名
+#define MIN_BLOCK_NUM           @"min_block_num"
+#define BPS                     @"bps"
+#define VALUE                   @"value"
+#define LIST                    @"list"
+#define NAME                    @"name"
+#define GNT_CATEGORY            @"gnt_category"
+#define CAP                     @"cap"
+#define PRICE_CNY               @"price_cny"
+#define PRICE_USD               @"price_usd"
+#define BALANCE                 @"balance"
+#define RECORD                  @"record"
+#define GNT                     @"gnt"
+#define DECIMALS                @"decimals"
+#define WALLET_ID               @"wallet_id"
+#define FLAG                    @"flag"
+#define PAGE                    @"page"
+#define ASSET_ID                @"asset_id"
+
+#define CONFIRM_AT              @"confirm_at"
+#define CREATED_AT              @"created_at"
+#define FEE                     @"fee"
+#define HANDLE_FEE              @"handle_fee"
+#define PAY_ADDRESS             @"pay_address"
+#define RECEIVE_ADDRESS         @"receive_address"
+#define REMARK                  @"remark"
+#define TRADE_NO                @"trade_no"
+#define BLOCK_NUMBER            @"block_number"
+#define CATEGORY_ID             @"category_id"
+#define CATEGORY                @"category"
+#define AUTH_TX_ID              @"auth_tx_id"
+#define AUTH_BLOCK              @"auth_block"
+#define REDBAG                  @"redbag"
+#define REDBAG_NUMBER           @"redbag_number"
+#define REDBAG_ADDR             @"redbag_addr"
+#define REDBAG_SYMBOL           @"redbag_symbol"
+
+// 根据钱包地址存储密码
+#define KEYCHAIN_PWD(address) [NSString stringWithFormat:@"%@-password", address]
+
+/**
+ *  简体中文
+ */
+#define CNS @"zh-Hans"
+
+/**
+ *  英文
+ */
+#define EN @"en"
+
+/**
+ *  语言
+ */
+#define CURRENT_APP_LANGUAGE [[NSUserDefaults standardUserDefaults] objectForKey:@"language"]
+
+/**
+ *  屏幕宽度
+ */
+#define  SCREENWIDTH [UIScreen mainScreen].bounds.size.width
+
+/**
+ *  屏幕高度
+ */
+#define  SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+
+/**
+ *  状态栏高度
+ */
+#define  STATUSBARHEIGHT [UIApplication sharedApplication].statusBarFrame.size.height
+
+/**
+ *  自适应大小
+ */
+#define AUTOLAYOUTSIZE(size) (SCREEN_WIDTH / 375.0 * size)
+
+/**
+ *  将10进制rgb颜色转换成UIColor
+ */
+#define COLORFROM10(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+
+/**
+ *  将16进制rgb颜色转换成UIColor
+ */
+#define COLORFROM16(RGB, A) [UIColor colorWithRed:((float)((RGB & 0xFF0000) >> 16)) / 255.0 green:((float)((RGB & 0xFF00) >> 8)) / 255.0 blue:((float)(RGB & 0xFF)) / 255.0 alpha:A]
+
+/**
+ *  图片浅灰色占位背景
+ */
+#define PICTURECOLOR COLORFROM10(170, 170, 170, 0.08)
+
+/**
+ *  背景颜色
+ */
+#define BACKGROUNDCOLOR COLORFROM16(0xFFFFFF, 1)
+
+/**
+ *  列表分界线
+ */
+#define LISTBOUNDARY COLORFROM16(0xe5e5e5, 1)
+
+/**
+ *  分隔线
+ */
+#define BORDERCOLOR COLORFROM16(0xebebeb, 1)
+
+/**
+ *  订单列表选中颜色  内容颜色
+ */
+#define ORDER_LIST_COLORT_SEL COLORFROM16(0X4AACE4, 1)
+/**
+ *  订单列表未选中颜色
+ */
+#define ORDER_LIST_COLORT_NOR COLORFROM16(0X666666, 1)
+
+
+/**
+ *  辅助字体颜色
+ */
+#define SUPPORT_WORD_COLOR COLORFROM16(0X999999, 1)
+
+/**
+ *  标题颜色
+ */
+#define TITLE_WORD_COLOR COLORFROM16(0x333333, 1)
+
+/**
+ *  字体大小设置
+ */
+#define FONT(size) [UIFont systemFontOfSize:(size) * (375.0 / SCREENWIDTH)]
+/**
+ *  字体大小设置（粗体）
+ */
+#define BOLDFONT(size) [UIFont boldSystemFontOfSize:(size) * (375.0 / SCREENWIDTH)]
+/**
+ *  导航栏标题字体大小
+ */
+#define NAVGATIONBARFONT [UIFont systemFontOfSize:AUTOLAYOUTSIZE(18)]
+
+// 获取当前版本号
+#define GETCURRENTVERSION [[UIDevice currentDevice].systemVersion floatValue]
+
+#pragma mark - 强/弱引用
+// block self
+#define WEAKSELF typeof(self) __weak weakSelf = self;
+#define STRONGSELF typeof(weakSelf) __strong strongSelf = weakSelf;
+
+#define NSEaseLocalizedString(key, comment) [[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"EaseUIResource" withExtension:@"bundle"]] localizedStringForKey:(key) value:@"" table:nil]
+
+#define IS_
+#endif /* OtherHeader_pch */

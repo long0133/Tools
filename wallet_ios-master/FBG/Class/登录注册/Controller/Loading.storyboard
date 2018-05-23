@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mF5-kH-reo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Loading-->
+        <scene sceneID="LVT-m5-ecl">
+            <objects>
+                <viewController title="Loading" id="mF5-kH-reo" customClass="DBHLoadingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DpA-cd-LFm"/>
+                        <viewControllerLayoutGuide type="bottom" id="6ec-eE-Zb3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VMe-uc-leJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topLogo" translatesAutoresizingMaskIntoConstraints="NO" id="2B9-kG-h4E">
+                                <rect key="frame" x="56.5" y="163" width="262.5" height="54"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2018 Rai Stone PTE. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8F-yV-S9g">
+                                <rect key="frame" x="0.0" y="636" width="375" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2B9-kG-h4E" firstAttribute="bottom" secondItem="VMe-uc-leJ" secondAttribute="centerY" multiplier="0.65" id="3hO-cQ-bLJ"/>
+                            <constraint firstItem="2B9-kG-h4E" firstAttribute="width" relation="lessThanOrEqual" secondItem="VMe-uc-leJ" secondAttribute="width" multiplier="0.7" id="Ix0-DW-C2Z"/>
+                            <constraint firstItem="6ec-eE-Zb3" firstAttribute="top" secondItem="h8F-yV-S9g" secondAttribute="bottom" constant="20" id="a8i-EG-FkD"/>
+                            <constraint firstItem="h8F-yV-S9g" firstAttribute="width" secondItem="VMe-uc-leJ" secondAttribute="width" id="lKG-xJ-CjX"/>
+                            <constraint firstItem="h8F-yV-S9g" firstAttribute="centerX" secondItem="VMe-uc-leJ" secondAttribute="centerX" id="pIY-QB-NRK"/>
+                            <constraint firstItem="2B9-kG-h4E" firstAttribute="centerX" secondItem="VMe-uc-leJ" secondAttribute="centerX" id="qfO-AX-AsC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ldi-iD-TcD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-233" y="105"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="topLogo" width="346" height="54"/>
+    </resources>
+</document>

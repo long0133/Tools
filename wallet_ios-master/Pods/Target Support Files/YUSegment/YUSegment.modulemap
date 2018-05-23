@@ -1,0 +1,6 @@
+framework module YUSegment {
+  umbrella header "YUSegment-umbrella.h"
+
+  export *
+  module * { export * }
+}
