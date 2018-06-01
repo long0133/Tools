@@ -8,5 +8,5 @@
 
 #import "ZJNButton.h"
 @interface CYLCountDownButton : ZJNButton
-- (instancetype)initWithPeriod:(CGFloat)period countToZeroBlock:(dispatch_block_t)zeroBlock;
+- (instancetype)initWithPeriod:(CGFloat)period beginCountBlock:(dispatch_block_t)beginBlock countToZeroBlock:(dispatch_block_t)zeroBlock;
 @end

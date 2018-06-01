@@ -42,7 +42,7 @@
 		_tapView.tapDelegate = self;
 		_tapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 		_tapView.backgroundColor = [UIColor clearColor];
-#warning 隐藏了背景除去其点击交互
+// 隐藏了背景除去其点击交互
 		[self addSubview:_tapView];
         
 		// Image view

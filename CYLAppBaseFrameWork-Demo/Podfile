@@ -3,17 +3,25 @@ project 'CYLAppBaseFrameWork/CYLAppBaseFrameWork.xcodeproj'
 project 'CYLAppBaseFrameWork-Demo.xcodeproj'
 
 target 'CYLAppBaseFrameWork-Demo' do
+inhibit_all_warnings!
 pod 'AFNetworking'
 pod 'Masonry'
 pod 'libextobjc'
 pod 'ReactiveObjC'
+pod 'SDWebImage'
+pod 'DACircularProgress'
+pod 'pop'
 project 'CYLAppBaseFrameWork-Demo.xcodeproj'
 end
 
 target 'CYLAppBaseFrameWork' do
+inhibit_all_warnings!
 pod 'AFNetworking'
 pod 'Masonry'
 pod 'libextobjc'
 pod 'ReactiveObjC'
+pod 'SDWebImage'
+pod 'DACircularProgress'
+pod 'pop'
 project 'CYLAppBaseFrameWork/CYLAppBaseFrameWork.xcodeproj'
 end

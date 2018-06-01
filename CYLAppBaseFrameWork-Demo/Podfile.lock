@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - DACircularProgress (2.3.1)
   - libextobjc (0.4.1):
     - libextobjc/EXTADT (= 0.4.1)
     - libextobjc/EXTConcreteProtocol (= 0.4.1)
@@ -50,20 +51,30 @@ PODS:
   - libextobjc/RuntimeExtensions (0.4.1)
   - libextobjc/UmbrellaHeader (0.4.1)
   - Masonry (1.1.0)
+  - pop (1.0.10)
   - ReactiveObjC (3.0.0)
+  - SDWebImage (4.3.3):
+    - SDWebImage/Core (= 4.3.3)
+  - SDWebImage/Core (4.3.3)
 
 DEPENDENCIES:
   - AFNetworking
+  - DACircularProgress
   - libextobjc
   - Masonry
+  - pop
   - ReactiveObjC
+  - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
+  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
 
-PODFILE CHECKSUM: e88f59b2e999234e485b9ea70a2c759d996ccaf8
+PODFILE CHECKSUM: eb2147bc55dc25db928acf4e340f134d9e3e2017
 
 COCOAPODS: 1.4.0
