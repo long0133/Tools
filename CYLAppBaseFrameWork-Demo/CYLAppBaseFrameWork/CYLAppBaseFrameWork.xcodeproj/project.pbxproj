@@ -94,7 +94,7 @@
 		E797920B2088684000538641 /* CYLRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791D22088684000538641 /* CYLRefreshFooter.m */; };
 		E797920C2088684000538641 /* CYLRefereshConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791D32088684000538641 /* CYLRefereshConstant.m */; };
 		E797920D2088684000538641 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E79791D42088684000538641 /* UIView+MJExtension.m */; };
-		E797920E2088684000538641 /* UIScrollView+Refresh.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791D52088684000538641 /* UIScrollView+Refresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E797920E2088684000538641 /* UIScrollView+Refresh.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791D52088684000538641 /* UIScrollView+Refresh.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E797920F2088684000538641 /* CYLRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791D62088684000538641 /* CYLRefreshFooter.h */; };
 		E79792102088684000538641 /* CYLRefereshBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791D72088684000538641 /* CYLRefereshBaseView.h */; };
 		E79792112088684000538641 /* CYLRefereshTool.h in Headers */ = {isa = PBXBuildFile; fileRef = E79791D82088684000538641 /* CYLRefereshTool.h */; };
@@ -443,11 +443,11 @@
 				E79791FE2088684000538641 /* CYLTansitionManager.h in Headers */,
 				E7704885208DB02A00B2D0C1 /* IDMTapDetectingImageView.h in Headers */,
 				E79791FB2088684000538641 /* CYLBaseTransitionAnimation.h in Headers */,
-				E797920E2088684000538641 /* UIScrollView+Refresh.h in Headers */,
 				E79791FD2088684000538641 /* CYLInteractiveTrasition.h in Headers */,
 				E3B3467E2089E3A8005AA263 /* CYLCountDownButton.h in Headers */,
 				E79791FF2088684000538641 /* CYLTransitionHeader.h in Headers */,
 				E3B3467A2089E344005AA263 /* ZJNButton.h in Headers */,
+				E797920E2088684000538641 /* UIScrollView+Refresh.h in Headers */,
 				E79791EB2088684000538641 /* CYLWebViewController.h in Headers */,
 				E79791EA2088684000538641 /* CYLWebHandle.h in Headers */,
 				E79792122088684000538641 /* CYLRefershHeader.h in Headers */,
