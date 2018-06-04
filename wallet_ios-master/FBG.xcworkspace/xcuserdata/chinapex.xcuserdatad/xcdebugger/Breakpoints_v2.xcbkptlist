@@ -25,13 +25,13 @@
                   symbolName = "__64-[DBHTransferConfirmationViewController getUnspentWithPassword:]_block_invoke_2.355"
                   moduleName = "FBG"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chinapex/Downloads/wallet_ios-master/FBG/Class/%E9%92%B1%E5%8C%85/Controller/DBHTransferConfirmationViewController.m"
-                  timestampString = "548232313.049489"
+                  urlString = "file:///Users/chinapex/Documents/Github/ChinaPex/wallet_ios-master/FBG/Class/%E9%92%B1%E5%8C%85/Controller/DBHTransferConfirmationViewController.m"
+                  timestampString = "549169223.871112"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "602"
                   endingLineNumber = "602"
-                  offsetFromSymbolStart = "152">
+                  offsetFromSymbolStart = "159">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -40,13 +40,13 @@
                   symbolName = "__64-[DBHTransferConfirmationViewController getUnspentWithPassword:]_block_invoke_3"
                   moduleName = "FBG"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chinapex/Downloads/wallet_ios-master/FBG/Class/%E9%92%B1%E5%8C%85/Controller/DBHTransferConfirmationViewController.m"
-                  timestampString = "548232313.053811"
+                  urlString = "file:///Users/chinapex/Documents/Github/ChinaPex/wallet_ios-master/FBG/Class/%E9%92%B1%E5%8C%85/Controller/DBHTransferConfirmationViewController.m"
+                  timestampString = "549169223.875916"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "602"
                   endingLineNumber = "602"
-                  offsetFromSymbolStart = "24">
+                  offsetFromSymbolStart = "16">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -55,13 +55,13 @@
                   symbolName = "__destroy_helper_block_.361"
                   moduleName = "FBG"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chinapex/Downloads/wallet_ios-master/FBG/Class/%E9%92%B1%E5%8C%85/Controller/DBHTransferConfirmationViewController.m"
-                  timestampString = "548232313.058774"
+                  urlString = "file:///Users/chinapex/Documents/Github/ChinaPex/wallet_ios-master/FBG/Class/%E9%92%B1%E5%8C%85/Controller/DBHTransferConfirmationViewController.m"
+                  timestampString = "549169223.879346"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "602"
                   endingLineNumber = "602"
-                  offsetFromSymbolStart = "20">
+                  offsetFromSymbolStart = "16">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -184,13 +184,13 @@
                   symbolName = "-[DBHTransferConfirmationViewController creatNeoOrderWithData:trade_no:]"
                   moduleName = "FBG"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chinapex/Downloads/wallet_ios-master/FBG/Class/%E9%92%B1%E5%8C%85/Controller/DBHTransferConfirmationViewController.m"
-                  timestampString = "548232313.115478"
+                  urlString = "file:///Users/chinapex/Documents/Github/ChinaPex/wallet_ios-master/FBG/Class/%E9%92%B1%E5%8C%85/Controller/DBHTransferConfirmationViewController.m"
+                  timestampString = "549169224.543088"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "548"
                   endingLineNumber = "548"
-                  offsetFromSymbolStart = "2312">
+                  offsetFromSymbolStart = "2289">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -199,13 +199,13 @@
                   symbolName = "__72-[DBHTransferConfirmationViewController creatNeoOrderWithData:trade_no:]_block_invoke"
                   moduleName = "FBG"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chinapex/Downloads/wallet_ios-master/FBG/Class/%E9%92%B1%E5%8C%85/Controller/DBHTransferConfirmationViewController.m"
-                  timestampString = "548232313.1183029"
+                  urlString = "file:///Users/chinapex/Documents/Github/ChinaPex/wallet_ios-master/FBG/Class/%E9%92%B1%E5%8C%85/Controller/DBHTransferConfirmationViewController.m"
+                  timestampString = "549169224.547056"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "548"
                   endingLineNumber = "548"
-                  offsetFromSymbolStart = "24">
+                  offsetFromSymbolStart = "19">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -214,13 +214,13 @@
                   symbolName = "__destroy_helper_block_.321"
                   moduleName = "FBG"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chinapex/Downloads/wallet_ios-master/FBG/Class/%E9%92%B1%E5%8C%85/Controller/DBHTransferConfirmationViewController.m"
-                  timestampString = "548232313.121043"
+                  urlString = "file:///Users/chinapex/Documents/Github/ChinaPex/wallet_ios-master/FBG/Class/%E9%92%B1%E5%8C%85/Controller/DBHTransferConfirmationViewController.m"
+                  timestampString = "549169224.551222"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "548"
                   endingLineNumber = "548"
-                  offsetFromSymbolStart = "20">
+                  offsetFromSymbolStart = "16">
                </Location>
             </Locations>
          </BreakpointContent>

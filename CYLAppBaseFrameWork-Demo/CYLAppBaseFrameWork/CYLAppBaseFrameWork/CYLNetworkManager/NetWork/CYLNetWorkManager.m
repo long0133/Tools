@@ -106,7 +106,7 @@ static CYLNetWorkManager *_instance;
         }
     }
     
-    return [[CYLNetWorkManager shareInstance].manner GET:url parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    return [[CYLNetWorkManager shareInstance].manner GET:url parameters:param success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
        
         if (successBlock) {
             CYLResponse *res = [self prepareResponse:responseObject];
@@ -142,7 +142,7 @@ static CYLNetWorkManager *_instance;
         }
     }
     
-    return [[CYLNetWorkManager shareInstance].manner POST:url parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    return [[CYLNetWorkManager shareInstance].manner POST:url parameters:param success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         if (successBlock) {
             CYLResponse *res = [self prepareResponse:responseObject];
