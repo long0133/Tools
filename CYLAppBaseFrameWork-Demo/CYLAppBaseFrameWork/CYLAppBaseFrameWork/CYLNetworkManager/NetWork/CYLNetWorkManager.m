@@ -298,6 +298,10 @@ static CYLNetWorkManager *_instance;
     return _manner;
 }
 
+- (AFHTTPSessionManager *)getManager{
+    return self.manner;
+}
+
 - (void)setBaseUrl:(NSURL *)baseurl{
     _baseURL = baseurl;
 }

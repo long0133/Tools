@@ -153,7 +153,6 @@ static BOOL isObserving = false; /**< 是否观察中 */
         [self removeObserver:self forKeyPath:CYLRefreshKeyPathContentSize];
         [self removeObserver:self forKeyPath:CYLRefreshKeyPathPanState];
     }
-    
     isObserving = false;
 }
 
