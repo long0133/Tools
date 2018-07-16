@@ -85,7 +85,7 @@
 {
     NSString *absolutePath = [self absolutePathWithUserPath:pathOfFile
                                         systemDirectoryType:directoryType];
-    NSLog(@"%@",absolutePath);
+//    NSLog(@"%@",absolutePath);
     return [[class alloc] initWithContentsOfFile:absolutePath];
 }
 

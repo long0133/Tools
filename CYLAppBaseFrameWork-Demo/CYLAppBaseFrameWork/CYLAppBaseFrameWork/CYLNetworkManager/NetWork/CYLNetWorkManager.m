@@ -294,6 +294,11 @@ static CYLNetWorkManager *_instance;
         _manner = [[AFHTTPSessionManager alloc] initWithBaseURL:_baseURL];
         _manner.requestSerializer.timeoutInterval = 10;
         _manner.responseSerializer = [AFHTTPResponseSerializer serializer];
+        
+        AFSecurityPolicy *securityPolicy = [AFSecurityPolicy defaultPolicy];
+        securityPolicy.validatesDomainName = NO;
+        securityPolicy.allowInvalidCertificates = YES;
+        _manner.securityPolicy = securityPolicy;
     }
     return _manner;
 }

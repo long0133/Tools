@@ -449,7 +449,6 @@ static NSString *const kDBHTransferListTableViewCellIdentifier = @"kDBHTransferL
             asset_id = self.tokenModel.address;
         }
     }
- 
     NSMutableDictionary *parametersDic = [[NSMutableDictionary alloc] init];
     [parametersDic setObject:@(self.neoWalletModel.listIdentifier) forKey:WALLET_ID];
     [parametersDic setObject:flag forKey:FLAG];
